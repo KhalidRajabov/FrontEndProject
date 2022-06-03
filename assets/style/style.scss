@@ -72,5 +72,84 @@ header{
         justify-content: space-between;
         align-items: center;
         height: 60px;
+        .logo{
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            .link-span{
+                padding-top: 5px;
+                font-size: 75%;
+            }
+        }
+        .location{
+            border: 1px solid #d9d9e9;
+            height: 60px;
+            width: 180px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            .left-loc{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .loc-span{
+                    font-size: 80%;
+                    color: #d9d9e9;
+                }
+                .select-span{
+                    color: rgb(35,58,149);
+                }
+            }
+            .loc-icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .header-input{
+            width: 40%;
+            position: relative;
+            .h-input{
+                width: 100%;
+                height: 60px;
+                padding: 20px;
+                font-size: 100%;
+                border: none;
+                color: rgb(160,149,169);
+                background-color: rgb(243,244,247);
+                &:focus{
+                    outline: none;
+                }
+            }
+            .input-icon{
+                position: absolute;
+                right: 25px;
+                top: 18px;
+                font-size: 140%;
+            }
+        }
+        .profile{
+            width: 40px;
+            height: 40px;
+            border: #d9d9e9 2px solid;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-basket{
+            .basket-self{
+                width: 40px;
+                height: 40px;
+                border: #d9d9e9 2px solid;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgb(237,49,15);
+                background-color: rgb(255,241,238);
+            }
+        }
     }
 }

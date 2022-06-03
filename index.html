@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/style.css" />
     <title>Home</title>
   </head>
@@ -50,10 +51,33 @@
         </ul>
       </div>
       <div class="header-second-row">
-          <a href="">
-              <img src="./assets/images/bacola-logo.png" width="160" alt="">
-              Online Grocery Shopping Center
-        </a> 
+          <div class="logo">
+            <img src="./assets/images/bacola-logo.png" width="160" alt="">
+            <span class="link-span">Online Grocery Shopping Center</span>
+          </div>
+          <div class="location">
+            <div class="left-loc">
+              <span class="loc-span">Your Location</span>
+              <div class="select-span">Select a Location</div>
+            </div>
+            <div class="loc-icon">
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="header-input">
+            <input class="h-input" type="text" placeholder="Search for products...">
+            <i class="input-icon fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="profile">
+            <i class="fa-regular fa-user"></i>
+          </div>
+
+          <div class="header-basket">
+            <div class="basket-worth"><span class="basket-total-worth"></span></div>
+            <div class="basket-self">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+          </div>
       </div>
     </header>
   </body>
