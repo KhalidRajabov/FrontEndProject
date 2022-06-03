@@ -3,6 +3,13 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hide {
+  -webkit-transform: translate(-600px);
+          transform: translate(-600px);
 }
 
 ul {
@@ -21,7 +28,7 @@ ul {
 
 .first-row .first-p {
   padding-top: 10px;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-size: 108%;
   font-weight: 100;
 }
@@ -163,7 +170,7 @@ header .header-second-row .location .left-loc {
 
 header .header-second-row .location .left-loc .loc-span {
   font-size: 80%;
-  color: #d9d9e9;
+  color: #b2b2b6;
 }
 
 header .header-second-row .location .left-loc .select-span {
@@ -183,7 +190,7 @@ header .header-second-row .location .loc-icon {
 }
 
 header .header-second-row .header-input {
-  width: 40%;
+  width: 50%;
   position: relative;
 }
 
@@ -224,7 +231,34 @@ header .header-second-row .profile {
           justify-content: center;
 }
 
+header .header-second-row .header-basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header-second-row .header-basket .basket-worth {
+  padding: 0 15px;
+}
+
+header .header-second-row .header-basket .basket-worth .basket-total-worth {
+  font-size: large;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
 header .header-second-row .header-basket .basket-self {
+  position: relative;
   width: 40px;
   height: 40px;
   border: #d9d9e9 2px solid;
@@ -240,5 +274,192 @@ header .header-second-row .header-basket .basket-self {
           justify-content: center;
   color: #ed310f;
   background-color: #fff1ee;
+}
+
+header .header-second-row .header-basket .basket-self sup {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ed310f;
+  color: white;
+  font-size: 80%;
+  text-align: center;
+}
+
+header .header-last-row {
+  z-index: 1;
+  position: relative;
+  font-family: "Roboto";
+  margin-top: 15px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-last-row .all-categories {
+  cursor: pointer;
+  position: relative;
+  background-color: #2bbef9;
+  width: 15%;
+  border-radius: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header-last-row .all-categories .categories {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 800;
+}
+
+header .header-last-row .all-categories .categories li {
+  padding: 0 5px;
+  font-size: 80%;
+}
+
+header .header-last-row .all-categories .total-products {
+  position: absolute;
+  bottom: -7px;
+  left: 18px;
+  width: 80%;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #e8f3ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header-last-row .all-categories .total-products .t-products {
+  color: black;
+  font-size: 70%;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+header .header-last-row .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header-last-row .nav .nav-ul {
+  width: 100%;
+}
+
+header .header-last-row .nav .nav-ul .nav-list {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 80%;
+  font-family: "Roboto";
+  padding: 10px 20px;
+  font-weight: 600;
+  margin: 0 5px;
+  border-radius: 15px;
+}
+
+header .header-last-row .nav .nav-ul .nav-list:hover {
+  background-color: #e8f3ff;
+  color: #007bff;
+}
+
+header .header-last-row .nav .nav-ul .nav-list i {
+  padding: 0 3px;
+  font-size: 120%;
+}
+
+header .drop-down-product {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 10px 0;
+  position: absolute;
+  width: 230px;
+  background-color: white;
+  border: 1px solid #d9d9e9;
+  font-family: "Roboto";
+  font-weight: 600;
+  top: 80px;
+}
+
+header .drop-down-product .dropped-product,
+header .drop-down-product .drop-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 90%;
+}
+
+header .drop-down-product .dropped-product a,
+header .drop-down-product .drop-footer a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding: 10px 0;
+}
+
+header .drop-down-product .dropped-product a:hover,
+header .drop-down-product .drop-footer a:hover {
+  color: #2bbef9;
+}
+
+header .drop-down-product .dropped-product .dropped-p-list,
+header .drop-down-product .dropped-product .drop-footer-list,
+header .drop-down-product .drop-footer .dropped-p-list,
+header .drop-down-product .drop-footer .drop-footer-list {
+  padding: 10px 25px;
+}
+
+header .drop-down-product .dropped-product i,
+header .drop-down-product .drop-footer i {
+  padding: 0 10px 0 0;
+}
+
+header .drop-down-product .drop-footer {
+  padding-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */

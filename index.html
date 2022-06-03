@@ -11,7 +11,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo&family=Meie+Script&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="/your-path-to-uicons/css/uicons-[your-style].css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+    />
     <link rel="stylesheet" href="./assets/style/style.css" />
     <title>Home</title>
   </head>
@@ -51,34 +64,128 @@
         </ul>
       </div>
       <div class="header-second-row">
-          <div class="logo">
-            <img src="./assets/images/bacola-logo.png" width="160" alt="">
-            <span class="link-span">Online Grocery Shopping Center</span>
+        <div class="logo">
+          <img src="./assets/images/bacola-logo.png" width="160" alt="" />
+          <span class="link-span">Online Grocery Shopping Center</span>
+        </div>
+        <div class="location">
+          <div class="left-loc">
+            <span class="loc-span">Your Location</span>
+            <div class="select-span">Select a Location</div>
           </div>
-          <div class="location">
-            <div class="left-loc">
-              <span class="loc-span">Your Location</span>
-              <div class="select-span">Select a Location</div>
-            </div>
-            <div class="loc-icon">
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
+          <div class="loc-icon">
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
-          <div class="header-input">
-            <input class="h-input" type="text" placeholder="Search for products...">
-            <i class="input-icon fa-solid fa-magnifying-glass"></i>
-          </div>
-          <div class="profile">
-            <i class="fa-regular fa-user"></i>
-          </div>
+        </div>
+        <div class="header-input">
+          <input
+            class="h-input"
+            type="text"
+            placeholder="Search for products..."
+          />
+          <i class="input-icon fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="profile">
+          <i class="fa-regular fa-user"></i>
+        </div>
 
-          <div class="header-basket">
-            <div class="basket-worth"><span class="basket-total-worth"></span></div>
-            <div class="basket-self">
-              <i class="fa-solid fa-bag-shopping"></i>
-            </div>
+        <div class="header-basket">
+          <div class="basket-worth">
+            <span class="basket-total-worth">$0.00</span>
           </div>
+          <div class="basket-self">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <sup class="sup">7</sup>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-last-row">
+        <div id="h-categories" class="all-categories">
+          <ul class="categories">
+            <li><i class="bars fa-solid fa-bars"></i></li>
+            <li>ALL CATEGORIES</li>
+            <li><i class="fa-solid fa-chevron-down"></i></li>
+          </ul>
+          <div class="total-products">
+            <p class="t-products">TOTAL 63 PRODUCTS</p>
+          </div>
+        </div>
+        <div id="h-drop-down" class="drop-down-product">
+          <ul class="dropped-product">
+            <li class="dropped-p-list">
+              <a href="" class="product-link"
+                ><i class="fa-solid fa-apple-whole"></i>Fruits & Vegetables</a
+              >
+            </li>
+            <li class="dropped-p-list">
+              <a href="" class="product-link"
+                ><i class="fa-solid fa-pizza-slice"></i>Meats & Seafood</a
+              >
+            </li>
+            <li class="dropped-p-list">
+              <a href="" class="product-link"
+                ><i class="fa-solid fa-egg"></i>Breakfast & Diary</a
+              >
+            </li>
+            <li class="dropped-p-list">
+              <a href="" class="product-link"
+                ><i class="fa-solid fa-mug-hot"></i>Beverages</a
+              >
+            </li>
+            <li class="dropped-p-list">
+              <a href="" class="product-link"
+                ><i class="fa-solid fa-cookie"></i>Breads & Bakery</a
+              >
+            </li>
+            <li class="dropped-p-list">
+              <a href="" class="product-link"
+                ><i class="fa-regular fa-snowflake"></i>Frozen Foods</a
+              >
+            </li>
+            <li class="dropped-p-list">
+              <a href="" class="product-link"
+                ><i class="fa-solid fa-candy-cane"></i>Biscuits & Snacks</a
+              >
+            </li>
+            <li class="dropped-p-list">
+              <a href="" class="product-link"
+                ><i class="fa-solid fa-leaf"></i>Grocery Staples</a
+              >
+            </li>
+          </ul>
+          <ul class="drop-footer">
+            <li class="drop-footer-list"><a href="">Value of the Day</a></li>
+            <li class="drop-footer-list"><a href="">Top 100 Offers</a></li>
+            <li class="drop-footer-list"><a href="">New Arrivals</a></li>
+          </ul>
+        </div>
+        <div class="nav">
+          <ul class="nav-ul">
+            <li class="nav-list">
+              HOME <i class="fa-solid fa-chevron-down"></i>
+              <ul class="drop-down-ul"></ul>
+            </li>
+            <li class="nav-list">
+              SHOP <i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li class="nav-list">
+              <i class="fa-solid fa-feather-pointed"></i> MEATS & SEAFOOD
+            </li>
+            <li class="nav-list"><i class="fa-solid fa-cookie"></i> BAKERY</li>
+            <li class="nav-list">
+              <i class="fa-solid fa-mug-hot"></i>BEVERAGES
+            </li>
+            <li class="nav-list">BLOG</li>
+            <li class="nav-list">CONTACT</li>
+          </ul>
+        </div>
       </div>
     </header>
   </body>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="./assets/apps/main.js"></script>
 </html>
