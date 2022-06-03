@@ -199,9 +199,9 @@
         </div>
         <div class="nav">
           <ul class="nav-ul">
-            <li class="nav-list nav-home">
+            <li id="home-down" class="nav-list nav-home">
               HOME <i class="fa-solid fa-chevron-down"></i>
-              <div class="drop-home">
+              <div id="home-drop" class="drop-home hide">
                 <ul class="drop-down-home">
                   <li class="home-list"><a href="" class="home-links">Home 1</a></li>
                   <li class="home-list"><a href="" class="home-links">Home 2</a></li>
@@ -211,7 +211,7 @@
                 </ul>
               </div>
             </li>
-            <li class="nav-list">
+            <li id="shop-drop" class="nav-list">
               SHOP <i class="fa-solid fa-chevron-down"></i>
             </li>
             <li class="nav-list">
@@ -227,47 +227,52 @@
         </div>
       </div>
     </header>
-    <div class="hidden-div">
+    <div id="shop-div" class="hidden-div hide">
       <div class="list-div">
         <ul class="col-1">
-          <li class="col-1-list"><a class="col-1-link" href="">text</a></li>
-          <li class="col-1-list"><a class="col-1-link" href="">text</a></li>
-          <li class="col-1-list"><a class="col-1-link" href="">text</a></li>
-          <li class="col-1-list"><a class="col-1-link" href="">text</a></li>
-          <li class="col-1-list"><a class="col-1-link" href="">text</a></li>
-          <li class="col-1-list"><a class="col-1-link" href="">text</a></li>
+          <li class="col-1-list header"><a class="lead-link col-1-link" href="">Shop Lists</a></li>
+          <li class="col-1-list"><a class="col-1-link" href="">shop default</a></li>
+          <li class="col-1-list"><a class="col-1-link" href="">Shop Right Sidebar</a></li>
+          <li class="col-1-list"><a class="col-1-link" href="">shop wide</a></li>
+          <li class="col-1-list"><a class="col-1-link" href="">list left sidebar</a></li>
+          <li class="col-1-list"><a class="col-1-link" href="">load more button</a></li>
+          <li class="col-1-list"><a class="col-1-link" href="">infinite scrolling</a></li>
         </ul>
         <ul class="col-2">
-          <li class="col-2-list"><a class="col-2-link" href="">text</a></li>
-          <li class="col-2-list"><a class="col-2-link" href="">text</a></li>
-          <li class="col-2-list"><a class="col-2-link" href="">text</a></li>
-          <li class="col-2-list"><a class="col-2-link" href="">text</a></li>
-          <li class="col-2-list"><a class="col-2-link" href="">text</a></li>
-          <li class="col-2-list"><a class="col-2-link" href="">text</a></li>
+          <li class="col-2-list header"><a class="lead-link col-2-link" href="">product detail</a></li>
+          <li class="col-2-list"><a class="col-2-link" href="">product default</a></li>
+          <li class="col-2-list"><a class="col-2-link" href="">product variable</a></li>
+          <li class="col-2-list"><a class="col-2-link" href="">product gorup</a></li>
+          <li class="col-2-list"><a class="col-2-link" href="">product external</a></li>
+          <li class="col-2-list"><a class="col-2-link" href="">product downloadable</a></li>
+          <li class="col-2-list"><a class="col-2-link" href="">product with video</a></li>
         </ul>
         <ul class="col-3">
-          <li class="col-3-list"><a class="col-3-link" href="">text</a></li>
-          <li class="col-3-list"><a class="col-3-link" href="">text</a></li>
-          <li class="col-3-list"><a class="col-3-link" href="">text</a></li>
-          <li class="col-3-list"><a class="col-3-link" href="">text</a></li>
-          <li class="col-3-list"><a class="col-3-link" href="">text</a></li>
-          <li class="col-3-list"><a class="col-3-link" href="">text</a></li>
+          <li class="col-3-list header"><a class="lead-link col-3-link" href="">product types</a></li>
+          <li class="col-3-list"><a class="col-3-link" href="">single type 1</a></li>
+          <li class="col-3-list"><a class="col-3-link" href="">single type 2</a></li>
+          <li class="col-3-list"><a class="col-3-link" href="">single type 3</a></li>
+          <li class="col-3-list"><a class="col-3-link" href="">single type 4</a></li>
+          <li class="col-3-list"><a class="col-3-link" href="">thumbnails left</a></li>
+          <li class="col-3-list"><a class="col-3-link" href="">zoom image</a></li>
         </ul>
         <ul class="col-4">
-          <li class="col-4-list"><a class="col-4-link" href="">text</a></li>
-          <li class="col-4-list"><a class="col-4-link" href="">text</a></li>
-          <li class="col-4-list"><a class="col-4-link" href="">text</a></li>
-          <li class="col-4-list"><a class="col-4-link" href="">text</a></li>
-          <li class="col-4-list"><a class="col-4-link" href="">text</a></li>
-          <li class="col-4-list"><a class="col-4-link" href="">text</a></li>
+          <li class="col-4-list header"><a class="lead-link col-4-link" href="">shop pages</a></li>
+          <li class="col-4-list"><a class="col-4-link" href="">cart</a></li>
+          <li class="col-4-list"><a class="col-4-link" href="">checkout</a></li>
+          <li class="col-4-list"><a class="col-4-link" href="">my account</a></li>
+          <li class="col-4-list"><a class="col-4-link" href="">wishlist</a></li>
+          <li class="col-4-list"><a class="col-4-link" href="">order tracking</a></li>
+          <li class="col-4-list"><a class="col-4-link" href="">order on whatsApp</a></li>
         </ul>
         <ul class="col-5">
-          <li class="col-5-list"><a class="col-5-link" href="">text</a></li>
-          <li class="col-5-list"><a class="col-5-link" href="">text</a></li>
-          <li class="col-5-list"><a class="col-5-link" href="">text</a></li>
-          <li class="col-5-list"><a class="col-5-link" href="">text</a></li>
-          <li class="col-5-list"><a class="col-5-link" href="">text</a></li>
-          <li class="col-5-list"><a class="col-5-link" href="">text</a></li>
+          <li class="col-5-list  header"><a class="lead-link col-5-link" href="">shop layouts</a></li>
+          <li class="col-5-list"><a class="col-5-link" href="">two columns</a></li>
+          <li class="col-5-list"><a class="col-5-link" href="">three coulmns</a></li>
+          <li class="col-5-list"><a class="col-5-link" href="">three columns wide</a></li>
+          <li class="col-5-list"><a class="col-5-link" href="">four columns</a></li>
+          <li class="col-5-list"><a class="col-5-link" href="">four columns wide</a></li>
+          <li class="col-5-list"><a class="col-5-link" href="">five columns wide</a></li>
         </ul>
       </div>
     </div>

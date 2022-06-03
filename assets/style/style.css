@@ -3,12 +3,14 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .hide {
-  opacity: 0;
+  visibility: hidden;
+}
+
+.unhide {
+  visibility: visible;
 }
 
 ul {
@@ -485,7 +487,7 @@ header .header-last-row .nav .nav-ul .nav-home {
   position: relative;
 }
 
-header .header-last-row .nav .nav-ul .nav-home:hover .drop-home {
+header .header-last-row .nav .nav-ul .nav-home:hover > .drop-home {
   opacity: 100;
 }
 
@@ -682,12 +684,64 @@ header .drop-down-product .drop-footer {
   width: 100%;
   min-height: 200px;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
 }
 
 .hidden-div .list-div {
-  position: relative;
+  position: absolute;
   width: 1200px;
-  margin: 0 auto;
   background-color: white;
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid red;
+  top: 20px;
+}
+
+.hidden-div .list-div ul {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hidden-div .list-div ul .header {
+  padding-bottom: 20px;
+}
+
+.hidden-div .list-div ul li {
+  padding: 10px 0;
+  text-transform: capitalize;
+}
+
+.hidden-div .list-div ul li .lead-link {
+  color: #007bff;
+}
+
+.hidden-div .list-div ul li:hover > a {
+  color: #007bff;
+}
+
+.hidden-div .list-div ul li a {
+  text-decoration: none;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
