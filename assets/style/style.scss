@@ -79,7 +79,7 @@ header {
             &:hover .lang-div {
               opacity: 1;
               visibility: visible;
-            cursor: pointer;
+              cursor: pointer;
             }
             cursor: pointer;
             .fa-chevron-down {
@@ -91,7 +91,7 @@ header {
               position: absolute;
               background-color: white;
               border: 1px solid #d9d9e9;
-              left: -15px;
+              left: 15px;
               top: 25px;
               opacity: 0;
               visibility: hidden;
@@ -294,17 +294,18 @@ header {
       display: flex;
       color: white;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       .categories {
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
+        margin-top: 10px;
+        margin-right:  20px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         font-weight: 800;
         li {
-          padding: 0 5px;
-          font-size: 80%;
+          padding: 0 2px;
+          font-size: 70%;
         }
       }
       .total-products {
@@ -322,6 +323,7 @@ header {
           color: black;
           font-size: 70%;
           text-align: center;
+          margin: auto;
           font-family: sans-serif;
         }
       }
@@ -343,7 +345,7 @@ header {
             position: absolute;
             width: 200%;
             left: 0px;
-            top: 67px;
+            top: 48px;
             background-color: rgb(255, 255, 255);
             .drop-down-home {
               padding: 25px;
@@ -364,8 +366,8 @@ header {
             }
           }
         }
-        .shop-dropper{
-          &:hover > .hidden-div{
+        .shop-dropper {
+          &:hover > .hidden-div {
             opacity: 1;
             visibility: visible;
           }
@@ -447,7 +449,7 @@ header {
     border: 1px solid #d9d9e9;
     font-family: "Roboto";
     font-weight: 600;
-    top: 80px;
+    top: 60px;
     .v-icon {
       position: absolute;
       right: 5px;
@@ -466,7 +468,7 @@ header {
       }
       .dropped-p-list,
       .drop-footer-list {
-        padding: 10px 25px;
+        padding: 10px 0;
         &:hover > a {
           color: rgb(43, 190, 249);
         }
@@ -497,7 +499,7 @@ header {
             flex-direction: column;
             font-size: 90%;
             .pop-fruit-li {
-              padding: 10px 30px;
+              padding: 10px 5px;
               &:hover a {
                 color: #007bff;
               }
@@ -526,7 +528,7 @@ header {
             flex-direction: column;
             font-size: 90%;
             .pop-bev-li {
-              padding: 10px 30px;
+              padding: 10px 5px;
               &:hover a {
                 color: #007bff;
               }
@@ -622,12 +624,13 @@ header {
   }
 }
 
-.slider{
+.slider {
   width: 100%;
   height: 64vh;
   position: relative;
   overflow: hidden;
-  .sliderleft, .sliderright{
+  .sliderleft,
+  .sliderright {
     position: absolute;
     background-color: white;
     height: 40px;
@@ -640,17 +643,17 @@ header {
     font-size: 80%;
     cursor: pointer;
   }
-  .sliderleft{
+  .sliderleft {
     left: 3%;
   }
-  .sliderright{
+  .sliderright {
     right: 3%;
   }
-  .images{
+  .images {
     width: 200%;
     height: 100%;
     display: flex;
-    .item{
+    .item {
       height: 33%;
       // .img{
       // }
