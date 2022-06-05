@@ -888,7 +888,7 @@ header .drop-down-product .drop-footer {
   height: 50px;
   background-color: #233a95;
   border-radius: 5px;
-  bottom: 38px;
+  bottom: 30px;
   right: 124px;
   color: white;
   font-size: 100%;
@@ -899,7 +899,7 @@ header .drop-down-product .drop-footer {
   position: absolute;
   font-size: 130%;
   color: #acacac;
-  bottom: 54px;
+  bottom: 44px;
   left: 20px;
 }
 
@@ -957,10 +957,6 @@ header .drop-down-product .drop-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.slider .images .item {
-  height: 33%;
 }
 
 footer {
