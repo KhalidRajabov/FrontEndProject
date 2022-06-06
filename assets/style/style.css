@@ -1447,6 +1447,12 @@ footer .footer-info .footer-last .payments {
   font-size: 80%;
   color: #b2b2b6;
   margin-top: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.big-product-section .product-time-counter .deal-section .deal-info:hover {
+  color: #233a95;
 }
 
 .big-product-section .product-time-counter .product-item {
@@ -1526,6 +1532,12 @@ footer .footer-info .footer-last .payments {
   font-size: 140%;
   font-weight: 600;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.big-product-section .product-time-counter .product-detail .title:hover {
+  color: #0026c0;
 }
 
 .big-product-section .product-time-counter .product-detail p {
@@ -1590,10 +1602,114 @@ footer .footer-info .footer-last .payments {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid lime;
   width: 66%;
   height: 105vh;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.big-product-section .product-cards .pr-card {
+  border: 1px solid lime;
+  width: 33.3%;
+  height: 52.5vh;
+  position: relative;
+}
+
+.big-product-section .product-cards .pr-card .collapse {
+  width: 40px;
+  position: absolute;
+  right: 5px;
+  height: 40px;
+  background-color: red;
+}
+
+.big-product-section .product-cards .pr-card img {
+  padding: 0;
+  width: 80%;
+  margin-top: 15px;
+  margin-left: 30PX;
+}
+
+.big-product-section .product-cards .pr-card .dc-percentage {
+  background-color: #2bbef9;
+  padding: 3px 9px;
+  width: 50px;
+  top: 15px;
+  left: 15px;
+  font-size: 80%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.big-product-section .product-cards .pr-card .dc-recommended {
+  background-color: #7a7a7a;
+  padding: 3px 9px;
+  width: 110px;
+  top: 45px;
+  text-transform: uppercase;
+  left: 15px;
+  font-size: 70%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.big-product-section .product-cards .pr-card .dc-title {
+  width: 80%;
+  font-weight: 600;
+  font-family: sans-serif;
+  margin-left: 15px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.big-product-section .product-cards .pr-card .dc-title:hover {
+  color: #0026c0;
+}
+
+.big-product-section .product-cards .pr-card .stock {
+  color: #00beb9;
+  margin-left: 15px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 70%;
+  font-weight: 600;
+}
+
+.big-product-section .product-cards .pr-card .review {
+  margin-left: 15px;
+}
+
+.big-product-section .product-cards .pr-card .review i {
+  font-size: 80%;
+  color: gold;
+}
+
+.big-product-section .product-cards .pr-card .review .bad-star {
+  color: #bfbfbf;
+  padding-right: 5px;
+}
+
+.big-product-section .product-cards .pr-card .worth-spans {
+  margin-left: 15px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.big-product-section .product-cards .pr-card .worth-spans .previous {
+  margin-bottom: -4px;
+  font-size: 130%;
+  color: #b2b2b6;
+  text-decoration: line-through;
+}
+
+.big-product-section .product-cards .pr-card .worth-spans .current {
+  margin-left: 5px;
+  font-size: 140%;
+  color: #ed174a;
 }
 /*# sourceMappingURL=style.css.map */
