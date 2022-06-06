@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
+    ">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo&family=Meie+Script&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="icon" href="./assets/images/favicon.png" type="image/icon type">
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="first-row">
+      <p class="first-p">
+        Due to the <strong>COVID</strong> 19 epidemic, orders may be processed
+        with a slight delay
+      </p>
+    </div>
+    <header>
+      <div class="header-first-row">
+        <ul class="left-ul">
+          <li class="left-list">About Us</li>
+          <li class="left-list">My account</li>
+          <li class="left-list">Wishlist</li>
+          <li class="left-list">Order Tracking</li>
+        </ul>
+        <ul class="right-ul">
+          <li class="right-list">
+            <i class="fa-regular fa-hand"></i>100% Secure delivery without
+            contacting the courier
+          </li>
+          <li class="right-list">
+            Need help? Call Us: <span>+ 0020 500</span>
+          </li>
+          <li class="right-list">
+            <ul class="inner-ul">
+              <li id="lang-list" class="inner-lang">
+                English <i class="fa-solid fa-chevron-down"></i>
+                <div id="-drop-lang-div" class="lang-div">
+                  <ul class="drop-lang">
+                    <li class="dropped-lang">
+                      <a href="" class="lang-links">English</a>
+                    </li>
+                    <li class="dropped-lang">
+                      <a href="" class="lang-links">Spanish</a>
+                    </li>
+                    <li class="dropped-lang">
+                      <a href="" class="lang-links">German</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="inner-curr">
+                USD <i class="fa-solid fa-chevron-down"></i>
+                <div id="-drop-curr-div" class="curr-div">
+                  <ul class="drop-curr">
+                    <li class="dropped-curr">
+                      <a href="" class="curr-links">USD</a>
+                    </li>
+                    <li class="dropped-curr">
+                      <a href="" class="curr-links">INR</a>
+                    </li>
+                    <li class="dropped-curr">
+                      <a href="" class="curr-links">GBP</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="header-second-row">
+        <div class="logo">
+          <img src="./assets/images/bacola-logo.png" width="160" alt="" />
+          <span class="link-span">Online Grocery Shopping Center</span>
+        </div>
+        <div class="location">
+          <div class="left-loc">
+            <span class="loc-span">Your Location</span>
+            <div class="select-span">Select a Location</div>
+          </div>
+          <div class="loc-icon">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="header-input">
+          <input
+            class="h-input"
+            type="text"
+            placeholder="Search for products..."
+          />
+          <i class="input-icon fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="profile">
+          <i class="fa-regular fa-user"></i>
+        </div>
+
+        <div class="header-basket">
+          <div class="basket-worth">
+            <span class="basket-total-worth">$0.00</span>
+          </div>
+          <div class="basket-self">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <sup class="sup">7</sup>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-last-row">
+        <div id="h-categories" class="all-categories">
+          <ul class="categories">
+            <li><i class="bars fa-solid fa-bars"></i></li>
+            <li>ALL CATEGORIES</li>
+            <li><i class="fa-solid fa-chevron-down"></i></li>
+          </ul>
+          <div class="total-products">
+            <p class="t-products">TOTAL 63 PRODUCTS</p>
+          </div>
+        </div>
+        <div id="h-drop-down" class="drop-down-product hide">
+          <ul class="dropped-product">
+            <li class="dropped-p-list fruit">
+              <a href="" class="product-link"
+                ><i class="fa-solid fa-apple-whole"></i>Fruits & Vegetables
+                <i class="v-icon fa-solid fa-chevron-right"></i>
+              </a>
+
+              <div class="pop-list-fruit">
+                <ul class="pop-fruit-ul">
+                  <li class="pop-fruit-li">
+                    <a href="" class="pop-fruit-link">Cuts & Sprouts</a>
+                  </li>
+                  <li class="pop-fruit-li">
+                    <a href="" class="pop-fruit-link"
+                      >Exotic Fruits & Veggies</a
+                    >
+                  </li>
+                  <li class="pop-fruit-li">
+                    <a href="" class="pop-fruit-link">Fresh Fruits</a>
+                  </li>
+                  <li class="pop-fruit-li">
+                    <a href="" class="pop-fruit-link">Fresh Vegetables</a>
+                  </li>
+                  <li class="pop-fruit-li">
+                    <a href="" class="pop-fruit-link">Herbs & Seasonings</a>
+                  </li>
+                  <li class="pop-fruit-li">
+                    <a href="" class="pop-fruit-link">Packaged Produce</a>
+                  </li>
+                  <li class="pop-fruit-li">
+                    <a href="" class="pop-fruit-link">Party Trays</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropped-p-list">
+              <a href="" class="product-link"
+                ><i class="fa-solid fa-pizza-slice"></i>Meats & Seafood</a
+              >
+            </li>
+            <li class="dropped-p-list">
+              <a href="" class="product-link"
+                ><i class="fa-solid fa-egg"></i>Breakfast & Diary</a
+              >
+            </li>
+            <li class="dropped-p-list bev">
+              <a href="" class="product-link"
+                ><i class="fa-solid fa-mug-hot"></i>Beverages
+                <i class="v-icon fa-solid fa-chevron-right"></i>
+              </a>
+              <div class="pop-list-bev">
+                <ul class="pop-bev-ul">
+                  <li class="pop-bev-li">
+                    <a href="" class="pop-bev-link">Coffee</a>
+                  </li>
+                  <li class="pop-bev-li">
+                    <a href="" class="pop-bev-link">Craft Beer</a>
+                  </li>
+                  <li class="pop-bev-li">
+                    <a href="" class="pop-bev-link">Drink Boxes & Pouches</a>
+                  </li>
+                  <li class="pop-bev-li">
+                    <a href="" class="pop-bev-link">Milk & Plant-Based-Milk</a>
+                  </li>
+                  <li class="pop-bev-li">
+                    <a href="" class="pop-bev-link">Soda & Polp</a>
+                  </li>
+                  <li class="pop-bev-li">
+                    <a href="" class="pop-bev-link">Sparkling Water</a>
+                  </li>
+                  <li class="pop-bev-li">
+                    <a href="" class="pop-bev-link">Tea & Kombucha</a>
+                  </li>
+                  <li class="pop-bev-li">
+                    <a href="" class="pop-bev-link">Water</a>
+                  </li>
+                  <li class="pop-bev-li">
+                    <a href="" class="pop-bev-link">Wine</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropped-p-list">
+              <a href="" class="product-link"
+                ><i class="fa-solid fa-cookie"></i>Breads & Bakery</a
+              >
+            </li>
+            <li class="dropped-p-list">
+              <a href="" class="product-link"
+                ><i class="fa-regular fa-snowflake"></i>Frozen Foods</a
+              >
+            </li>
+            <li class="dropped-p-list">
+              <a href="" class="product-link"
+                ><i class="fa-solid fa-candy-cane"></i>Biscuits & Snacks</a
+              >
+            </li>
+            <li class="dropped-p-list">
+              <a href="" class="product-link"
+                ><i class="fa-solid fa-leaf"></i>Grocery Staples</a
+              >
+            </li>
+          </ul>
+          <ul class="drop-footer">
+            <li class="drop-footer-list"><a href="">Value of the Day</a></li>
+            <li class="drop-footer-list"><a href="">Top 100 Offers</a></li>
+            <li class="drop-footer-list"><a href="">New Arrivals</a></li>
+          </ul>
+        </div>
+        <div class="nav">
+          <ul class="nav-ul">
+            <li id="home-down" class="nav-list nav-home">
+              HOME <i class="fa-solid fa-chevron-down"></i>
+              <div id="home-drop" class="drop-home">
+                <ul class="drop-down-home">
+                  <li class="home-list">
+                    <a href="" class="home-links">Home 1</a>
+                  </li>
+                  <li class="home-list">
+                    <a href="" class="home-links">Home 2</a>
+                  </li>
+                  <li class="home-list">
+                    <a href="" class="home-links">Home 3</a>
+                  </li>
+                  <li class="home-list">
+                    <a href="" class="home-links">Home 4</a>
+                  </li>
+                  <li class="home-list">
+                    <a href="" class="home-links">Home 5</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li id="shop-drop" class="nav-list shop-dropper">
+              SHOP <i class="fa-solid fa-chevron-down"></i>
+              <div id="shop-div" class="hidden-div hide">
+                <div class="list-div">
+                  <ul class="col-one">
+                    <li class="col-1-list header">
+                      <a class="lead-link col-1-link" href="">Shop Lists</a>
+                    </li>
+                    <li class="col-1-list">
+                      <a class="col-1-link" href="">shop default</a>
+                    </li>
+                    <li class="col-1-list">
+                      <a class="col-1-link" href="">Shop Right Sidebar</a>
+                    </li>
+                    <li class="col-1-list">
+                      <a class="col-1-link" href="">shop wide</a>
+                    </li>
+                    <li class="col-1-list">
+                      <a class="col-1-link" href="">list left sidebar</a>
+                    </li>
+                    <li class="col-1-list">
+                      <a class="col-1-link" href="">load more button</a>
+                    </li>
+                    <li class="col-1-list">
+                      <a class="col-1-link" href="">infinite scrolling</a>
+                    </li>
+                  </ul>
+                  <ul class="col-two">
+                    <li class="col-2-list header">
+                      <a class="lead-link col-2-link" href="">product detail</a>
+                    </li>
+                    <li class="col-2-list">
+                      <a class="col-2-link" href="">product default</a>
+                    </li>
+                    <li class="col-2-list">
+                      <a class="col-2-link" href="">product variable</a>
+                    </li>
+                    <li class="col-2-list">
+                      <a class="col-2-link" href="">product gorup</a>
+                    </li>
+                    <li class="col-2-list">
+                      <a class="col-2-link" href="">product external</a>
+                    </li>
+                    <li class="col-2-list">
+                      <a class="col-2-link" href="">product downloadable</a>
+                    </li>
+                    <li class="col-2-list">
+                      <a class="col-2-link" href="">product with video</a>
+                    </li>
+                  </ul>
+                  <ul class="col-three">
+                    <li class="col-3-list header">
+                      <a class="lead-link col-3-link" href="">product types</a>
+                    </li>
+                    <li class="col-3-list">
+                      <a class="col-3-link" href="">single type 1</a>
+                    </li>
+                    <li class="col-3-list">
+                      <a class="col-3-link" href="">single type 2</a>
+                    </li>
+                    <li class="col-3-list">
+                      <a class="col-3-link" href="">single type 3</a>
+                    </li>
+                    <li class="col-3-list">
+                      <a class="col-3-link" href="">single type 4</a>
+                    </li>
+                    <li class="col-3-list">
+                      <a class="col-3-link" href="">thumbnails left</a>
+                    </li>
+                    <li class="col-3-list">
+                      <a class="col-3-link" href="">zoom image</a>
+                    </li>
+                  </ul>
+                  <ul class="col-four">
+                    <li class="col-4-list header">
+                      <a class="lead-link col-4-link" href="">shop pages</a>
+                    </li>
+                    <li class="col-4-list">
+                      <a class="col-4-link" href="">cart</a>
+                    </li>
+                    <li class="col-4-list">
+                      <a class="col-4-link" href="">checkout</a>
+                    </li>
+                    <li class="col-4-list">
+                      <a class="col-4-link" href="">my account</a>
+                    </li>
+                    <li class="col-4-list">
+                      <a class="col-4-link" href="">wishlist</a>
+                    </li>
+                    <li class="col-4-list">
+                      <a class="col-4-link" href="">order tracking</a>
+                    </li>
+                    <li class="col-4-list">
+                      <a class="col-4-link" href="">order on whatsApp</a>
+                    </li>
+                  </ul>
+                  <ul class="col-five">
+                    <li class="col-5-list header">
+                      <a class="lead-link col-5-link" href="">shop layouts</a>
+                    </li>
+                    <li class="col-5-list">
+                      <a class="col-5-link" href="">two columns</a>
+                    </li>
+                    <li class="col-5-list">
+                      <a class="col-5-link" href="">three coulmns</a>
+                    </li>
+                    <li class="col-5-list">
+                      <a class="col-5-link" href="">three columns wide</a>
+                    </li>
+                    <li class="col-5-list">
+                      <a class="col-5-link" href="">four columns</a>
+                    </li>
+                    <li class="col-5-list">
+                      <a class="col-5-link" href="">four columns wide</a>
+                    </li>
+                    <li class="col-5-list">
+                      <a class="col-5-link" href="">five columns wide</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-list">
+              <i class="fa-solid fa-feather-pointed"></i> MEATS & SEAFOOD
+            </li>
+            <li class="nav-list"><i class="fa-solid fa-cookie"></i> BAKERY</li>
+            <li class="nav-list">
+              <i class="fa-solid fa-mug-hot"></i>BEVERAGES
+            </li>
+            <li class="nav-list">BLOG</li>
+            <li class="nav-list">CONTACT</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="footer-top">
+        <div class="footer-letter">
+          <div class="footer-letter-side">
+            <span class="discount-span"> $20 discount for your first order </span>
+            <h1 class="discount-header">Join our newsletter and get...</h1>
+            <p class="discount-text">
+              Join our email subscription now to get updates <br />
+              on promotions and coupons.
+            </p>
+            <input
+              class="discount-input"
+              type="email"
+              placeholder="Your email address"
+            />
+            <button class="discount-button">Subscribe</button>
+            <i class="discount-message fa-regular fa-envelope"></i>
+          </div>
+          <div class="discount-image">
+            <img src="./assets/images/coupon.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-middle-list">
+          <ul class="mid-ul">
+            <li class="mid-lists">
+              <i class="fa-solid fa-boxes-packing"></i>Everyday fresh products
+            </li>
+            <li class="mid-lists">
+              <i class="fa-solid fa-truck-fast"></i>Free delivery for order over
+              $70
+            </li>
+            <li class="mid-lists">
+              <i class="fa-solid fa-sack-dollar"></i>Daily Mega Discounts
+            </li>
+            <li class="mid-lists">
+              <i class="fa-solid fa-percent"></i>Best price on the market
+            </li>
+          </ul>
+        </div>
+        <div class="footer-list-div">
+          <ul class="first-ul">
+            <li class="main first-lists">
+              <a href="" class="main first-links">fruits and vegetables</a>
+            </li>
+            <li class="first-lists">
+              <a href="" class="first-links">fresh vegetables</a>
+            </li>
+            <li class="first-lists">
+              <a href="" class="first-links">herbs & seasonings</a>
+            </li>
+            <li class="first-lists">
+              <a href="" class="first-links">fresh fruits</a>
+            </li>
+            <li class="first-lists">
+              <a href="" class="first-links">cuts & sprouts</a>
+            </li>
+            <li class="first-lists">
+              <a href="" class="first-links">exotic fruits & veggies</a>
+            </li>
+            <li class="first-lists">
+              <a href="" class="first-links">packaged produce</a>
+            </li>
+            <li class="first-lists">
+              <a href="" class="first-links">party trays</a>
+            </li>
+          </ul>
+          <ul class="second-ul">
+            <li class="main second-lists">
+              <a href="" class="main second-links">breakfast & diary</a>
+            </li>
+            <li class="second-lists">
+              <a href="" class="second-links">milk flavoured milk</a>
+            </li>
+            <li class="second-lists">
+              <a href="" class="second-links">butter & margarine</a>
+            </li>
+            <li class="second-lists">
+              <a href="" class="second-links">cheese</a>
+            </li>
+            <li class="second-lists">
+              <a href="" class="second-links">eggs substitutes</a>
+            </li>
+            <li class="second-lists">
+              <a href="" class="second-links">honer</a>
+            </li>
+            <li class="second-lists">
+              <a href="" class="second-links">marmalades</a>
+            </li>
+            <li class="second-lists">
+              <a href="" class="second-links">sour cream and dips</a>
+            </li>
+            <li class="second-lists">
+              <a href="" class="second-links">yogurt</a>
+            </li>
+          </ul>
+          <ul class="third-ul">
+            <li class="main third-lists">
+              <a href="" class="main third-links">meat & seafood</a>
+            </li>
+            <li class="third-lists">
+              <a href="" class="third-links">breakfast sausage</a>
+            </li>
+            <li class="third-lists">
+              <a href="" class="third-links">dinner sausage</a>
+            </li>
+            <li class="third-lists"><a href="" class="third-links">beef</a></li>
+            <li class="third-lists">
+              <a href="" class="third-links">chicken</a>
+            </li>
+            <li class="third-lists">
+              <a href="" class="third-links">sliced deli meat</a>
+            </li>
+            <li class="third-lists"><a href="" class="third-links">shrimp</a></li>
+            <li class="third-lists">
+              <a href="" class="third-links">wild caught fillets</a>
+            </li>
+            <li class="third-lists">
+              <a href="" class="third-links">crab and shellfish</a>
+            </li>
+            <li class="third-lists">
+              <a href="" class="third-links">farm raised fillets</a>
+            </li>
+          </ul>
+          <ul class="fourth-ul">
+            <li class="main fourth-lists">
+              <a href="" class="main fourth-links">beverages</a>
+            </li>
+            <li class="fourth-lists">
+              <a href="" class="fourth-links">water</a>
+            </li>
+            <li class="fourth-lists">
+              <a href="" class="fourth-links">sparkling water</a>
+            </li>
+            <li class="fourth-lists">
+              <a href="" class="fourth-links">soda & pop</a>
+            </li>
+            <li class="fourth-lists">
+              <a href="" class="fourth-links">coffee</a>
+            </li>
+            <li class="fourth-lists">
+              <a href="" class="fourth-links">milk & plant-based milk</a>
+            </li>
+            <li class="fourth-lists">
+              <a href="" class="fourth-links">tea & Kombucha</a>
+            </li>
+            <li class="fourth-lists">
+              <a href="" class="fourth-links">drink boxes & pouches</a>
+            </li>
+            <li class="fourth-lists">
+              <a href="" class="fourth-links">craft beer</a>
+            </li>
+            <li class="fourth-lists"><a href="" class="fourth-links">wine</a></li>
+          </ul>
+          <ul class="fifth-ul">
+            <li class="main fifth-lists">
+              <a href="" class="main fifth-links">breads & bakery</a>
+            </li>
+            <li class="fifth-lists">
+              <a href="" class="fifth-links">milk and flavoured milk</a>
+            </li>
+            <li class="fifth-lists"><a href="" class="fifth-links">cheese</a></li>
+            <li class="fifth-lists">
+              <a href="" class="fifth-links">eggs substitutes</a>
+            </li>
+            <li class="fifth-lists"><a href="" class="fifth-links">honey</a></li>
+            <li class="fifth-lists">
+              <a href="" class="fifth-links">marmalades</a>
+            </li>
+            <li class="fifth-lists">
+              <a href="" class="fifth-links">sour cream and dips</a>
+            </li>
+            <li class="fifth-lists"><a href="" class="fifth-links">yogurt</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-info">
+          <div class="footer-bg-white">
+            <div class="footer-phone">
+              <div class="phone-div">
+                <i class="rotate fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="phone-column">
+                <span class="phone-number"> 8 800 555-55 </span>
+                <span class="work-time"> Working 8:00 - 22:00 </span>
+              </div>
+            </div>
+            <div class="footer-social">
+              <div class="download">
+                <span class="download-app">Download App on Mobile :</span>
+                <span class="discount-app"
+                  >15% discount on your first purchase</span
+                >
+              </div>
+              <div class="store-apps">
+                <img src="./assets/images/google-play.png" alt="" />
+                <img src="./assets/images/app-store.png" alt="" />
+              </div>
+              <div class="social-links">
+                <div class="socials"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="socials"><i class="fa-brands fa-twitter"></i></div>
+                <div class="socials"><i class="fa-brands fa-instagram"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-last">
+            <p>
+              Copyright 2022 © Bacola WordPress Theme. All rights reserved.
+              Powered by KlbTheme.
+            </p>
+            <ul>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms and Conditions</a></li>
+              <li><a href="">Cookie</a></li>
+            </ul>
+            <div class="payments">
+              <img src="./assets/images/payments.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/apps/effects.js"></script>
+    <script src="./assets/apps/main.js"></script>
+  </html>
