@@ -1884,7 +1884,8 @@ footer .footer-info .footer-last .payments {
   visibility: visible;
 }
 
-.big-product-section .product-cards .pr-card .button-div .card-button {
+.big-product-section .product-cards .pr-card .button-div button {
+  cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 100%;
@@ -2133,6 +2134,7 @@ footer .footer-info .footer-last .payments {
   margin-top: 20px;
   margin-left: 12px;
   font-size: 80%;
+  cursor: pointer;
 }
 
 .best-sellers {
@@ -2148,7 +2150,6 @@ footer .footer-info .footer-last .payments {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  line-height: 1px;
 }
 
 .best-sellers h1 {
@@ -2362,6 +2363,7 @@ footer .footer-info .footer-last .payments {
   margin-top: 20px;
   margin-left: 12px;
   font-size: 80%;
+  cursor: pointer;
 }
 
 .link-div {
@@ -2385,5 +2387,88 @@ footer .footer-info .footer-last .payments {
   font-weight: 700;
   font-size: 110%;
   letter-spacing: 4px;
+}
+
+.navigation-text {
+  width: 1200px;
+  margin: 30px auto;
+  font-size: 80%;
+  font-family: sans-serif;
+}
+
+.navigation-text a {
+  text-decoration: none;
+  color: black;
+}
+
+.navigation-text span {
+  margin-left: 5px;
+}
+
+.navigation-text span i {
+  padding-right: 10px;
+}
+
+.main-section {
+  width: 1200px;
+  margin: 50px auto;
+  height: 500px;
+}
+
+.main-section .left-side {
+  width: 22%;
+  height: 300px;
+}
+
+.main-section .left-side .list-title {
+  font-weight: 600;
+}
+
+.main-section .left-side .left-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.main-section .left-side .left-ul .left-lists {
+  width: 100%;
+  margin-left: -30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2px 0;
+  cursor: pointer;
+  font-size: 90%;
+}
+
+.main-section .left-side .left-ul .left-lists a {
+  text-decoration: none;
+  color: #758ca6;
+}
+
+.main-section .left-side .left-ul .left-lists a input {
+  cursor: pointer;
+}
+
+.main-section .left-side .left-ul .left-lists a span {
+  margin-left: 15px;
+}
+
+.main-section .left-side .left-ul .left-lists i {
+  font-size: 80%;
+  color: #758ca6;
 }
 /*# sourceMappingURL=style.css.map */

@@ -19,13 +19,12 @@
       href="https://fonts.googleapis.com/css2?family=Arimo&family=Meie+Script&family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
     />
-    <link rel="stylesheet" href="./assets/style/style.css" />
     <link rel="icon" href="./assets/images/favicon.png" type="image/icon type">
+    <link rel="stylesheet" href="./assets/style/style.css" />
     <title>Home</title>
   </head>
   <body>
@@ -121,7 +120,7 @@
           </div>
           <div class="basket-self">
             <i class="fa-solid fa-bag-shopping"></i>
-            <sup class="sup">7</sup>
+            <sup id="product-count" class="sup">0</sup>
           </div>
         </div>
       </div>
@@ -406,7 +405,7 @@
         </div>
       </div>
     </header>
-    
+
     <div id="slider" class="slider">
       <div class="sliderleft">
         <i class="slide-left fa-solid fa-chevron-left"></i>
@@ -434,11 +433,10 @@
       </div>
     </div>
 
-
     <div class="first-product-row">
       <div class="left-row">
         <div class="small-product-card">
-          <img width="150" src="./assets/images/baverages-1.jpg" alt="">
+          <img width="150" src="./assets/images/baverages-1.jpg" alt="" />
           <div class="product-info">
             <span class="product-title">Baverages</span>
             <span class="product-count">11 items</span>
@@ -447,56 +445,56 @@
       </div>
       <div class="right-row">
         <div class="small-product-card">
-          <img width="100" src="./assets/images/biscuitssnacks-1.jpg" alt="">
+          <img width="100" src="./assets/images/biscuitssnacks-1.jpg" alt="" />
           <div class="product-info">
             <span class="product-title">Baverages</span>
             <span class="product-count">11 items</span>
           </div>
         </div>
         <div class="small-product-card">
-          <img width="100" src="./assets/images/breadbakery-1.jpg" alt="">
+          <img width="100" src="./assets/images/breadbakery-1.jpg" alt="" />
           <div class="product-info">
             <span class="product-title">Baverages</span>
             <span class="product-count">11 items</span>
           </div>
         </div>
         <div class="small-product-card">
-          <img width="100" src="./assets/images/dairy-1.jpg" alt="">
+          <img width="100" src="./assets/images/dairy-1.jpg" alt="" />
           <div class="product-info">
             <span class="product-title">Baverages</span>
             <span class="product-count">11 items</span>
           </div>
         </div>
         <div class="small-product-card">
-          <img width="100" src="./assets/images/category-image4.png" alt="">
+          <img width="100" src="./assets/images/category-image4.png" alt="" />
           <div class="product-info">
             <span class="product-title">Baverages</span>
             <span class="product-count">11 items</span>
           </div>
         </div>
         <div class="small-product-card">
-          <img width="100" src="./assets/images/fruitvegetables-1.jpg" alt="">
+          <img width="100" src="./assets/images/fruitvegetables-1.jpg" alt="" />
           <div class="product-info">
             <span class="product-title">Baverages</span>
             <span class="product-count">11 items</span>
           </div>
         </div>
         <div class="small-product-card">
-          <img width="100" src="./assets/images/category-image2.png" alt="">
+          <img width="100" src="./assets/images/category-image2.png" alt="" />
           <div class="product-info">
             <span class="product-title">Baverages</span>
             <span class="product-count">11 items</span>
           </div>
         </div>
         <div class="small-product-card">
-          <img width="100" src="./assets/images/household-1.jpg" alt="">
+          <img width="100" src="./assets/images/household-1.jpg" alt="" />
           <div class="product-info">
             <span class="product-title">Baverages</span>
             <span class="product-count">11 items</span>
           </div>
         </div>
         <div class="small-product-card">
-          <img width="100" src="./assets/images/meat-1.jpg" alt="">
+          <img width="100" src="./assets/images/meat-1.jpg" alt="" />
           <div class="product-info">
             <span class="product-title">Baverages</span>
             <span class="product-count">11 items</span>
@@ -509,9 +507,12 @@
         <div class="deal-section">
           <p class="deal-title">Deal of the <span>week!</span></p>
           <div class="timer-row">
-            <div id="days" class="days">60</div><span>:</span>
-            <div id="hours" class="hours">09</div><span>:</span>
-            <div id="minutes" class="minutes">11</div><span>:</span>
+            <div id="days" class="days">60</div>
+            <span>:</span>
+            <div id="hours" class="hours">09</div>
+            <span>:</span>
+            <div id="minutes" class="minutes">11</div>
+            <span>:</span>
             <div id="seconds" class="seconds">20</div>
           </div>
           <span class="deal-info">Remains until the end of the offer</span>
@@ -520,7 +521,7 @@
           <div class="item-discount">
             <span>19%</span>
           </div>
-          <img width="100%" src="./assets/images/product-image-50.jpg" alt="">
+          <img width="100%" src="./assets/images/product-image-50.jpg" alt="" />
         </div>
         <div class="item-worth">
           <span class="previous">$4.49</span>
@@ -528,7 +529,7 @@
         </div>
         <div class="product-detail">
           <span class="title">Chobani Complete Vanilla Greek Yogurt</span>
-          <p>  1 kg<span class="stock"> in stock</span></p> 
+          <p>1 kg<span class="stock"> in stock</span></p>
           <div class="review">
             <i class="star fa-solid fa-star"></i>
             <i class="star fa-solid fa-star"></i>
@@ -546,78 +547,92 @@
         </div>
       </div>
       <div class="product-cards">
-        
-        <div class="pr-card">
+        <div data-id="1" class="pr-card">
           <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
           <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
           <span class="dc-percentage">23%</span>
+          <img
+          id="card-image"
+            src="./assets/images/product-image-62-346x310.jpg"
+            alt=""
+            />
+            <div class="dc-title">
+              <span id="card-title"
+              >All Natural Italian-Style Chicken Meatballs</span>
+            </div>
+            <span class="stock">in stock</span>
+            <div class="review">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="bad-star fa-solid fa-star"></i>1
+          </div>
+          <div class="worth-spans">
+            <span class="previous">$9.35</span>
+            <span class="current">$<span>7.26</span></span>
+          </div>
+          <div class="button-div">
+            <button  class="card-button">Add to card</button>
+          </div>
           <span class="dc-recommended">recommended</span>
-          <img src="./assets/images/product-image-62-346x310.jpg" alt="">
-          <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
-          <span class="stock">in stock</span>
-          <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
-          <div class="worth-spans">
-            <span class="previous">$9.35</span>
-            <span class="current">$7.26</span>
-          </div>
-          <div class="button-div">
-            <button class="card-button">Add to card</button>
-          </div>
         </div>
-
-
-
-        <div class="pr-card">
+        
+        
+        
+        <div data-id="2" class="pr-card">
           <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
           <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
           <span class="dc-percentage">23%</span>
-          <img src="./assets/images/product-image-60-346x310.jpg" alt="">
-          <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
+          <img
+            id="card-image"
+            src="./assets/images/product-image-60-346x310.jpg"
+            alt=""
+          />
+          <div class="dc-title">
+            <span id="card-title"
+              >Angie’s Boomchickapop Sweet & Salty Kettle Corn</span>
+          </div>
           <span class="stock">in stock</span>
-          <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
+          <div class="review">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="bad-star fa-solid fa-star"></i>1
+          </div>
           <div class="worth-spans">
             <span class="previous">$9.35</span>
-            <span class="current">$7.26</span>
+            <span class="current">$<span>3.29</span></span>
           </div>
           <div class="button-div">
-            <button class="card-button">Add to card</button>
+            <button  class="card-button">Add to card</button>
           </div>
         </div>
-       
-       
-       
-        <div class="pr-card">
+   
+   
+   
+        <div data-id="3" class="pr-card">
           <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
           <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
           <span class="dc-percentage">23%</span>
-          <img src="./assets/images/product-image-46-346x310.jpg" alt="">
-          <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
+          <img
+            id="card-image"
+            src="./assets/images/product-image-46-346x310.jpg"
+            alt=""
+          />
+          <div class="dc-title">
+            <span id="card-title"
+              >Field Roast Chao Cheese Creamy Original</span>
+          </div>
           <span class="stock">in stock</span>
-          <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
+          <div class="review">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="bad-star fa-solid fa-star"></i>1
+          </div>
           <div class="worth-spans">
             <span class="previous">$9.35</span>
-            <span class="current">$7.26</span>
+            <span class="current">$<span>19.50</span></span>
           </div>
           <div class="button-div">
-            <button class="card-button">Add to card</button>
-          </div>
-        </div>
-       
-       
-        <div class="pr-card">
-          <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
-          <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
-          <span class="dc-percentage">23%</span>
-          <img src="./assets/images/product-image-45-346x310.jpg" alt="">
-          <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
-          <span class="stock">in stock</span>
-          <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
-          <div class="worth-spans">
-            <span class="previous">$9.35</span>
-            <span class="current">$7.26</span>
-          </div>
-          <div class="button-div">
-            <button class="card-button">Add to card</button>
+            <button  class="card-button">Add to card</button>
           </div>
         </div>
         
@@ -626,306 +641,407 @@
           <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
           <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
           <span class="dc-percentage">23%</span>
-          <img src="./assets/images/product-image-59-346x310.jpg" alt="">
-          <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
+          <img
+            id="card-image"
+            src="./assets/images/product-image-45-346x310.jpg"
+            alt=""
+          />
+          <div class="dc-title">
+            <span id="card-title"
+              >Foster Farms Takeout Crispy Classic Buffalo Wings</span>
+          </div>
           <span class="stock">in stock</span>
-          <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
+          <div class="review">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="bad-star fa-solid fa-star"></i>1
+          </div>
           <div class="worth-spans">
-            <span class="previous">$9.35</span>
-            <span class="current">$7.26</span>
+            <span class="current">$<span>7.25 -</span></span>
+            <span class="current">$<span>49.99</span></span>
           </div>
           <div class="button-div">
-            <button class="card-button">Add to card</button>
-          </div>
-        </div>
-        <div class="pr-card">
-          <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
-          <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
-          <span class="dc-percentage">23%</span>
-          <img src="./assets/images/product-image-58-346x310.jpg" alt="">
-          <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
-          <span class="stock">in stock</span>
-          <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
-          <div class="worth-spans">
-            <span class="previous">$9.35</span>
-            <span class="current">$7.26</span>
-          </div>
-          <div class="button-div">
-            <button class="card-button">Add to card</button>
+            <button>View Product</button>
           </div>
         </div>
         
-
+        
+        <div data-id="4" class="pr-card">
+          <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
+          <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
+          <span class="dc-percentage">23%</span>
+          <img
+            id="card-image"
+            src="./assets/images/product-image-59-346x310.jpg"
+            alt=""
+          />
+          <div class="dc-title">
+            <span id="card-title"
+              >Blue Diamond Almonds Lightly Salted</span>
+          </div>
+          <span class="stock">in stock</span>
+          <div class="review">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="bad-star fa-solid fa-star"></i>1
+          </div>
+          <div class="worth-spans">
+            <span class="previous ">$<span>7.25 -</span></span>
+            <span class="current">$<span>10.58</span></span>
+          </div>
+          <div class="button-div">
+            <button  class="card-button">Add to card</button>
+          </div>
+        </div>
+       
+       
+        <div data-id="5" class="pr-card">
+          <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
+          <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
+          <span class="dc-percentage">23%</span>
+          <img
+            id="card-image"
+            src="./assets/images/product-image-58-346x310.jpg"
+            alt=""
+          />
+          <div class="dc-title">
+            <span id="card-title"
+              >Blueberries   –  1  Pint <br> Package</span>
+          </div>
+          <span class="stock">in stock</span>
+          <div class="review">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="bad-star fa-solid fa-star"></i>1
+          </div>
+          <div class="worth-spans">
+            <span class="previous">$<span>7.25 -</span></span>
+            <span class="current">$<span>3.99</span></span>
+          </div>
+          <div class="button-div">
+            <button  class="card-button">Add to card</button>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="banner">
-      <img src="./assets/images/banner.jpg" alt=""><img src="" alt="">
-      <img src="./assets/images/banner-2.jpg" alt=""><img src="" alt="">
+      <img src="./assets/images/banner.jpg" alt="" /><img src="" alt="" />
+      <img src="./assets/images/banner-2.jpg" alt="" /><img src="" alt="" />
     </div>
 
-<div class="best-sellers">
-  <h1>BEST SELLERS</h1>
-  <p>Do not miss the current offers until the end of March.</p>
-</div>
+    <div class="best-sellers">
+      <h1>BEST SELLERS</h1>
+      <p>Do not miss the current offers until the end of March.</p>
+    </div>
 
+    <div class="product-container">
+      <div data-id="1" class="pr-card">
+        <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
+        <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
+        <span class="dc-percentage">23%</span>
+        <img src="./assets/images/product-image-62-346x310.jpg" alt="" />
+        <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
+        <span class="stock">in stock</span>
+        <div class="review">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="bad-star fa-solid fa-star"></i>1
+        </div>
+        <div class="worth-spans">
+          <span class="previous">$9.35</span>
+          <span class="current">$<span>7.26</span></span>
+        </div>
+        <div class="button-div">
+          <button class="card-button">Add to card</button>
+        </div>
+      </div>
 
+      <div data-id="2" class="pr-card">
+        <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
+        <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
+        <span class="dc-percentage">23%</span>
+        <img src="./assets/images/product-image-60-346x310.jpg" alt="" />
+        <div class="dc-title">Angie’s Boomchickapop Sweet & Salty Kettle Corn</div>
+        <span class="stock">in stock</span>
+        <div class="review">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="bad-star fa-solid fa-star"></i>1
+        </div>
+        <div class="worth-spans">
+          <span class="previous">$9.35</span>
+          <span class="current">$<span>3.29</span></span>
+        </div>
+        <div class="button-div">
+          <button class="card-button">Add to card</button>
+        </div>
+      </div>
 
-<div class="product-container">
+      <div data-id="3" class="pr-card">
+        <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
+        <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
+        <span class="dc-percentage">23%</span>
+        <img src="./assets/images/product-image-46-346x310.jpg" alt="" />
+        <div class="dc-title">Field Roast Chao Cheese Creamy Original</div>
+        <span class="stock">in stock</span>
+        <div class="review">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="bad-star fa-solid fa-star"></i>1
+        </div>
+        <div class="worth-spans">
+          <span class="previous">$9.35</span>
+          <span class="current">$<span>19.50</span></span>
+        </div>
+        <div class="button-div">
+          <button class="card-button">Add to card</button>
+        </div>
+      </div>
 
-  
-  <div class="pr-card">
-    <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
-    <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
-    <span class="dc-percentage">23%</span>
-    <img src="./assets/images/product-image-9-346x310.jpg" alt="">
-    <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
-    <span class="stock">in stock</span>
-    <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
-    <div class="worth-spans">
-      <span class="previous">$9.35</span>
-      <span class="current">$7.26</span>
-    </div>
-    <div class="button-div">
-      <button class="card-button">Add to card</button>
-    </div>
-  </div>
-  
-  
-  <div class="pr-card">
-    <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
-    <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
-    <span class="dc-percentage">23%</span>
-    <img src="./assets/images/product-image-11-346x310.jpg" alt="">
-    <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
-    <span class="stock">in stock</span>
-    <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
-    <div class="worth-spans">
-      <span class="previous">$9.35</span>
-      <span class="current">$7.26</span>
-    </div>
-    <div class="button-div">
-      <button class="card-button">Add to card</button>
-    </div>
-  </div>
-  
-  
-  <div class="pr-card">
-    <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
-    <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
-    <span class="dc-percentage">23%</span>
-    <img src="./assets/images/product-image-12-346x310.jpg" alt="">
-    <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
-    <span class="stock">in stock</span>
-    <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
-    <div class="worth-spans">
-      <span class="previous">$9.35</span>
-      <span class="current">$7.26</span>
-    </div>
-    <div class="button-div">
-      <button class="card-button">Add to card</button>
-    </div>
-  </div>
-  
-  
-  <div class="pr-card">
-    <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
-    <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
-    <span class="dc-percentage">23%</span>
-    <img src="./assets/images/product-image-2-346x310.jpg" alt="">
-    <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
-    <span class="stock">in stock</span>
-    <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
-    <div class="worth-spans">
-      <span class="previous">$9.35</span>
-      <span class="current">$7.26</span>
-    </div>
-    <div class="button-div">
-      <button class="card-button">Add to card</button>
-    </div>
-  </div>
-  
-  
-  <div class="pr-card">
-    <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
-    <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
-    <span class="dc-percentage">23%</span>
-    <img src="./assets/images/product-image-3-346x310.jpg" alt="">
-    <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
-    <span class="stock">in stock</span>
-    <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
-    <div class="worth-spans">
-      <span class="previous">$9.35</span>
-      <span class="current">$7.26</span>
-    </div>
-    <div class="button-div">
-      <button class="card-button">Add to card</button>
-    </div>
-  </div>
+      <div data-id="6" class="pr-card">
+        <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
+        <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
+        <span class="dc-percentage">23%</span>
+        <img src="./assets/images/product-image-57-346x310.jpg" alt="" />
+        <div class="dc-title">Fresh Organic Broccoli Crowns</div>
+        <span class="stock">in stock</span>
+        <div class="review">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="bad-star fa-solid fa-star"></i>1
+        </div>
+        <div class="worth-spans">
+          <span class="previous">$9.35</span>
+          <span class="current">$<span>4.85</span></span>
+        </div>
+        <div class="button-div">
+          <button class="card-button">Add to card</button>
+        </div>
+      </div>
 
-</div>
+      <div data-id="7" class="pr-card">
+        <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
+        <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
+        <span class="dc-percentage">23%</span>
+        <img src="./assets/images/product-image-48-346x310.jpg" alt="" />
+        <div class="dc-title">Encore Seafoods Stuffed Alaskan Salmon</div>
+        <span class="stock">in stock</span>
+        <div class="review">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="bad-star fa-solid fa-star"></i>1
+        </div>
+        <div class="worth-spans">
+          <span class="previous">$9.35</span>
+          <span class="current">$7.26</span>
+        </div>
+        <div class="button-div">
+          <button class="card-button">Add to card</button>
+        </div>
+      </div>
+    </div>
 
-<div class="link-div">
-  <span>SAVE AN EXTRA 5-10 % ON EVERY AUTOSHIP ORDER!</span>
-</div>
-
+    <div class="link-div">
+      <span>SAVE AN EXTRA 5-10 % ON EVERY AUTOSHIP ORDER!</span>
+    </div>
 
     <div class="many-products">
-      <div class="pr-card">
+      <div data-id="8" class="pr-card">
         <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
         <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
         <span class="dc-percentage">23%</span>
-        <img src="./assets/images/first.jpg" alt="">
-        <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
+        <img src="./assets/images/first.jpg" alt="" />
+        <div class="dc-title">Zevia Kidz Strawberry Lemonade Zero Calorie</div>
         <span class="stock">in stock</span>
-        <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
+        <div class="review">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="bad-star fa-solid fa-star"></i>1
+        </div>
         <div class="worth-spans">
           <span class="previous">$9.35</span>
-          <span class="current">$7.26</span>
+          <span class="current">$<span>5.95</span></span>
         </div>
         <div class="button-div">
           <button class="card-button">Add to card</button>
         </div>
       </div>
-      <div class="pr-card">
+      <div data-id="9" class="pr-card">
         <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
         <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
         <span class="dc-percentage">23%</span>
-        <img src="./assets/images/product-image-2-346x310.jpg" alt="">
-        <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
+        <img src="./assets/images/product-image-2-346x310.jpg" alt="" />
+        <div class="dc-title">Wheat Thins Original Crackers</div>
         <span class="stock">in stock</span>
-        <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
+        <div class="review">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="bad-star fa-solid fa-star"></i>1
+        </div>
         <div class="worth-spans">
           <span class="previous">$9.35</span>
-          <span class="current">$7.26</span>
+          <span class="current">$<span>3.00</span></span>
         </div>
         <div class="button-div">
           <button class="card-button">Add to card</button>
         </div>
       </div>
-      <div class="pr-card">
+      <div data-id="10" class="pr-card">
         <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
         <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
         <span class="dc-percentage">23%</span>
-        <img src="./assets/images/product-image-3-346x310.jpg" alt="">
-        <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
+        <img src="./assets/images/product-image-3-346x310.jpg" alt="" />
+        <div class="dc-title">Werther’s Original Caramel Hard Candies</div>
         <span class="stock">in stock</span>
-        <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
+        <div class="review">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="bad-star fa-solid fa-star"></i>1
+        </div>
         <div class="worth-spans">
           <span class="previous">$9.35</span>
-          <span class="current">$7.26</span>
+          <span class="current">$<span>14.97</span></span>
         </div>
         <div class="button-div">
           <button class="card-button">Add to card</button>
         </div>
       </div>
-      <div class="pr-card">
+      <div data-id="11" class="pr-card">
         <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
         <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
         <span class="dc-percentage">23%</span>
-        <img src="./assets/images/product-image-4-346x310.jpg" alt="">
-        <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
+        <img src="./assets/images/product-image-4-346x310.jpg" alt="" />
+        <div class="dc-title">Warrior Blend Organic</div>
         <span class="stock">in stock</span>
-        <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
+        <div class="review">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="bad-star fa-solid fa-star"></i>1
+        </div>
         <div class="worth-spans">
           <span class="previous">$9.35</span>
-          <span class="current">$7.26</span>
+          <span class="current">$<span>29.00</span></span>
         </div>
         <div class="button-div">
           <button class="card-button">Add to card</button>
         </div>
       </div>
-      <div class="pr-card">
+      <div data-id="12" class="pr-card">
         <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
         <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
         <span class="dc-percentage">23%</span>
-        <img src="./assets/images/product-image-5-346x310.jpg" alt="">
-        <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
+        <img src="./assets/images/product-image-5-346x310.jpg" alt="" />
+        <div class="dc-title">Vital Farms Pasture-Raised Egg Bites Bacon & Cheddar</div>
         <span class="stock">in stock</span>
-        <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
+        <div class="review">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="bad-star fa-solid fa-star"></i>1
+        </div>
         <div class="worth-spans">
           <span class="previous">$9.35</span>
-          <span class="current">$7.26</span>
+          <span class="current">$<span>25.00</span></span>
         </div>
         <div class="button-div">
           <button class="card-button">Add to card</button>
         </div>
       </div>
-      <div class="pr-card">
+      <div data-id="13" class="pr-card">
         <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
         <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
         <span class="dc-percentage">23%</span>
-        <img src="./assets/images/product-image-60-346x310.jpg" alt="">
-        <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
+        <img src="./assets/images/product-image-7-346x310.jpg" alt="" />
+        <div class="dc-title">USDA Choice Angus Beef Stew Meat</div>
         <span class="stock">in stock</span>
-        <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
+        <div class="review">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="bad-star fa-solid fa-star"></i>1
+        </div>
         <div class="worth-spans">
           <span class="previous">$9.35</span>
-          <span class="current">$7.26</span>
+          <span class="current">$<span>49.99</span></span>
         </div>
         <div class="button-div">
           <button class="card-button">Add to card</button>
         </div>
       </div>
-      <div class="pr-card">
+      <div data-id="14" class="pr-card">
         <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
         <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
         <span class="dc-percentage">23%</span>
-        <img src="./assets/images/product-image-7-346x310.jpg" alt="">
-        <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
+        <img src="./assets/images/product-image-9-346x310.jpg" alt="" />
+        <div class="dc-title">Tropicana Pineapple Mango Drink</div>
         <span class="stock">in stock</span>
-        <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
+        <div class="review">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="bad-star fa-solid fa-star"></i>1
+        </div>
         <div class="worth-spans">
           <span class="previous">$9.35</span>
-          <span class="current">$7.26</span>
+          <span class="current">$<span>3.00</span></span>
         </div>
         <div class="button-div">
           <button class="card-button">Add to card</button>
         </div>
       </div>
-      <div class="pr-card">
+      <div data-id="15" class="pr-card">
         <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
         <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
         <span class="dc-percentage">23%</span>
-        <img src="./assets/images/product-image-48-346x310.jpg" alt="">
-        <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
+        <img src="./assets/images/product-image-11-346x310.jpg" alt="" />
+        <div class="dc-title">Organic Sweet Lime</div>
         <span class="stock">in stock</span>
-        <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
+        <div class="review">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="bad-star fa-solid fa-star"></i>1
+        </div>
         <div class="worth-spans">
           <span class="previous">$9.35</span>
-          <span class="current">$7.26</span>
+          <span class="current">$<span>5.99</span></span>
         </div>
         <div class="button-div">
           <button class="card-button">Add to card</button>
         </div>
       </div>
-      <div class="pr-card">
+      <div data-id="16" class="pr-card">
         <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
         <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
         <span class="dc-percentage">23%</span>
-        <img src="./assets/images/product-image-9-346x310.jpg" alt="">
-        <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
+        <img src="./assets/images/product-image-12-346x310.jpg" alt="" />
+        <div class="dc-title">Fresh Organic Strawberry</div>
         <span class="stock">in stock</span>
-        <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
+        <div class="review">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="bad-star fa-solid fa-star"></i>1
+        </div>
         <div class="worth-spans">
           <span class="previous">$9.35</span>
-          <span class="current">$7.26</span>
+          <span class="current">$<span>9.00</span></span>
         </div>
         <div class="button-div">
           <button class="card-button">Add to card</button>
         </div>
       </div>
-      <div class="pr-card">
+      <div data-id="17" class="pr-card">
         <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
         <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
         <span class="dc-percentage">23%</span>
-        <img src="./assets/images/product-image-11-346x310.jpg" alt="">
-        <div class="dc-title">All Natural Italian-Style Chicken Meatballs</div>
+        <img src="./assets/images/product-image-14-346x310.jpg" alt="" />
+        <div class="dc-title">Sol-ti Coconut Charcoal SuperAde</div>
         <span class="stock">in stock</span>
-        <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="bad-star fa-solid fa-star"></i>1</div>
+        <div class="review">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="bad-star fa-solid fa-star"></i>1
+        </div>
         <div class="worth-spans">
           <span class="previous">$9.35</span>
-          <span class="current">$7.26</span>
+          <span class="current">$<span>3.97</span></span>
         </div>
         <div class="button-div">
           <button class="card-button">Add to card</button>
@@ -933,36 +1049,48 @@
       </div>
     </div>
 
-
-
-      <div class="blog-div">
-        <div class="up-row">
-          <img src="./assets/images/new1.jpg" alt="">
-          <img src="./assets/images/new2.jpg" alt="">
-          <img src="./assets/images/new3.jpg" alt="">
+    <div class="blog-div">
+      <div class="up-row">
+        <img src="./assets/images/new1.jpg" alt="" />
+        <img src="./assets/images/new2.jpg" alt="" />
+        <img src="./assets/images/new3.jpg" alt="" />
+      </div>
+      <div class="down-row">
+        <div class="blog">
+          <img src="./assets/images/blog-3-370x260.jpg" alt="" />
+          <span class="tips">tips & tricks</span>
+          <span class="title"
+            >But I must explain to you how all this mistaken idea</span
+          >
+          <p>
+            3 May 2021 <span class="coms">3 comments</span> <i> by</i
+            ><span class="coms"> Bacola</span>
+          </p>
         </div>
-        <div class="down-row">
-          <div class="blog">
-            <img src="./assets/images/blog-3-370x260.jpg" alt="">
-            <span class="tips">tips & tricks</span>
-            <span class="title">But I must explain to you how all this mistaken idea</span>
-            <p>3 May 2021 <span class="coms">3 comments</span> <i> by</i><span class="coms"> Bacola</span></p>
-          </div>
-          <div class="blog">
-            <img src="./assets/images/blog-5-370x260.jpg" alt="">
-            <span class="tips">tips & tricks</span>
-            <span class="title">But I must explain to you how all this mistaken idea</span>
-            <p>3 May 2021 <span class="coms">3 comments</span> <i> by</i><span class="coms"> Bacola</span></p>
-          </div>
-          <div class="blog">
-            <img src="./assets/images/blog-1-370x260.jpg" alt="">
-            <span class="tips">tips & tricks</span>
-            <span class="title">But I must explain to you how all this mistaken idea</span>
-            <p>3 May 2021 <span class="coms">3 comments</span> <i> by</i><span class="coms"> Bacola</span></p>
-          </div>
+        <div class="blog">
+          <img src="./assets/images/blog-5-370x260.jpg" alt="" />
+          <span class="tips">tips & tricks</span>
+          <span class="title"
+            >But I must explain to you how all this mistaken idea</span
+          >
+          <p>
+            3 May 2021 <span class="coms">3 comments</span> <i> by</i
+            ><span class="coms"> Bacola</span>
+          </p>
+        </div>
+        <div class="blog">
+          <img src="./assets/images/blog-1-370x260.jpg" alt="" />
+          <span class="tips">tips & tricks</span>
+          <span class="title"
+            >But I must explain to you how all this mistaken idea</span
+          >
+          <p>
+            3 May 2021 <span class="coms">3 comments</span> <i> by</i
+            ><span class="coms"> Bacola</span>
+          </p>
         </div>
       </div>
-
+    </div>
 
     <div class="footer-top">
       <div class="footer-letter">
@@ -1191,6 +1319,7 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"
   ></script>
+  <script src="./assets/apps/basket.js"></script>
   <script src="./assets/apps/effects.js"></script>
   <script src="./assets/apps/main.js"></script>
 </html>

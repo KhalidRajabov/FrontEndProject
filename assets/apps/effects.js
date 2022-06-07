@@ -52,17 +52,5 @@ $(document).ready(function () {
     setInterval(updateCountdownTime,1000)
 
 
-    let container = [...document.querySelectorAll(`.product-container`)]
-    let next = [...document.querySelectorAll(`.right-btn`)]
-    let left = [...document.querySelectorAll(`.left-btn`)]
-    container.forEach((item, i) =>{
-        let cdim = item.getBoundingClientRect();
-        let cwidth = cdim.width;
-        next[i].addEventListener("click",()=>{
-            item.scrollLeft+=cwidth;
-        })
-        left[i].addEventListener("click",()=>{
-            item.scrollLeft-=cwidth;
-        })
-    })
+  
 })

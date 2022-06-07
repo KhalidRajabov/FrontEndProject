@@ -1259,7 +1259,8 @@ footer {
         transition: 0.3s;
         opacity: 0;
         visibility: visible;
-        .card-button{
+        button{
+          cursor: pointer;
           transition: 0.3s;
           width: 100%;
           height: 30px;
@@ -1450,6 +1451,7 @@ footer {
         margin-top: 20px;
         margin-left: 12px;
         font-size: 80%;
+        cursor: pointer;
       }
     }
   }
@@ -1467,7 +1469,6 @@ footer {
     font-size: 80%;
     color: #b2b2b6;
   }
-  line-height: 1px;
 }
 .product-container{
   width: 1200px;
@@ -1623,6 +1624,7 @@ footer {
         margin-top: 20px;
         margin-left: 12px;
         font-size: 80%;
+        cursor: pointer;
       }
     }
   } 
@@ -1640,5 +1642,63 @@ footer {
     font-weight: 700;
     font-size: 110%;
     letter-spacing: 4px;
+  }
+}
+.navigation-text{
+  width: 1200px;
+  margin: 30px auto;
+  font-size: 80%;
+  font-family: sans-serif;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  span{
+    margin-left: 5px;
+    i{
+      padding-right: 10px
+    }
+  };
+}
+.main-section{
+  width: 1200px;
+  margin: 50px auto;
+  height: 500px;
+  .left-side{
+    width: 22%;
+    height: 300px;
+    .list-title{
+      font-weight: 600;
+    }
+    .left-ul{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 20px;
+      .left-lists{
+        width: 100%;
+        margin-left: -30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2px 0;
+        cursor: pointer;
+        font-size: 90%;
+        a{
+          input{
+            cursor: pointer;
+          }
+          text-decoration: none;
+          color: rgb(117,140,166);
+          span{
+            margin-left: 15px;
+          }
+        }
+        i{
+          font-size: 80%;
+          color: rgb(117,140,166);
+        }
+      }
+    }
   }
 }
