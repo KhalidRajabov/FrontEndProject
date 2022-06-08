@@ -340,6 +340,7 @@ header .header-second-row .header-input .input-icon {
 }
 
 header .header-second-row .profile {
+  cursor: pointer;
   width: 40px;
   height: 40px;
   border: #d9d9e9 2px solid;
@@ -356,6 +357,7 @@ header .header-second-row .profile {
 }
 
 header .header-second-row .header-basket {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,16 +371,105 @@ header .header-second-row .header-basket {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 header .header-second-row .header-basket .basket-worth {
   padding: 0 15px;
+  cursor: pointer;
 }
 
 header .header-second-row .header-basket .basket-worth .basket-total-worth {
   font-size: large;
   font-weight: 400;
   font-family: sans-serif;
+}
+
+header .header-second-row .header-basket:hover .dropping-basket {
+  opacity: 1;
+  visibility: visible;
+}
+
+header .header-second-row .header-basket .dropping-basket {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  background-color: white;
+  z-index: 50;
+  top: 40px;
+  left: -190px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+header .header-second-row .header-basket .dropping-basket .basket-empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -80px;
+}
+
+header .header-second-row .header-basket .dropping-basket .basket-empty .basket-div {
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #dedddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+header .header-second-row .header-basket .dropping-basket .basket-empty .basket-div i {
+  margin-top: 30px;
+  color: red;
+  font-size: 280%;
+}
+
+header .header-second-row .header-basket .dropping-basket .basket-empty span {
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 90%;
+}
+
+header .header-second-row .header-basket .dropping-basket p {
+  position: absolute;
+  top: 210px;
+  font-weight: 500;
+  font-size: 80%;
 }
 
 header .header-second-row .header-basket .basket-self {
