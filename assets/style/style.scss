@@ -251,11 +251,11 @@ header {
           font-family: sans-serif;
         }
       }
-      &:hover .dropping-basket{
+      &:hover .dropping-basket {
         opacity: 1;
         visibility: visible;
       }
-      .dropping-basket{
+      .dropping-basket {
         transition: 0.3s;
         opacity: 0;
         visibility: hidden;
@@ -272,12 +272,12 @@ header {
         align-items: center;
         justify-content: center;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        .basket-empty{
+        .basket-empty {
           display: flex;
           flex-direction: column;
           justify-content: center;
           margin-top: -80px;
-          .basket-div{
+          .basket-div {
             margin: 0 auto;
             width: 60px;
             height: 60px;
@@ -287,20 +287,20 @@ header {
             justify-content: center;
             align-items: center;
             overflow: hidden;
-            i{
+            i {
               margin-top: 30px;
               color: red;
               font-size: 280%;
             }
           }
-          span{
+          span {
             margin-top: 10px;
             font-family: sans-serif;
             font-weight: 600;
             font-size: 90%;
           }
         }
-        p{
+        p {
           position: absolute;
           top: 210px;
           font-weight: 500;
@@ -605,55 +605,55 @@ header {
     }
   }
 }
-.blog-div{
+.blog-div {
   width: 1200px;
   margin: 50px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  .up-row{
+  .up-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    img{
+    img {
       width: 32%;
       border-radius: 5px;
       cursor: pointer;
     }
   }
-  .down-row{
+  .down-row {
     margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    .blog{
+    .blog {
       display: flex;
       flex-direction: column;
       width: 32%;
-      img{
+      img {
         width: 100%;
         cursor: pointer;
       }
-      .tips{
+      .tips {
         color: #7a7a7a;
         font-size: 80%;
         text-transform: uppercase;
         padding: 10px 0;
       }
-      .title{
+      .title {
         font-size: 130%;
         font-weight: 600;
         cursor: pointer;
       }
-      p{
+      p {
         cursor: pointer;
         color: #7a7a7a;
-        span{
+        span {
           font-weight: 500;
           color: black;
         }
       }
-    } 
+    }
   }
 }
 .footer-top {
@@ -778,6 +778,7 @@ footer {
     z-index: 1;
     align-items: center;
     .mid-ul {
+      padding-top: 50px;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -1056,7 +1057,7 @@ footer {
         color: #b2b2b6;
         margin-top: 15px;
         transition: 0.3s;
-        &:hover{
+        &:hover {
           color: rgb(35, 58, 149);
         }
       }
@@ -1113,7 +1114,7 @@ footer {
         font-weight: 600;
         cursor: pointer;
         transition: 0.3s;
-        &:hover{
+        &:hover {
           color: rgb(0, 38, 192);
         }
       }
@@ -1144,7 +1145,7 @@ footer {
         margin-right: 35px;
         font-size: 80%;
         color: #b2b2b6;
-        span{
+        span {
           font-size: 140%;
           color: rgb(0, 190, 185);
         }
@@ -1169,43 +1170,43 @@ footer {
       }
     }
   }
-  .product-cards{
+  .product-cards {
     display: flex;
     width: 66%;
     height: 105vh;
     flex-wrap: wrap;
-    .pr-card{
+    .pr-card {
       border: 1px solid #ededed;
       width: 33.3%;
       height: 52.5vh;
       position: relative;
       transition: 0.3s;
       z-index: 1;
-      &:hover .button-div{
+      &:hover .button-div {
         opacity: 1;
         visibility: visible;
       }
-      &:hover .button-div>.card-button{
+      &:hover .button-div > .card-button {
         margin-top: 30px;
       }
-      &:hover{
+      &:hover {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border: 1px solid #b2b2b6;
         //transform: scaleY(1.1);
         z-index: 50;
         height: 58vh;
       }
-      &:hover .icon-collapse{
+      &:hover .icon-collapse {
         right: 15px;
         top: 15px;
         opacity: 1;
       }
-      &:hover .icon-heart{
+      &:hover .icon-heart {
         right: 15px;
         top: 55px;
         opacity: 1;
       }
-      .icon-collapse{
+      .icon-collapse {
         width: 40px;
         position: absolute;
         right: 5px;
@@ -1217,12 +1218,12 @@ footer {
         align-items: center;
         opacity: 0;
         transition: 0.3s;
-        &:hover{
+        &:hover {
           background-color: #004a9a;
           color: white;
         }
       }
-      .icon-heart{
+      .icon-heart {
         width: 40px;
         position: absolute;
         right: 5px;
@@ -1234,19 +1235,19 @@ footer {
         align-items: center;
         opacity: 0;
         transition: 0.6s;
-        &:hover{
-          background-color: rgb(207,57,150);
+        &:hover {
+          background-color: rgb(207, 57, 150);
           color: white;
         }
       }
-      img{
+      img {
         padding: 0;
         width: 80%;
         margin-top: 15px;
-        margin-left: 30PX;
+        margin-left: 30px;
       }
-      .dc-percentage{
-        background-color: rgb(43,190,249);
+      .dc-percentage {
+        background-color: rgb(43, 190, 249);
         padding: 3px 9px;
         width: 50px;
         top: 15px;
@@ -1257,7 +1258,7 @@ footer {
         position: absolute;
         border-radius: 5px;
       }
-      .dc-recommended{
+      .dc-recommended {
         background-color: #7a7a7a;
         padding: 3px 9px;
         width: 110px;
@@ -1270,18 +1271,18 @@ footer {
         position: absolute;
         border-radius: 5px;
       }
-      .dc-title{
+      .dc-title {
         width: 80%;
         font-weight: 500;
         font-family: sans-serif;
         margin-left: 15px;
         cursor: pointer;
         transition: 0.3s;
-        &:hover{
+        &:hover {
           color: rgb(0, 38, 192);
         }
       }
-      .stock{
+      .stock {
         color: rgb(0, 190, 185);
         margin-left: 15px;
         text-transform: uppercase;
@@ -1289,18 +1290,18 @@ footer {
         font-size: 70%;
         font-weight: 600;
       }
-      .review{
+      .review {
         margin-left: 15px;
-        i{
+        i {
           font-size: 80%;
           color: gold;
         }
-        .bad-star{
+        .bad-star {
           color: #bfbfbf;
           padding-right: 5px;
         }
       }
-      .worth-spans{
+      .worth-spans {
         margin-left: 15px;
         font-family: sans-serif;
         font-weight: 600;
@@ -1316,13 +1317,13 @@ footer {
           color: rgb(237, 23, 74);
         }
       }
-      .button-div{
+      .button-div {
         margin-left: 15px;
         width: 80%;
         transition: 0.3s;
         opacity: 0;
         visibility: visible;
-        button{
+        button {
           cursor: pointer;
           transition: 0.3s;
           width: 100%;
@@ -1338,56 +1339,56 @@ footer {
     }
   }
 }
-.banner{
+.banner {
   width: 1200px;
   display: flex;
   flex-direction: row;
   margin: 30px auto;
   justify-content: space-evenly;
-  img{
+  img {
     width: 48%;
     border-radius: 10px;
     cursor: pointer;
   }
 }
-.many-products{
+.many-products {
   width: 1200px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 50px auto;
-  .pr-card{
+  .pr-card {
     border: 1px solid #ededed;
     width: 20%;
     height: 350px;
     position: relative;
     transition: 0.3s;
     z-index: 1;
-    &:hover .button-div{
+    &:hover .button-div {
       opacity: 1;
       visibility: visible;
     }
-    &:hover .button-div>.card-button{
+    &:hover .button-div > .card-button {
       margin-top: 30px;
     }
-    &:hover{
+    &:hover {
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       border: 1px solid #b2b2b6;
       //transform: scaleY(1.1);
       z-index: 50;
       height: 400px;
     }
-    &:hover .icon-collapse{
+    &:hover .icon-collapse {
       right: 15px;
       top: 15px;
       opacity: 1;
     }
-    &:hover .icon-heart{
+    &:hover .icon-heart {
       right: 15px;
       top: 55px;
       opacity: 1;
     }
-    .icon-collapse{
+    .icon-collapse {
       width: 40px;
       position: absolute;
       right: 5px;
@@ -1399,12 +1400,12 @@ footer {
       align-items: center;
       opacity: 0;
       transition: 0.3s;
-      &:hover{
+      &:hover {
         background-color: #004a9a;
         color: white;
       }
     }
-    .icon-heart{
+    .icon-heart {
       width: 40px;
       position: absolute;
       right: 5px;
@@ -1416,19 +1417,19 @@ footer {
       align-items: center;
       opacity: 0;
       transition: 0.6s;
-      &:hover{
-        background-color: rgb(207,57,150);
+      &:hover {
+        background-color: rgb(207, 57, 150);
         color: white;
       }
     }
-    img{
+    img {
       padding: 0;
       width: 80%;
       margin-top: 15px;
-      margin-left: 30PX;
+      margin-left: 30px;
     }
-    .dc-percentage{
-      background-color: rgb(43,190,249);
+    .dc-percentage {
+      background-color: rgb(43, 190, 249);
       padding: 3px 9px;
       width: 50px;
       top: 15px;
@@ -1439,7 +1440,7 @@ footer {
       position: absolute;
       border-radius: 5px;
     }
-    .dc-recommended{
+    .dc-recommended {
       background-color: #7a7a7a;
       padding: 3px 9px;
       width: 110px;
@@ -1452,18 +1453,18 @@ footer {
       position: absolute;
       border-radius: 5px;
     }
-    .dc-title{
+    .dc-title {
       width: 80%;
       font-weight: 500;
       font-family: sans-serif;
       margin-left: 15px;
       cursor: pointer;
       transition: 0.3s;
-      &:hover{
+      &:hover {
         color: rgb(0, 38, 192);
       }
     }
-    .stock{
+    .stock {
       color: rgb(0, 190, 185);
       margin-left: 15px;
       text-transform: uppercase;
@@ -1471,18 +1472,18 @@ footer {
       font-size: 70%;
       font-weight: 600;
     }
-    .review{
+    .review {
       margin-left: 15px;
-      i{
+      i {
         font-size: 80%;
         color: gold;
       }
-      .bad-star{
+      .bad-star {
         color: #bfbfbf;
         padding-right: 5px;
       }
     }
-    .worth-spans{
+    .worth-spans {
       margin-left: 15px;
       font-family: sans-serif;
       font-weight: 600;
@@ -1498,13 +1499,13 @@ footer {
         color: rgb(237, 23, 74);
       }
     }
-    .button-div{
+    .button-div {
       margin-left: 15px;
       width: 80%;
       transition: 0.3s;
       opacity: 0;
       visibility: visible;
-      .card-button{
+      .card-button {
         transition: 0.3s;
         width: 100%;
         height: 30px;
@@ -1519,21 +1520,21 @@ footer {
     }
   }
 }
-.best-sellers{
+.best-sellers {
   width: 1200px;
   display: flex;
   margin: 50px auto;
   flex-direction: column;
   justify-content: flex-start;
-  h1{
+  h1 {
     font-size: 130%;
   }
-  p{
+  p {
     font-size: 80%;
     color: #b2b2b6;
   }
 }
-.product-container{
+.product-container {
   width: 1200px;
   height: 400px;
   margin: 50px auto;
@@ -1542,26 +1543,26 @@ footer {
   position: relative;
   display: flex;
   flex-direction: row;
-  &::-webkit-scrollbar{
+  &::-webkit-scrollbar {
     display: none;
   }
-  .pr-card{
+  .pr-card {
     border: 1px solid #ededed;
     width: 20%;
     height: 350px;
     position: relative;
     transition: 0.3s;
-    &:hover .icon-collapse{
+    &:hover .icon-collapse {
       right: 15px;
       top: 15px;
       opacity: 1;
     }
-    &:hover .icon-heart{
+    &:hover .icon-heart {
       right: 15px;
       top: 55px;
       opacity: 1;
     }
-    .icon-collapse{
+    .icon-collapse {
       width: 40px;
       position: absolute;
       right: 5px;
@@ -1573,12 +1574,12 @@ footer {
       align-items: center;
       opacity: 0;
       transition: 0.3s;
-      &:hover{
+      &:hover {
         background-color: #004a9a;
         color: white;
       }
     }
-    .icon-heart{
+    .icon-heart {
       width: 40px;
       position: absolute;
       right: 5px;
@@ -1590,19 +1591,19 @@ footer {
       align-items: center;
       opacity: 0;
       transition: 0.6s;
-      &:hover{
-        background-color: rgb(207,57,150);
+      &:hover {
+        background-color: rgb(207, 57, 150);
         color: white;
       }
     }
-    img{
+    img {
       padding: 0;
       width: 80%;
       margin-top: 15px;
-      margin-left: 30PX;
+      margin-left: 30px;
     }
-    .dc-percentage{
-      background-color: rgb(43,190,249);
+    .dc-percentage {
+      background-color: rgb(43, 190, 249);
       padding: 3px 9px;
       width: 50px;
       top: 15px;
@@ -1613,7 +1614,7 @@ footer {
       position: absolute;
       border-radius: 5px;
     }
-    .dc-recommended{
+    .dc-recommended {
       background-color: #7a7a7a;
       padding: 3px 9px;
       width: 110px;
@@ -1626,18 +1627,18 @@ footer {
       position: absolute;
       border-radius: 5px;
     }
-    .dc-title{
+    .dc-title {
       width: 80%;
       font-weight: 500;
       font-family: sans-serif;
       margin-left: 15px;
       cursor: pointer;
       transition: 0.3s;
-      &:hover{
+      &:hover {
         color: rgb(0, 38, 192);
       }
     }
-    .stock{
+    .stock {
       color: rgb(0, 190, 185);
       margin-left: 15px;
       text-transform: uppercase;
@@ -1645,18 +1646,18 @@ footer {
       font-size: 70%;
       font-weight: 600;
     }
-    .review{
+    .review {
       margin-left: 15px;
-      i{
+      i {
         font-size: 80%;
         color: gold;
       }
-      .bad-star{
+      .bad-star {
         color: #bfbfbf;
         padding-right: 5px;
       }
     }
-    .worth-spans{
+    .worth-spans {
       margin-left: 15px;
       font-family: sans-serif;
       font-weight: 600;
@@ -1672,11 +1673,11 @@ footer {
         color: rgb(237, 23, 74);
       }
     }
-    .button-div{
+    .button-div {
       margin-left: 15px;
       width: 80%;
       transition: 0.3s;
-      .card-button{
+      .card-button {
         transition: 0.3s;
         width: 100%;
         height: 30px;
@@ -1690,57 +1691,57 @@ footer {
         cursor: pointer;
       }
     }
-  } 
+  }
 }
-.link-div{
+.link-div {
   width: 1200px;
   height: 65px;
   margin: 50px auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(251,234,207);
+  background-color: rgb(251, 234, 207);
   cursor: pointer;
-  span{
+  span {
     font-weight: 700;
     font-size: 110%;
     letter-spacing: 4px;
   }
 }
-.navigation-text{
+.navigation-text {
   width: 1200px;
   margin: 30px auto;
   font-size: 80%;
   font-family: sans-serif;
-  a{
+  a {
     text-decoration: none;
     color: black;
   }
-  span{
+  span {
     margin-left: 5px;
-    i{
-      padding-right: 10px
+    i {
+      padding-right: 10px;
     }
-  };
+  }
 }
-.main-section{
+.main-section {
   width: 1200px;
   margin: 50px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  .left-side{
+  .left-side {
     width: 22%;
     height: 300px;
-    .list-title{
+    .list-title {
       font-weight: 600;
     }
-    .left-ul{
+    .left-ul {
       display: flex;
       flex-direction: column;
       width: 100%;
       margin-top: 20px;
-      .left-lists{
+      .left-lists {
         width: 100%;
         margin-left: -30px;
         display: flex;
@@ -1749,30 +1750,30 @@ footer {
         padding: 3px 0;
         cursor: pointer;
         font-size: 90%;
-        a{
-          input{
+        a {
+          input {
             cursor: pointer;
           }
           text-decoration: none;
-          color: rgb(117,140,166);
-          span{
+          color: rgb(117, 140, 166);
+          span {
             margin-left: 15px;
           }
         }
-        i{
+        i {
           font-size: 80%;
-          color: rgb(117,140,166);
+          color: rgb(117, 140, 166);
         }
       }
       padding-bottom: 25px;
     }
-    .filter-div{
+    .filter-div {
       width: 100%;
       margin-top: 20px;
       height: 3px;
       position: relative;
       background-color: black;
-      span{
+      span {
         position: absolute;
         width: 15px;
         height: 15px;
@@ -1780,32 +1781,32 @@ footer {
         border-radius: 50%;
         top: -6px;
       }
-      .right-dot{
+      .right-dot {
         right: 0;
       }
     }
-    .price-div{
-      .left{
+    .price-div {
+      .left {
         width: 40%;
         justify-content: space-between;
       }
       padding-bottom: 50px;
     }
-    .title{
+    .title {
       font-weight: 600;
       margin-top: 150px;
     }
-    .status{
-      ul{
+    .status {
+      ul {
         padding: 0;
         width: 40%;
-        li{
-          a{
+        li {
+          a {
             text-decoration: none;
             color: black;
             font-size: 80%;
             margin-bottom: 2px;
-            span{
+            span {
               margin-left: 15px;
             }
           }
@@ -1813,13 +1814,13 @@ footer {
       }
       padding-bottom: 30px;
     }
-    
-    .left-ul-sec{
+
+    .left-ul-sec {
       display: flex;
       flex-direction: column;
       width: 100%;
       margin-top: 20px;
-      .left-lists{
+      .left-lists {
         width: 100%;
         margin-left: -30px;
         display: flex;
@@ -1828,105 +1829,105 @@ footer {
         padding: 3px 0;
         cursor: pointer;
         font-size: 90%;
-        a{
-          input{
+        a {
+          input {
             cursor: pointer;
           }
           text-decoration: none;
-          color: rgb(117,140,166);
-          span{
+          color: rgb(117, 140, 166);
+          span {
             margin-left: 15px;
           }
         }
-        i{
+        i {
           font-size: 80%;
-          color: rgb(117,140,166);
+          color: rgb(117, 140, 166);
         }
       }
       padding-bottom: 25px;
     }
   }
-  .main-side{
+  .main-side {
     width: 75%;
     display: flex;
     flex-direction: column;
-    .image-section{
-      img{
+    .image-section {
+      img {
         width: 100%;
         border-radius: 10px;
         cursor: pointer;
       }
     }
-    .show-page-in{
+    .show-page-in {
       width: 100%;
       border-radius: 5px;
-      background-color: rgb(247,248,253);
+      background-color: rgb(247, 248, 253);
       height: 50px;
       margin-top: 15px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
     }
-    .left-ul{
+    .left-ul {
       margin: auto 0;
-      li{
+      li {
         font-size: 120%;
         padding: 0 5px;
-        i{
+        i {
           cursor: pointer;
         }
-        .rotate-this{
+        .rotate-this {
           transform: rotate(90deg);
         }
       }
     }
-    .show-filtered{
+    .show-filtered {
       margin: auto 0;
-      li{
+      li {
         cursor: pointer;
         padding: 0 5px;
-        i{
+        i {
           padding: 0 5px;
         }
       }
     }
-    .product-section{
+    .product-section {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       margin-top: 15px;
-      .pr-card{
+      .pr-card {
         border: 1px solid #ededed;
         width: 33.3%;
         height: 52.5vh;
         position: relative;
         transition: 0.3s;
         z-index: 1;
-        &:hover .button-div{
+        &:hover .button-div {
           opacity: 1;
           visibility: visible;
         }
-        &:hover .button-div>.card-button{
+        &:hover .button-div > .card-button {
           margin-top: 10px;
         }
-        &:hover{
+        &:hover {
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           border: 1px solid #b2b2b6;
           //transform: scaleY(1.1);
           z-index: 50;
           height: 62vh;
         }
-        &:hover .icon-collapse{
+        &:hover .icon-collapse {
           right: 15px;
           top: 15px;
           opacity: 1;
         }
-        &:hover .icon-heart{
+        &:hover .icon-heart {
           right: 15px;
           top: 55px;
           opacity: 1;
         }
-        .icon-collapse{
+        .icon-collapse {
           width: 40px;
           position: absolute;
           right: 5px;
@@ -1938,12 +1939,12 @@ footer {
           align-items: center;
           opacity: 0;
           transition: 0.3s;
-          &:hover{
+          &:hover {
             background-color: #004a9a;
             color: white;
           }
         }
-        .icon-heart{
+        .icon-heart {
           width: 40px;
           position: absolute;
           right: 5px;
@@ -1955,19 +1956,19 @@ footer {
           align-items: center;
           opacity: 0;
           transition: 0.6s;
-          &:hover{
-            background-color: rgb(207,57,150);
+          &:hover {
+            background-color: rgb(207, 57, 150);
             color: white;
           }
         }
-        img{
+        img {
           padding: 0;
           width: 80%;
           margin-top: 15px;
-          margin-left: 30PX;
+          margin-left: 30px;
         }
-        .dc-percentage{
-          background-color: rgb(43,190,249);
+        .dc-percentage {
+          background-color: rgb(43, 190, 249);
           padding: 3px 9px;
           width: 50px;
           top: 15px;
@@ -1978,7 +1979,7 @@ footer {
           position: absolute;
           border-radius: 5px;
         }
-        .dc-recommended{
+        .dc-recommended {
           background-color: #7a7a7a;
           padding: 3px 9px;
           width: 110px;
@@ -1991,18 +1992,18 @@ footer {
           position: absolute;
           border-radius: 5px;
         }
-        .dc-title{
+        .dc-title {
           width: 80%;
           font-weight: 500;
           font-family: sans-serif;
           margin-left: 15px;
           cursor: pointer;
           transition: 0.3s;
-          &:hover{
+          &:hover {
             color: rgb(0, 38, 192);
           }
         }
-        .stock{
+        .stock {
           color: rgb(0, 190, 185);
           margin-left: 15px;
           text-transform: uppercase;
@@ -2010,18 +2011,18 @@ footer {
           font-size: 70%;
           font-weight: 600;
         }
-        .review{
+        .review {
           margin-left: 15px;
-          i{
+          i {
             font-size: 80%;
             color: gold;
           }
-          .bad-star{
+          .bad-star {
             color: #bfbfbf;
             padding-right: 5px;
           }
         }
-        .worth-spans{
+        .worth-spans {
           margin-left: 15px;
           font-family: sans-serif;
           font-weight: 600;
@@ -2037,13 +2038,13 @@ footer {
             color: rgb(237, 23, 74);
           }
         }
-        .button-div{
+        .button-div {
           margin-left: 15px;
           width: 80%;
           transition: 0.3s;
           opacity: 0;
           visibility: visible;
-          button{
+          button {
             cursor: pointer;
             transition: 0.3s;
             width: 100%;
@@ -2060,19 +2061,19 @@ footer {
     }
   }
 }
-.pagecount{
+.pagecount {
   width: 30%;
   margin: 90px auto;
-  ul{
+  ul {
     display: flex;
     flex-direction: row;
-    .first-list{
+    .first-list {
       background-color: rgb(43, 190, 249);
-      a{
+      a {
         color: white;
       }
     }
-    li{
+    li {
       width: 40px;
       height: 40px;
       border-radius: 50%;
@@ -2080,16 +2081,88 @@ footer {
       display: flex;
       align-items: center;
       justify-content: center;
-      &:hover{
+      &:hover {
         background-color: #bfbfbf;
       }
-      i{
+      i {
         font-size: 120%;
       }
-      a{
+      a {
         color: black;
         padding: 15px;
         text-decoration: none;
+      }
+    }
+  }
+}
+
+.card-body-section {
+  width: 1200px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .circle-div {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(234, 236, 239);
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    i {
+      font-size: 120px;
+      color: red;
+      position: absolute;
+      top: 50px;
+      left: 10px;
+    }
+  }
+  span {
+    font-weight: 600;
+    font-size: 110%;
+    color: red;
+    margin: 50px auto;
+  }
+  button {
+    width: 15%;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: rgb(0, 38, 192);
+    border: none;
+    height: 50px;
+    color: white;
+    font-family: sans-serif;
+    &:hover {
+      background-color: rgb(80, 93, 148);
+    }
+  }
+}
+.product-detail-body {
+  width: 100%;
+  background-color: rgb(247, 248, 253);
+  .bodies {
+    width: 1100px;
+    margin: 50px auto;
+    background-color: white;
+    .title {
+      font-size: 160%;
+      font-weight: 600;
+    }
+    .brand-detail {
+      margin-top: 15px;
+      display: flex;
+      padding: 0;
+      flex-direction: row;
+      font-size: 70%;
+      .brand-list {
+        padding: 0 15px;
+        i {
+          color: gold;
+        }
+        .dark-star {
+          color: #b2b2b6;
+        }
       }
     }
   }
