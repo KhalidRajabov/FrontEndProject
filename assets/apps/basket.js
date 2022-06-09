@@ -1,6 +1,10 @@
 let cardBtn = document.querySelectorAll(`.card-button`)
 let productCount = document.getElementById("product-count")
 let basketPrice= document.getElementById("basket-worth")
+let bigMinus = document.getElementById("minus-btn")
+let bigPlus = document.getElementById("plus-btn")
+let bigCounter = document.getElementById("big-pr-counter")
+let countData = bigCounter.innerText
 window.onload = function() {
 writeProductCount();
   };
@@ -43,4 +47,13 @@ function writeProductCount(){
         basketPrice.innerText=totalPrice
     }
 }
-
+bigMinus.onclick=function(){
+    if (countData!=1) {
+        countData--
+        bigCounter.innerText=countData
+    }
+}
+bigPlus.onclick=function(){
+    countData++
+    bigCounter.innerText=countData
+}

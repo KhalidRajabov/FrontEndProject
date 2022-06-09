@@ -450,9 +450,9 @@
             <p class="product-text">Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent</p>
 
             <div class="card-buttons-row">
-              <button class="minus-button"><i class="fa-solid fa-minus"></i></button>
+              <button id="minus-btn" class="minus-button"><i class="fa-solid fa-minus"></i></button>
               <span id="big-pr-counter" class="product-count">1</span>
-              <button class="plus-button"><i class="fa-solid fa-plus"></i></button>
+              <button id="plus-btn" class="plus-button"><i class="fa-solid fa-plus"></i></button>
               <button class="big-button">Add to Cart</button>
             </div>
             <ul class="choice-ul">
@@ -478,12 +478,143 @@
           <div class="right">
             <div class="covid">Covid-19 Info: We keep delivering.</div>
             <div class="triple-row">
-              <div class="my-row"><i class="fa-solid fa-truck"></i> Free Shipping apply to all orders over $100
+              <div class="my-row"><i class="fa-solid fa-truck"></i> <span>Free Shipping apply to all orders over $100</span>
               </div>
-              <div class="my-row"><i class="fa-solid fa-building"></i>Guranteed 100% Organic from natural farmas
+              <div class="my-row"><i class="fa-solid fa-building"></i><span>Guranteed 100% Organic from natural farmas</span>
               </div>
-              <div class="my-row"><i class="fa-solid fa-dollar-sign"></i>1 Day Returns if you change your mind</div>
+              <div class="my-row"><i class="fa-solid fa-dollar-sign"></i><span>1 Day Returns if you change your mind</span></div>
             </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+      <div class="description">
+        <div class="body">
+          <ul class="desc">
+            <li class="diff">DESCRIPTION</li>
+            <li>ADDITIONAL INFORMATION</li>
+            <li>REVIEWS (10)</li>
+          </ul>
+
+          <p class="first">Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.</p>
+          <p class="secont">Morbi ut sapien vitae odio accumsan gravida. Morbi vitae erat auctor, eleifend nunc a, lobortis neque. Praesent aliquam dignissim viverra. Maecenas lacus odio, feugiat eu nunc sit amet, maximus sagittis dolor. Vivamus nisi sapien, elementum sit amet eros sit amet, ultricies cursus ipsum. Sed consequat luctus ligula. Curabitur laoreet rhoncus blandit. Aenean vel diam ut arcu pharetra dignissim ut sed leo. Vivamus faucibus, ipsum in vestibulum vulputate, lorem orci convallis quam, sit amet consequat nulla felis pharetra lacus. Duis semper erat mauris, sed egestas purus commodo vel.</p>
+        </div>
+      </div>
+
+
+      <div class="big-products">
+        <div data-id="20" class="pr-card">
+          <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
+          <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
+          <span class="dc-percentage">23%</span>
+          <img
+          id="card-image"
+            src="./assets/images/product-image-4-346x310.jpg"
+            alt=""
+            />
+            <div class="dc-title">
+              <span id="card-title"
+              >Warrior Blend Organic</span>
+            </div>
+            <span class="stock">in stock</span>
+            <div class="review">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="bad-star fa-solid fa-star"></i>1
+          </div>
+          <div class="worth-spans">
+            <span class="previous">$9.35</span>
+            <span class="current">$<span>29.00</span></span>
+          </div>
+          <div class="button-div">
+            <button  class="card-button">Add to card</button>
+          </div>
+        </div>
+
+        <div class="pr-card">
+          <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
+          <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
+          <span class="dc-percentage">23%</span>
+          <img
+          id="card-image"
+            src="./assets/images/product-image-10-346x310.jpg"
+            alt=""
+            />
+            <div class="dc-title">
+              <span id="card-title"
+              >Tomatoes on the Vine</span>
+            </div>
+            <span class="stock">in stock</span>
+            <div class="review">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="bad-star fa-solid fa-star"></i>1
+          </div>
+          <div class="worth-spans">
+            <span class="previous">$9.35</span>
+            <span class="current">$<span>7.26</span></span>
+          </div>
+          <div class="button-div">
+            <button  class="card-button">Add to card</button>
+          </div>
+        </div>
+
+        <div data-id="21" class="pr-card">
+          <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
+          <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
+          <span class="dc-percentage">23%</span>
+          <img
+          id="card-image"
+            src="./assets/images/product-image-19-346x310.jpg"
+            alt=""
+            />
+            <div class="dc-title">
+              <span id="card-title"
+              >Texas Rio Red Grapefruit</span>
+            </div>
+            <span class="stock">in stock</span>
+            <div class="review">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="bad-star fa-solid fa-star"></i>1
+          </div>
+          <div class="worth-spans">
+            <span class="previous">$9.35</span>
+            <span class="current">$<span>4.50</span></span>
+          </div>
+          <div class="button-div">
+            <button  class="card-button">Add to card</button>
+          </div>
+        </div>
+
+        <div data-id="22" class="pr-card">
+          <div class="icon-collapse"><i class="fa-solid fa-compress"></i></div>
+          <div class="icon-heart"><i class="fa-regular fa-heart"></i></div>
+          <span class="dc-percentage">23%</span>
+          <img
+          id="card-image"
+            src="./assets/images/product-image-31-346x310.jpg"
+            alt=""
+            />
+            <div class="dc-title">
+              <span id="card-title"
+              >Texas Rio Red Grapefruit</span>
+            </div>
+            <span class="stock">in stock</span>
+            <div class="review">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="bad-star fa-solid fa-star"></i>1
+          </div>
+          <div class="worth-spans">
+            <span class="previous">$9.35</span>
+            <span class="current">$<span>5.99</span></span>
+          </div>
+          <div class="button-div">
+            <button  class="card-button">Add to card</button>
           </div>
         </div>
       </div>
