@@ -3685,4 +3685,63 @@ footer .footer-info .footer-last .payments {
   margin-left: 12px;
   font-size: 80%;
 }
+
+.new-item-added {
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #00b853;
+  min-height: 50px;
+  width: 450px;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 100%;
+}
+
+.new-item-added div {
+  padding: 15px;
+}
+
+.new-item-added div .delete_icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-weight: 600;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.new-item-added #new-item {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.new-item-added .added-text {
+  color: white;
+  font-weight: 200;
+  font-family: sans-serif;
+}
+
+.new-item-added a {
+  padding: 15px;
+  color: white;
+}
+
+.temporary-div {
+  opacity: 1;
+  visibility: visible;
+}
 /*# sourceMappingURL=style.css.map */
