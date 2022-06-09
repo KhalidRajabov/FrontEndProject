@@ -1,5 +1,6 @@
 let cardBtn = document.querySelectorAll(`.card-button`)
 let productCount = document.getElementById("product-count")
+let basketPrice= document.getElementById("basket-worth")
 window.onload = function() {
 writeProductCount();
   };
@@ -34,8 +35,12 @@ cardBtn.forEach((addBtn) =>{
 function writeProductCount(){
     if (localStorage.getItem("basket")!=null) {
         let arr = JSON.parse(localStorage.getItem("basket"))
-        productCount.innerText=arr.length
+        let totalProducts = 0;
+        let totalPrice= 0;
+         arr.map(product=>{totalProducts+=product.count})
+         arr.map(product=>{totalPrice+=parseFloat(product.price * product.count)})
+        productCount.innerText=totalProducts
+        basketPrice.innerText=totalPrice
     }
-
 }
 

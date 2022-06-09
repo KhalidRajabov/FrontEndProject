@@ -87,6 +87,7 @@ header {
               font-size: 60%;
             }
             .lang-div {
+              z-index: 51;
               transition: 0.3s;
               position: absolute;
               background-color: white;
@@ -327,7 +328,7 @@ header {
           border-radius: 50%;
           background-color: rgb(237, 49, 15);
           color: white;
-          font-size: 80%;
+          font-size: 60%;
           text-align: center;
           display: flex;
           align-items: center;
@@ -2163,6 +2164,175 @@ footer {
         .dark-star {
           color: #b2b2b6;
         }
+      }
+    }
+    .container-product{
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .left{
+        width: 40%;
+        height: 100%;
+      }
+      .mid{
+        width: 30%;
+        height: 100%;
+
+        .item-worth {
+          display: flex;
+          flex-direction: row;
+          font-family: sans-serif;
+          font-weight: 500;
+          align-items: center;
+          .previous {
+            margin-bottom: -4px;
+            font-size: 130%;
+            color: #b2b2b6;
+            text-decoration: line-through;
+          }
+          .current {
+            margin-left: 5px;
+            font-size: 140%;
+            color: rgb(237, 23, 74);
+          }
+          padding-bottom: 15px;
+        }
+        .stock {
+          color: rgb(0, 190, 185);
+          text-transform: uppercase;
+          font-family: sans-serif;
+          font-size: 60%;
+          font-weight: 600;
+          padding: 5px 10px;
+          border-radius: 10px;
+          background-color: rgba(0, 190, 184, 0.141);
+        }
+        .product-text{
+          margin-top: 30px;
+          font-size: 92%;
+        }
+        .card-buttons-row{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 100%;
+          .minus-button,.plus-button{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            background-color: rgb(237,238,245);
+            transition: 0.3s;
+            &:hover{
+              background-color: gold;
+            }
+          }
+          .big-button{
+            transition: 0.3s;
+            width: 150px;
+            height: 40px;
+            border: none;
+            background-color: rgb(35,58,149);
+            color: white;
+            font-size: 90%;
+            border-radius: 20px;
+            &:hover{
+              background-color: rgba(35, 58, 149, 0.645);
+            }
+          }
+        }
+        .choice-ul{
+          display: flex;
+          flex-direction: row;
+          margin-top: 15px;
+          width: 100%;
+          padding: 0;
+          li{
+            font-size: 70%;
+            margin-right: 35px;
+            padding: 5px 5px;
+            border: 1px solid gray;
+            border-radius: 15px;
+            width: 45%;
+            margin-top: 30px;
+            .fa-heart{
+              padding: 0 7px;
+              font-size: 110%;
+            }
+            cursor: pointer;
+            .down-icon{
+              transform: rotate(180deg);
+            }
+          }
+        }
+        .detail{
+          margin-top: 30px;
+          padding: 0;
+          li{
+            font-size: 90%;
+            i{
+              color: rgb(0,184,83);
+              padding-right: 10px;
+            }
+          }
+        }
+        .category{
+          margin-top: 30px;
+          color: #b2b2b6;
+          font-size: 90%;
+          a{
+            text-decoration: none;
+            color: #7a7a7a;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+        .no-cat{
+          margin-top: 15px;
+        }
+        .social-row{
+          width: 80%;
+          margin-top: 45px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .social-shit{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            cursor: pointer;
+          }
+          .fb{
+            background-color: rgb(35, 58, 149);
+          }
+          .tw{
+            background-color: rgb(29,161,242);
+          }
+          .pin{
+            background-color: rgb(230,0,35);
+          }
+          .linkedin{
+            background-color: rgb(0,119,181);
+          }
+          .reddit{
+            background-color:rgb(255,69,0);
+          }
+          .wp{
+            background-color: rgb(37,211,102);
+          }
+        }
+      }
+      .right{
+        width: 25%;
+        height: 100%;
       }
     }
   }
