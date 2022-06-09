@@ -2778,7 +2778,7 @@ footer .footer-info .footer-last .payments {
 .main-section .main-side .product-section .pr-card {
   border: 1px solid #ededed;
   width: 33.3%;
-  height: 52.5vh;
+  height: 58vh;
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -2955,6 +2955,10 @@ footer .footer-info .footer-last .payments {
   color: #ed174a;
 }
 
+.main-section .main-side .product-section .pr-card:hover > .button-div > .next-button {
+  margin-top: 10px;
+}
+
 .main-section .main-side .product-section .pr-card .button-div {
   margin-left: 15px;
   width: 80%;
@@ -2962,6 +2966,10 @@ footer .footer-info .footer-last .payments {
   transition: 0.3s;
   opacity: 0;
   visibility: visible;
+}
+
+.main-section .main-side .product-section .pr-card .button-div .next-button {
+  margin-top: 35px;
 }
 
 .main-section .main-side .product-section .pr-card .button-div button {
@@ -2973,8 +2981,8 @@ footer .footer-info .footer-last .payments {
   background-color: #004a9a;
   color: white;
   border-radius: 10px;
-  margin-top: 10px;
   margin-left: 12px;
+  margin-top: 30px;
   font-size: 80%;
 }
 

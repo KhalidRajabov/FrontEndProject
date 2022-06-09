@@ -1904,7 +1904,7 @@ footer {
       .pr-card {
         border: 1px solid #ededed;
         width: 33.3%;
-        height: 52.5vh;
+        height: 58vh;
         position: relative;
         transition: 0.3s;
         z-index: 1;
@@ -2042,12 +2042,19 @@ footer {
             color: rgb(237, 23, 74);
           }
         }
+        
+        &:hover >.button-div>.next-button{
+          margin-top: 10px;
+        }
         .button-div {
           margin-left: 15px;
           width: 80%;
           transition: 0.3s;
           opacity: 0;
           visibility: visible;
+          .next-button{
+           margin-top: 35px;
+          }
           button {
             cursor: pointer;
             transition: 0.3s;
@@ -2056,8 +2063,8 @@ footer {
             background-color: #004a9a;
             color: white;
             border-radius: 10px;
-            margin-top: 10px;
             margin-left: 12px;
+            margin-top: 30px;
             font-size: 80%;
           }
         }
