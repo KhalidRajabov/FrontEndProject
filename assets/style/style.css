@@ -394,8 +394,6 @@ header .header-second-row .header-basket:hover .dropping-basket {
 header .header-second-row .header-basket .dropping-basket {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  opacity: 0;
-  visibility: hidden;
   position: absolute;
   width: 300px;
   height: 250px;
@@ -419,6 +417,59 @@ header .header-second-row .header-basket .dropping-basket {
           justify-content: center;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+header .header-second-row .header-basket .dropping-basket .added-baskets {
+  width: 90%;
+  margin: 5px auto;
+  max-height: 200px;
+  overflow: auto;
+}
+
+header .header-second-row .header-basket .dropping-basket .added-baskets .basket-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  margin: 5px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header-second-row .header-basket .dropping-basket .added-baskets .basket-row img {
+  width: 50px;
+  height: 50px;
+}
+
+header .header-second-row .header-basket .dropping-basket .added-baskets .basket-row .pro-details {
+  margin-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50px;
+}
+
+header .header-second-row .header-basket .dropping-basket .added-baskets .basket-row .pro-details #pro-name {
+  font-size: 80%;
+}
+
+header .header-second-row .header-basket .dropping-basket .added-baskets .basket-row .pro-details div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 header .header-second-row .header-basket .dropping-basket .basket-empty {
@@ -467,6 +518,7 @@ header .header-second-row .header-basket .dropping-basket .basket-empty span {
 }
 
 header .header-second-row .header-basket .dropping-basket p {
+  background-color: white;
   position: absolute;
   top: 210px;
   font-weight: 500;
@@ -3719,6 +3771,7 @@ footer .footer-info .footer-last .payments {
 
 .new-item-added div {
   padding: 15px;
+  width: 80%;
 }
 
 .new-item-added div .delete_icon {
@@ -3751,5 +3804,10 @@ footer .footer-info .footer-last .payments {
 .temporary-div {
   opacity: 1;
   visibility: visible;
+}
+
+.hide-basket {
+  visibility: hidden;
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */

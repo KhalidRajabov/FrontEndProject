@@ -122,11 +122,23 @@
             <i class="fa-solid fa-bag-shopping"></i>
             <sup id="product-count" class="sup">0</sup>
           </div>
-          <div class="dropping-basket">
+          <div id="dropping-basket" class="dropping-basket">
             <div class="basket-empty">
               <div class="basket-div"><i class="fa-solid fa-basket-shopping"></i></div>
               <span>No products in the cart.</span>
             </div>
+            <div class="added-baskets">
+              <div id="for-new-item" class="basket-row">
+                <!-- <img src="./assets/images/alpro.jpg"  alt="">
+                <div class="pro-details">
+                  <span id="pro-name" >We reduce shipping prices to</span>
+                  <div>
+                    <span id="pro-count">35</span> <span> x $</span> <span id="pro-price">5.99</span>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            
 
             <p class="empty-text">We reduce shipping prices to only 2.49 €!</p>
           </div>
@@ -1321,7 +1333,13 @@
         </div>
       </div>
     </footer>
-
+    <div id="basket-notifier" class="new-item-added">
+      <div>  
+        <i class="delete_icon fa-solid fa-xmark"></i>
+        <span id="new-item"></span> <span class="added-text">added to basket</span>
+      </div>
+        <a href="card(basket).html">View basket</a>
+      </div>
   </body>
   <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"

@@ -3,9 +3,11 @@ let productCount = document.getElementById("product-count")
 let basketPrice = document.getElementById("basket-worth")
 let basketNotify = document.getElementById("basket-notifier")
 let basketAlert = document.getElementById("new-item")
+let newItemsHere = document.getElementById("for-new-item")
 window.onload = function () {
     writeProductCount();
 };
+
 
 cardBtn.forEach((addBtn) => {
     addBtn.addEventListener("click", function () {
@@ -31,6 +33,16 @@ cardBtn.forEach((addBtn) => {
         localStorage.setItem("basket", JSON.stringify(arr))
         writeProductCount()
         showBasketNotification(itemName)
+        newProduct = `
+        <img src="${existProduct.imageURL}"  alt="">
+                <div class="pro-details">
+                  <span id="pro-name" >${existProduct.name}</span>
+                  <div>
+                    <span id="pro-count">${existProduct.count}</span> <span> x $</span> <span id="pro-price">${existProduct.price}</span>
+                  </div>
+                </div>
+        `
+        newItemsHere.innerHTML+= newProduct
         console.log(arr);
     })
 })
@@ -53,4 +65,4 @@ function showBasketNotification(itemName) {
 function hideBasketNotification() {
     basketNotify.classList.remove("temporary-div")
 }
-setInterval(hideBasketNotification, 6000)
+setInterval(hideBasketNotification, 4000)

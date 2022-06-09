@@ -258,8 +258,8 @@ header {
       }
       .dropping-basket {
         transition: 0.3s;
-        opacity: 0;
-        visibility: hidden;
+        // opacity: 0;
+        // visibility: hidden;
         position: absolute;
         width: 300px;
         height: 250px;
@@ -273,11 +273,43 @@ header {
         align-items: center;
         justify-content: center;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        .added-baskets{
+          width: 90%;
+          margin: 5px auto;
+          max-height: 200px;
+          overflow: auto;
+          .basket-row{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            margin: 5px auto;
+            justify-content: space-between;
+            img{
+              width: 50px;
+              height: 50px;
+            }
+            .pro-details{
+              margin-left: 5px;
+              display: flex;
+              flex-direction: column;
+              height: 50px;
+              #pro-name{
+                font-size: 80%;
+              }
+              div{
+                display: flex;
+                flex-direction: row;
+              }
+            }
+
+          }
+        }
         .basket-empty {
           display: flex;
           flex-direction: column;
           justify-content: center;
           margin-top: -80px;
+          
           .basket-div {
             margin: 0 auto;
             width: 60px;
@@ -302,6 +334,7 @@ header {
           }
         }
         p {
+          background-color: white;
           position: absolute;
           top: 210px;
           font-weight: 500;
@@ -2592,6 +2625,7 @@ footer {
   font-size: 100%;
   div{
     padding: 15px;
+    width: 80%;
     .delete_icon{
       position: absolute;
       top: 5px;
@@ -2620,4 +2654,8 @@ footer {
 .temporary-div{
   opacity: 1;
   visibility: visible;
+}
+.hide-basket{
+  visibility: hidden;
+  opacity: 0;
 }
