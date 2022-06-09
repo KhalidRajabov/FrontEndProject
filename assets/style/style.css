@@ -394,6 +394,8 @@ header .header-second-row .header-basket:hover .dropping-basket {
 header .header-second-row .header-basket .dropping-basket {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   width: 300px;
   height: 250px;
@@ -3809,5 +3811,130 @@ footer .footer-info .footer-last .payments {
 .hide-basket {
   visibility: hidden;
   opacity: 0;
+}
+
+.basket-div {
+  width: 1200px;
+  margin: 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basket-div .icon-div {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #eaecef;
+  overflow: hidden;
+}
+
+.basket-div .icon-div i {
+  position: absolute;
+  top: 70px;
+  left: 15px;
+  color: #f04652;
+  font-size: 150px;
+}
+
+.basket-div .empty {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 40px;
+  color: #f04652;
+}
+
+.basket-div .return {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #233a95;
+  border: none;
+  color: white;
+  margin-top: 40px;
+}
+
+.btn-icons {
+  padding: 5px;
+  margin: 5px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.my-container {
+  width: 1200px;
+  margin: 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.my-container .login {
+  width: 49%;
+}
+
+.my-container .login .input {
+  padding-left: 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  background-color: #f3f4f7;
+}
+
+.my-container .login .submit-button {
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #233a95;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.my-container .login a {
+  margin-top: 20px;
+}
+
+.my-container .register {
+  width: 49%;
+}
+
+.my-container .register .input {
+  padding-left: 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  background-color: #f3f4f7;
+}
+
+.my-container .register .submit-button {
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #233a95;
+  color: white;
+}
+
+.my-container .register p {
+  font-size: 80%;
 }
 /*# sourceMappingURL=style.css.map */

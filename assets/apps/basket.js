@@ -9,6 +9,8 @@ window.onload = function () {
 };
 
 
+
+
 cardBtn.forEach((addBtn) => {
     addBtn.addEventListener("click", function () {
         if (localStorage.getItem("basket") == null) {
@@ -33,16 +35,16 @@ cardBtn.forEach((addBtn) => {
         localStorage.setItem("basket", JSON.stringify(arr))
         writeProductCount()
         showBasketNotification(itemName)
-        newProduct = `
-        <img src="${existProduct.imageURL}"  alt="">
-                <div class="pro-details">
-                  <span id="pro-name" >${existProduct.name}</span>
-                  <div>
-                    <span id="pro-count">${existProduct.count}</span> <span> x $</span> <span id="pro-price">${existProduct.price}</span>
-                  </div>
-                </div>
-        `
-        newItemsHere.innerHTML+= newProduct
+        // newProduct = `
+        // <img src="${existProduct.imageURL}"  alt="">
+        //         <div class="pro-details">
+        //           <span id="pro-name" >${existProduct.name}</span>
+        //           <div>
+        //             <span id="pro-count">${existProduct.count}</span> <span> x $</span> <span id="pro-price">${existProduct.price}</span>
+        //           </div>
+        //         </div>
+        // `
+        //newItemsHere.innerHTML+= newProduct
         console.log(arr);
     })
 })
@@ -53,9 +55,9 @@ function writeProductCount() {
         let totalProducts = 0;
         let totalPrice = 0;
         arr.map(product => { totalProducts += product.count })
-        arr.map(product => { totalPrice += parseFloat(product.price * product.count) })
+        arr.map(product => { totalPrice += product.price * product.count })
         productCount.innerText = totalProducts
-        basketPrice.innerText = totalPrice
+        basketPrice.innerText = parseFloat(totalPrice).toFixed(2)
     }
 }
 function showBasketNotification(itemName) {

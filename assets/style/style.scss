@@ -258,8 +258,8 @@ header {
       }
       .dropping-basket {
         transition: 0.3s;
-        // opacity: 0;
-        // visibility: hidden;
+         opacity: 0;
+        visibility: hidden;
         position: absolute;
         width: 300px;
         height: 250px;
@@ -2658,4 +2658,98 @@ footer {
 .hide-basket{
   visibility: hidden;
   opacity: 0;
+}
+.basket-div{
+  width: 1200px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .icon-div{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+    background-color: rgb(234,236,239);
+    overflow: hidden;
+    i{
+      position: absolute;
+      top: 70px;
+      left: 15px;
+      color: rgb(240,70,82);
+      font-size: 150px;
+    }
+  }
+  .empty{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 40px;
+    color: rgb(240,70,82);
+  }
+  .return{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(35,58,149);
+    border: none;
+    color: white;
+    margin-top: 40px;
+  }
+}
+.btn-icons{
+  padding: 5px;
+  margin: 5px;
+background-color: red;
+border-radius: 50%;
+}
+.my-container{
+  width: 1200px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .login{
+    width: 49%;
+    .input{
+      padding-left: 15px;
+      width: 100%;
+      border: none;
+      outline: none;
+      height: 50px;
+      background-color: rgb(243,244,247);
+    }
+    .submit-button{
+      width: 90px;
+      height: 40px;
+      border-radius: 5px;
+      background-color: rgb(35,58,149);
+      color: white;
+      margin-bottom: 20px;
+    }
+    a{
+      margin-top: 20px;
+    }
+  }
+  .register{
+    width: 49%;
+    .input{
+      padding-left: 15px;
+      width: 100%;
+      border: none;
+      outline: none;
+      height: 50px;
+      background-color: rgb(243,244,247);
+    }
+    .submit-button{
+      width: 90px;
+      height: 40px;
+      border-radius: 5px;
+      background-color: rgb(35,58,149);
+      color: white;
+    }
+    p{
+      font-size: 80%;
+    }
+  }
 }
