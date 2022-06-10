@@ -4190,8 +4190,68 @@ footer .footer-info .footer-last .payments {
   border: none;
 }
 
+.container-blogs .blogs .pages {
+  width: 100px;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container-blogs .blogs .pages span {
+  cursor: pointer;
+}
+
+.container-blogs .blogs .pages .one {
+  background-color: #2bbef9;
+  color: white;
+  font-weight: 600;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-blogs .blogs .pages .two {
+  font-weight: 600;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-blogs .blogs .pages .two:hover {
+  background-color: #d8d8de;
+}
+
 .container-blogs .aside {
-  width: 25%;
+  width: 22%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4301,5 +4361,65 @@ footer .footer-info .footer-last .payments {
   cursor: pointer;
   width: 65%;
   font-weight: 600;
+}
+
+.container-blogs .aside .social {
+  width: 100%;
+  height: 40px;
+  background-color: red;
+  margin-top: 5px;
+}
+
+.container-blogs .aside .social i {
+  margin: 12px 20px;
+  color: white;
+}
+
+.container-blogs .aside .social span {
+  color: white;
+  font-size: 80%;
+}
+
+.container-blogs .aside .fb {
+  background-color: #3b5998;
+}
+
+.container-blogs .aside .tw {
+  background-color: #1da1f2;
+}
+
+.container-blogs .aside .pin {
+  background-color: #e60023;
+}
+
+.container-blogs .aside .link {
+  background-color: #0077b5;
+}
+
+.container-blogs .aside .redd {
+  background-color: orangered;
+}
+
+.container-blogs .aside .tag-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.container-blogs .aside .tag-box a {
+  text-decoration: none;
+  color: black;
+  padding: 2px 15px;
+  border: 1px solid #bfbfbf;
+  margin: 2px;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */
