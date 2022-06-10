@@ -51,6 +51,8 @@ window.addEventListener('load', (event) => {
                 plus.innerText = "+"
                 let minus = document.createElement("button")
                 minus.innerText = "-"
+                plus.classList.add("table-buttons")
+                minus.classList.add("table-buttons")
                 spanthing=document.createElement("span")
                 spanthing.innerText=product.count
                 tdCount.prepend(minus);
@@ -68,8 +70,9 @@ window.addEventListener('load', (event) => {
 
                 plus.onclick = function () {
                     product.count++;
-                    alert("dad")
+                    spanthing.innerText=product.count
                     localStorage.setItem("basket", JSON.stringify(arr));
+                    window.location.reload()
                 }
                 minus.onclick = function () {
                     product.count--
@@ -82,7 +85,10 @@ window.addEventListener('load', (event) => {
                     if (arr.length==0) {
                         localStorage.removeItem("basket")
                     }
-                    localStorage.setItem("basket", JSON.stringify(arr));
+                    else{
+                        localStorage.setItem("basket", JSON.stringify(arr));
+                    }
+                    window.location.reload()
                 }
                 deleteTd.onclick = function () {
                     this.parentElement.remove()

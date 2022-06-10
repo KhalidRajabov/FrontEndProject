@@ -5,18 +5,20 @@ let basketNotify = document.getElementById("basket-notifier")
 let basketAlert = document.getElementById("new-item")
 let newItemsHere = document.getElementById("added-baskets")
 let emptyBasket = document.getElementById("empty-this")
+let emptyText = document.getElementById("empty-text")
 window.onload = function () {
     writeProductCount();
     let currentLS=JSON.parse(localStorage.getItem("basket"))
     if(localStorage.getItem("basket") != null||currentLS.length!=0){
         emptyBasket.classList.add("d-none")
+        emptyText.classList.add("d-none")
         currentLS.forEach(function (product){
             newItemsHere.innerHTML+=`<div id="for-new-item" class="basket-row">
             <img src="${product.imageURL}"  alt="">
             <div class="pro-details">
               <span id="pro-name" >${product.name}</span>
               <div>
-                <span id="pro-count">${product.count}</span> <span> x $</span> <span id="pro-price">${product.price}</span>
+                <span id="pro-count">${product.count } </span> <span style="color: red;"> x </span> <span id="pro-price"> $${product.price}</span>
               </div>
             </div>
           </div>`
@@ -28,6 +30,7 @@ window.onload = function () {
     }
     else if (currentLS.length==0||localStorage.getItem("basket") == null){
         emptyBasket.classList.remove("d-none")
+        emptyText.classList.remove("d-none")
     }
 };
 
