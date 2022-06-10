@@ -8,13 +8,13 @@ window.addEventListener('load', (event) => {
          <button class="return">Return to shop</button>`
     }
     else {
-        basket.innerHTML = `<table class="table table-dark" id="table">
+        basket.innerHTML = `<table class="table table-white" id="table">
 <thead>
   <tr>
-    <th scope="col">Image</th>
-    <th scope="col">Name</th>
+    <th scope="col"></th>
+    <th scope="col">Product</th>
     <th scope="col">Price</th>
-    <th scope="col">Count</th>
+    <th scope="col">Quantity</th>
     <th scope="col">Subtotal</th>
     <th scope="col"></th>
   </tr>
@@ -64,6 +64,7 @@ window.addEventListener('load', (event) => {
                 let minus =document.getElementById("minus-btn")
                 minus.onclick=function(){
                     product.count--;
+                    
                     localStorage.setItem("basket", JSON.stringify(arr));
                 }
                 deleteTd.onclick = function () {
