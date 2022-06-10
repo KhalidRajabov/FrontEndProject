@@ -55,6 +55,7 @@ cardBtn.forEach((addBtn) => {
         else {
             existProduct.count++;
         }
+        
         localStorage.setItem("basket", JSON.stringify(arr))
         writeProductCount()
         showBasketNotification(itemName)
@@ -86,6 +87,10 @@ function writeProductCount() {
 function showBasketNotification(itemName) {
     basketNotify.classList.add("temporary-div")
     basketAlert.innerText = itemName
+    basketNotify.onclick=function(){
+        window.location="cart(basket).html"
+    }
+    
 }
 function hideBasketNotification() {
     basketNotify.classList.remove("temporary-div")
