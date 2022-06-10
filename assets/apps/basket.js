@@ -3,13 +3,33 @@ let productCount = document.getElementById("product-count")
 let basketPrice = document.getElementById("basket-worth")
 let basketNotify = document.getElementById("basket-notifier")
 let basketAlert = document.getElementById("new-item")
-let newItemsHere = document.getElementById("for-new-item")
+let newItemsHere = document.getElementById("added-baskets")
+let emptyBasket = document.getElementById("empty-this")
 window.onload = function () {
     writeProductCount();
+    let currentLS=JSON.parse(localStorage.getItem("basket"))
+    if(localStorage.getItem("basket") != null||currentLS.length!=0){
+        emptyBasket.classList.add("d-none")
+        currentLS.forEach(function (product){
+            newItemsHere.innerHTML+=`<div id="for-new-item" class="basket-row">
+            <img src="${product.imageURL}"  alt="">
+            <div class="pro-details">
+              <span id="pro-name" >${product.name}</span>
+              <div>
+                <span id="pro-count">${product.count}</span> <span> x $</span> <span id="pro-price">${product.price}</span>
+              </div>
+            </div>
+          </div>`
+
+          newItemsHere.onclick= _=>{
+            window.location="cart(basket).html"
+          }
+        })
+    }
+    else if (currentLS.length==0||localStorage.getItem("basket") == null){
+        emptyBasket.classList.remove("d-none")
+    }
 };
-
-
-
 
 cardBtn.forEach((addBtn) => {
     addBtn.addEventListener("click", function () {
@@ -45,7 +65,7 @@ cardBtn.forEach((addBtn) => {
         //         </div>
         // `
         //newItemsHere.innerHTML+= newProduct
-        console.log(arr);
+        
     })
 })
 

@@ -28,397 +28,403 @@
     <title>Cart</title>
   </head>
 <body>
-    <header>
-        <div class="header-first-row">
-          <ul class="left-ul">
-            <li class="left-list">About Us</li>
-            <li class="left-list">My account</li>
-            <li class="left-list">Wishlist</li>
-            <li class="left-list">Order Tracking</li>
+  <div class="first-row">
+    <p class="first-p">
+      Due to the <strong>COVID</strong> 19 epidemic, orders may be processed
+      with a slight delay
+    </p>
+  </div>
+  <header>
+    <div class="header-first-row">
+      <ul class="left-ul">
+        <li class="left-list">About Us</li>
+        <li class="left-list">My account</li>
+        <li class="left-list">Wishlist</li>
+        <li class="left-list">Order Tracking</li>
+      </ul>
+      <ul class="right-ul">
+        <li class="right-list">
+          <i class="fa-regular fa-hand"></i>100% Secure delivery without
+          contacting the courier
+        </li>
+        <li class="right-list">
+          Need help? Call Us: <span>+ 0020 500</span>
+        </li>
+        <li class="right-list">
+          <ul class="inner-ul">
+            <li id="lang-list" class="inner-lang">
+              English <i class="fa-solid fa-chevron-down"></i>
+              <div id="-drop-lang-div" class="lang-div">
+                <ul class="drop-lang">
+                  <li class="dropped-lang">
+                    <a href="" class="lang-links">English</a>
+                  </li>
+                  <li class="dropped-lang">
+                    <a href="" class="lang-links">Spanish</a>
+                  </li>
+                  <li class="dropped-lang">
+                    <a href="" class="lang-links">German</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="inner-curr">
+              USD <i class="fa-solid fa-chevron-down"></i>
+              <div id="-drop-curr-div" class="curr-div">
+                <ul class="drop-curr">
+                  <li class="dropped-curr">
+                    <a href="" class="curr-links">USD</a>
+                  </li>
+                  <li class="dropped-curr">
+                    <a href="" class="curr-links">INR</a>
+                  </li>
+                  <li class="dropped-curr">
+                    <a href="" class="curr-links">GBP</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
           </ul>
-          <ul class="right-ul">
-            <li class="right-list">
-              <i class="fa-regular fa-hand"></i>100% Secure delivery without
-              contacting the courier
-            </li>
-            <li class="right-list">
-              Need help? Call Us: <span>+ 0020 500</span>
-            </li>
-            <li class="right-list">
-              <ul class="inner-ul">
-                <li id="lang-list" class="inner-lang">
-                  English <i class="fa-solid fa-chevron-down"></i>
-                  <div id="-drop-lang-div" class="lang-div">
-                    <ul class="drop-lang">
-                      <li class="dropped-lang">
-                        <a href="" class="lang-links">English</a>
-                      </li>
-                      <li class="dropped-lang">
-                        <a href="" class="lang-links">Spanish</a>
-                      </li>
-                      <li class="dropped-lang">
-                        <a href="" class="lang-links">German</a>
-                      </li>
-                    </ul>
-                  </div>
+        </li>
+      </ul>
+    </div>
+    <div class="header-second-row">
+      <div class="logo">
+        <img src="./assets/images/bacola-logo.png" width="160" alt="" />
+        <span class="link-span">Online Grocery Shopping Center</span>
+      </div>
+      <div class="location">
+        <div class="left-loc">
+          <span class="loc-span">Your Location</span>
+          <div class="select-span">Select a Location</div>
+        </div>
+        <div class="loc-icon">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+      <div class="header-input">
+        <input
+          class="h-input"
+          type="text"
+          placeholder="Search for products..."
+        />
+        <i class="input-icon fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="profile">
+        <i class="fa-regular fa-user"></i>
+      </div>
+
+      <div class="header-basket">
+        <div class="basket-worth">
+          <span class="basket-total-worth">$ <span id="basket-worth">0.00</span> </span>
+        </div>
+        <div class="basket-self">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <sup id="product-count" class="sup">0</sup>
+        </div>
+        <div id="dropping-basket" class="dropping-basket">
+          <div id="empty-this" class="basket-empty">
+            <div class="basket-div"><i class="fa-solid fa-basket-shopping"></i></div>
+            <span>No products in the cart.</span>
+          </div>
+          <div id="added-baskets" class="added-baskets">
+            <!-- <div id="for-new-item" class="basket-row">
+              <img src="./assets/images/alpro.jpg"  alt="">
+              <div class="pro-details">
+                <span id="pro-name" >We reduce shipping prices to</span>
+                <div>
+                  <span id="pro-count">35</span> <span> x $</span> <span id="pro-price">5.99</span>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          
+
+          <p class="empty-text">We reduce shipping prices to only 2.49 €!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-last-row">
+      <div id="h-categories" class="all-categories">
+        <ul class="categories">
+          <li><i class="bars fa-solid fa-bars"></i></li>
+          <li>ALL CATEGORIES</li>
+          <li><i class="fa-solid fa-chevron-down"></i></li>
+        </ul>
+        <div class="total-products">
+          <p class="t-products">TOTAL 63 PRODUCTS</p>
+        </div>
+      </div>
+      <div id="h-drop-down" class="drop-down-product hide">
+        <ul class="dropped-product">
+          <li class="dropped-p-list fruit">
+            <a href="" class="product-link"
+              ><i class="fa-solid fa-apple-whole"></i>Fruits & Vegetables
+              <i class="v-icon fa-solid fa-chevron-right"></i>
+            </a>
+
+            <div class="pop-list-fruit">
+              <ul class="pop-fruit-ul">
+                <li class="pop-fruit-li">
+                  <a href="" class="pop-fruit-link">Cuts & Sprouts</a>
                 </li>
-                <li class="inner-curr">
-                  USD <i class="fa-solid fa-chevron-down"></i>
-                  <div id="-drop-curr-div" class="curr-div">
-                    <ul class="drop-curr">
-                      <li class="dropped-curr">
-                        <a href="" class="curr-links">USD</a>
-                      </li>
-                      <li class="dropped-curr">
-                        <a href="" class="curr-links">INR</a>
-                      </li>
-                      <li class="dropped-curr">
-                        <a href="" class="curr-links">GBP</a>
-                      </li>
-                    </ul>
-                  </div>
+                <li class="pop-fruit-li">
+                  <a href="" class="pop-fruit-link"
+                    >Exotic Fruits & Veggies</a
+                  >
+                </li>
+                <li class="pop-fruit-li">
+                  <a href="" class="pop-fruit-link">Fresh Fruits</a>
+                </li>
+                <li class="pop-fruit-li">
+                  <a href="" class="pop-fruit-link">Fresh Vegetables</a>
+                </li>
+                <li class="pop-fruit-li">
+                  <a href="" class="pop-fruit-link">Herbs & Seasonings</a>
+                </li>
+                <li class="pop-fruit-li">
+                  <a href="" class="pop-fruit-link">Packaged Produce</a>
+                </li>
+                <li class="pop-fruit-li">
+                  <a href="" class="pop-fruit-link">Party Trays</a>
                 </li>
               </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="header-second-row">
-          <div class="logo">
-            <img src="./assets/images/bacola-logo.png" width="160" alt="" />
-            <span class="link-span">Online Grocery Shopping Center</span>
-          </div>
-          <div class="location">
-            <div class="left-loc">
-              <span class="loc-span">Your Location</span>
-              <div class="select-span">Select a Location</div>
             </div>
-            <div class="loc-icon">
-              <i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li class="dropped-p-list">
+            <a href="" class="product-link"
+              ><i class="fa-solid fa-pizza-slice"></i>Meats & Seafood</a
+            >
+          </li>
+          <li class="dropped-p-list">
+            <a href="" class="product-link"
+              ><i class="fa-solid fa-egg"></i>Breakfast & Diary</a
+            >
+          </li>
+          <li class="dropped-p-list bev">
+            <a href="" class="product-link"
+              ><i class="fa-solid fa-mug-hot"></i>Beverages
+              <i class="v-icon fa-solid fa-chevron-right"></i>
+            </a>
+            <div class="pop-list-bev">
+              <ul class="pop-bev-ul">
+                <li class="pop-bev-li">
+                  <a href="" class="pop-bev-link">Coffee</a>
+                </li>
+                <li class="pop-bev-li">
+                  <a href="" class="pop-bev-link">Craft Beer</a>
+                </li>
+                <li class="pop-bev-li">
+                  <a href="" class="pop-bev-link">Drink Boxes & Pouches</a>
+                </li>
+                <li class="pop-bev-li">
+                  <a href="" class="pop-bev-link">Milk & Plant-Based-Milk</a>
+                </li>
+                <li class="pop-bev-li">
+                  <a href="" class="pop-bev-link">Soda & Polp</a>
+                </li>
+                <li class="pop-bev-li">
+                  <a href="" class="pop-bev-link">Sparkling Water</a>
+                </li>
+                <li class="pop-bev-li">
+                  <a href="" class="pop-bev-link">Tea & Kombucha</a>
+                </li>
+                <li class="pop-bev-li">
+                  <a href="" class="pop-bev-link">Water</a>
+                </li>
+                <li class="pop-bev-li">
+                  <a href="" class="pop-bev-link">Wine</a>
+                </li>
+              </ul>
             </div>
-          </div>
-          <div class="header-input">
-            <input
-              class="h-input"
-              type="text"
-              placeholder="Search for products..."
-            />
-            <i class="input-icon fa-solid fa-magnifying-glass"></i>
-          </div>
-          <div class="profile">
-            <i class="fa-regular fa-user"></i>
-          </div>
-  
-          <div class="header-basket">
-            <div class="basket-worth">
-              <span class="basket-total-worth">$ <span id="basket-worth">0.00</span> </span>
+          </li>
+          <li class="dropped-p-list">
+            <a href="" class="product-link"
+              ><i class="fa-solid fa-cookie"></i>Breads & Bakery</a
+            >
+          </li>
+          <li class="dropped-p-list">
+            <a href="" class="product-link"
+              ><i class="fa-regular fa-snowflake"></i>Frozen Foods</a
+            >
+          </li>
+          <li class="dropped-p-list">
+            <a href="" class="product-link"
+              ><i class="fa-solid fa-candy-cane"></i>Biscuits & Snacks</a
+            >
+          </li>
+          <li class="dropped-p-list">
+            <a href="" class="product-link"
+              ><i class="fa-solid fa-leaf"></i>Grocery Staples</a
+            >
+          </li>
+        </ul>
+        <ul class="drop-footer">
+          <li class="drop-footer-list"><a href="">Value of the Day</a></li>
+          <li class="drop-footer-list"><a href="">Top 100 Offers</a></li>
+          <li class="drop-footer-list"><a href="">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div class="nav">
+        <ul class="nav-ul">
+          <li id="home-down" class="nav-list nav-home">
+            HOME <i class="fa-solid fa-chevron-down"></i>
+            <div id="home-drop" class="drop-home">
+              <ul class="drop-down-home">
+                <li class="home-list">
+                  <a href="" class="home-links">Home 1</a>
+                </li>
+                <li class="home-list">
+                  <a href="" class="home-links">Home 2</a>
+                </li>
+                <li class="home-list">
+                  <a href="" class="home-links">Home 3</a>
+                </li>
+                <li class="home-list">
+                  <a href="" class="home-links">Home 4</a>
+                </li>
+                <li class="home-list">
+                  <a href="" class="home-links">Home 5</a>
+                </li>
+              </ul>
             </div>
-            <div class="basket-self">
-              <i class="fa-solid fa-bag-shopping"></i>
-              <sup id="product-count" class="sup">0</sup>
-            </div>
-            <div id="dropping-basket" class="dropping-basket">
-              <div class="basket-empty">
-                <div class="basket-div"><i class="fa-solid fa-basket-shopping"></i></div>
-                <span>No products in the cart.</span>
+          </li>
+          <li id="shop-drop" class="nav-list shop-dropper">
+            SHOP <i class="fa-solid fa-chevron-down"></i>
+            <div id="shop-div" class="hidden-div hide">
+              <div class="list-div">
+                <ul class="col-one">
+                  <li class="col-1-list header">
+                    <a class="lead-link col-1-link" href="">Shop Lists</a>
+                  </li>
+                  <li class="col-1-list">
+                    <a class="col-1-link" href="">shop default</a>
+                  </li>
+                  <li class="col-1-list">
+                    <a class="col-1-link" href="">Shop Right Sidebar</a>
+                  </li>
+                  <li class="col-1-list">
+                    <a class="col-1-link" href="">shop wide</a>
+                  </li>
+                  <li class="col-1-list">
+                    <a class="col-1-link" href="">list left sidebar</a>
+                  </li>
+                  <li class="col-1-list">
+                    <a class="col-1-link" href="">load more button</a>
+                  </li>
+                  <li class="col-1-list">
+                    <a class="col-1-link" href="">infinite scrolling</a>
+                  </li>
+                </ul>
+                <ul class="col-two">
+                  <li class="col-2-list header">
+                    <a class="lead-link col-2-link" href="">product detail</a>
+                  </li>
+                  <li class="col-2-list">
+                    <a class="col-2-link" href="">product default</a>
+                  </li>
+                  <li class="col-2-list">
+                    <a class="col-2-link" href="">product variable</a>
+                  </li>
+                  <li class="col-2-list">
+                    <a class="col-2-link" href="">product gorup</a>
+                  </li>
+                  <li class="col-2-list">
+                    <a class="col-2-link" href="">product external</a>
+                  </li>
+                  <li class="col-2-list">
+                    <a class="col-2-link" href="">product downloadable</a>
+                  </li>
+                  <li class="col-2-list">
+                    <a class="col-2-link" href="">product with video</a>
+                  </li>
+                </ul>
+                <ul class="col-three">
+                  <li class="col-3-list header">
+                    <a class="lead-link col-3-link" href="">product types</a>
+                  </li>
+                  <li class="col-3-list">
+                    <a class="col-3-link" href="">single type 1</a>
+                  </li>
+                  <li class="col-3-list">
+                    <a class="col-3-link" href="">single type 2</a>
+                  </li>
+                  <li class="col-3-list">
+                    <a class="col-3-link" href="">single type 3</a>
+                  </li>
+                  <li class="col-3-list">
+                    <a class="col-3-link" href="">single type 4</a>
+                  </li>
+                  <li class="col-3-list">
+                    <a class="col-3-link" href="">thumbnails left</a>
+                  </li>
+                  <li class="col-3-list">
+                    <a class="col-3-link" href="">zoom image</a>
+                  </li>
+                </ul>
+                <ul class="col-four">
+                  <li class="col-4-list header">
+                    <a class="lead-link col-4-link" href="">shop pages</a>
+                  </li>
+                  <li class="col-4-list">
+                    <a class="col-4-link" href="">cart</a>
+                  </li>
+                  <li class="col-4-list">
+                    <a class="col-4-link" href="">checkout</a>
+                  </li>
+                  <li class="col-4-list">
+                    <a class="col-4-link" href="">my account</a>
+                  </li>
+                  <li class="col-4-list">
+                    <a class="col-4-link" href="">wishlist</a>
+                  </li>
+                  <li class="col-4-list">
+                    <a class="col-4-link" href="">order tracking</a>
+                  </li>
+                  <li class="col-4-list">
+                    <a class="col-4-link" href="">order on whatsApp</a>
+                  </li>
+                </ul>
+                <ul class="col-five">
+                  <li class="col-5-list header">
+                    <a class="lead-link col-5-link" href="">shop layouts</a>
+                  </li>
+                  <li class="col-5-list">
+                    <a class="col-5-link" href="">two columns</a>
+                  </li>
+                  <li class="col-5-list">
+                    <a class="col-5-link" href="">three coulmns</a>
+                  </li>
+                  <li class="col-5-list">
+                    <a class="col-5-link" href="">three columns wide</a>
+                  </li>
+                  <li class="col-5-list">
+                    <a class="col-5-link" href="">four columns</a>
+                  </li>
+                  <li class="col-5-list">
+                    <a class="col-5-link" href="">four columns wide</a>
+                  </li>
+                  <li class="col-5-list">
+                    <a class="col-5-link" href="">five columns wide</a>
+                  </li>
+                </ul>
               </div>
-              <div class="added-baskets">
-                <div id="for-new-item" class="basket-row">
-                  <!-- <img src="./assets/images/alpro.jpg"  alt="">
-                  <div class="pro-details">
-                    <span id="pro-name" >We reduce shipping prices to</span>
-                    <div>
-                      <span id="pro-count">35</span> <span> x $</span> <span id="pro-price">5.99</span>
-                    </div>
-                  </div> -->
-                </div>
-              </div>
-              
-  
-              <p class="empty-text">We reduce shipping prices to only 2.49 €!</p>
             </div>
-          </div>
-        </div>
-  
-        <div class="header-last-row">
-          <div id="h-categories" class="all-categories">
-            <ul class="categories">
-              <li><i class="bars fa-solid fa-bars"></i></li>
-              <li>ALL CATEGORIES</li>
-              <li><i class="fa-solid fa-chevron-down"></i></li>
-            </ul>
-            <div class="total-products">
-              <p class="t-products">TOTAL 63 PRODUCTS</p>
-            </div>
-          </div>
-          <div id="h-drop-down" class="drop-down-product hide">
-            <ul class="dropped-product">
-              <li class="dropped-p-list fruit">
-                <a href="" class="product-link"
-                  ><i class="fa-solid fa-apple-whole"></i>Fruits & Vegetables
-                  <i class="v-icon fa-solid fa-chevron-right"></i>
-                </a>
-  
-                <div class="pop-list-fruit">
-                  <ul class="pop-fruit-ul">
-                    <li class="pop-fruit-li">
-                      <a href="" class="pop-fruit-link">Cuts & Sprouts</a>
-                    </li>
-                    <li class="pop-fruit-li">
-                      <a href="" class="pop-fruit-link"
-                        >Exotic Fruits & Veggies</a
-                      >
-                    </li>
-                    <li class="pop-fruit-li">
-                      <a href="" class="pop-fruit-link">Fresh Fruits</a>
-                    </li>
-                    <li class="pop-fruit-li">
-                      <a href="" class="pop-fruit-link">Fresh Vegetables</a>
-                    </li>
-                    <li class="pop-fruit-li">
-                      <a href="" class="pop-fruit-link">Herbs & Seasonings</a>
-                    </li>
-                    <li class="pop-fruit-li">
-                      <a href="" class="pop-fruit-link">Packaged Produce</a>
-                    </li>
-                    <li class="pop-fruit-li">
-                      <a href="" class="pop-fruit-link">Party Trays</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="dropped-p-list">
-                <a href="" class="product-link"
-                  ><i class="fa-solid fa-pizza-slice"></i>Meats & Seafood</a
-                >
-              </li>
-              <li class="dropped-p-list">
-                <a href="" class="product-link"
-                  ><i class="fa-solid fa-egg"></i>Breakfast & Diary</a
-                >
-              </li>
-              <li class="dropped-p-list bev">
-                <a href="" class="product-link"
-                  ><i class="fa-solid fa-mug-hot"></i>Beverages
-                  <i class="v-icon fa-solid fa-chevron-right"></i>
-                </a>
-                <div class="pop-list-bev">
-                  <ul class="pop-bev-ul">
-                    <li class="pop-bev-li">
-                      <a href="" class="pop-bev-link">Coffee</a>
-                    </li>
-                    <li class="pop-bev-li">
-                      <a href="" class="pop-bev-link">Craft Beer</a>
-                    </li>
-                    <li class="pop-bev-li">
-                      <a href="" class="pop-bev-link">Drink Boxes & Pouches</a>
-                    </li>
-                    <li class="pop-bev-li">
-                      <a href="" class="pop-bev-link">Milk & Plant-Based-Milk</a>
-                    </li>
-                    <li class="pop-bev-li">
-                      <a href="" class="pop-bev-link">Soda & Polp</a>
-                    </li>
-                    <li class="pop-bev-li">
-                      <a href="" class="pop-bev-link">Sparkling Water</a>
-                    </li>
-                    <li class="pop-bev-li">
-                      <a href="" class="pop-bev-link">Tea & Kombucha</a>
-                    </li>
-                    <li class="pop-bev-li">
-                      <a href="" class="pop-bev-link">Water</a>
-                    </li>
-                    <li class="pop-bev-li">
-                      <a href="" class="pop-bev-link">Wine</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="dropped-p-list">
-                <a href="" class="product-link"
-                  ><i class="fa-solid fa-cookie"></i>Breads & Bakery</a
-                >
-              </li>
-              <li class="dropped-p-list">
-                <a href="" class="product-link"
-                  ><i class="fa-regular fa-snowflake"></i>Frozen Foods</a
-                >
-              </li>
-              <li class="dropped-p-list">
-                <a href="" class="product-link"
-                  ><i class="fa-solid fa-candy-cane"></i>Biscuits & Snacks</a
-                >
-              </li>
-              <li class="dropped-p-list">
-                <a href="" class="product-link"
-                  ><i class="fa-solid fa-leaf"></i>Grocery Staples</a
-                >
-              </li>
-            </ul>
-            <ul class="drop-footer">
-              <li class="drop-footer-list"><a href="">Value of the Day</a></li>
-              <li class="drop-footer-list"><a href="">Top 100 Offers</a></li>
-              <li class="drop-footer-list"><a href="">New Arrivals</a></li>
-            </ul>
-          </div>
-          <div class="nav">
-            <ul class="nav-ul">
-              <li id="home-down" class="nav-list nav-home">
-                HOME <i class="fa-solid fa-chevron-down"></i>
-                <div id="home-drop" class="drop-home">
-                  <ul class="drop-down-home">
-                    <li class="home-list">
-                      <a href="" class="home-links">Home 1</a>
-                    </li>
-                    <li class="home-list">
-                      <a href="" class="home-links">Home 2</a>
-                    </li>
-                    <li class="home-list">
-                      <a href="" class="home-links">Home 3</a>
-                    </li>
-                    <li class="home-list">
-                      <a href="" class="home-links">Home 4</a>
-                    </li>
-                    <li class="home-list">
-                      <a href="" class="home-links">Home 5</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li id="shop-drop" class="nav-list shop-dropper">
-                SHOP <i class="fa-solid fa-chevron-down"></i>
-                <div id="shop-div" class="hidden-div hide">
-                  <div class="list-div">
-                    <ul class="col-one">
-                      <li class="col-1-list header">
-                        <a class="lead-link col-1-link" href="">Shop Lists</a>
-                      </li>
-                      <li class="col-1-list">
-                        <a class="col-1-link" href="">shop default</a>
-                      </li>
-                      <li class="col-1-list">
-                        <a class="col-1-link" href="">Shop Right Sidebar</a>
-                      </li>
-                      <li class="col-1-list">
-                        <a class="col-1-link" href="">shop wide</a>
-                      </li>
-                      <li class="col-1-list">
-                        <a class="col-1-link" href="">list left sidebar</a>
-                      </li>
-                      <li class="col-1-list">
-                        <a class="col-1-link" href="">load more button</a>
-                      </li>
-                      <li class="col-1-list">
-                        <a class="col-1-link" href="">infinite scrolling</a>
-                      </li>
-                    </ul>
-                    <ul class="col-two">
-                      <li class="col-2-list header">
-                        <a class="lead-link col-2-link" href="">product detail</a>
-                      </li>
-                      <li class="col-2-list">
-                        <a class="col-2-link" href="">product default</a>
-                      </li>
-                      <li class="col-2-list">
-                        <a class="col-2-link" href="">product variable</a>
-                      </li>
-                      <li class="col-2-list">
-                        <a class="col-2-link" href="">product gorup</a>
-                      </li>
-                      <li class="col-2-list">
-                        <a class="col-2-link" href="">product external</a>
-                      </li>
-                      <li class="col-2-list">
-                        <a class="col-2-link" href="">product downloadable</a>
-                      </li>
-                      <li class="col-2-list">
-                        <a class="col-2-link" href="">product with video</a>
-                      </li>
-                    </ul>
-                    <ul class="col-three">
-                      <li class="col-3-list header">
-                        <a class="lead-link col-3-link" href="">product types</a>
-                      </li>
-                      <li class="col-3-list">
-                        <a class="col-3-link" href="">single type 1</a>
-                      </li>
-                      <li class="col-3-list">
-                        <a class="col-3-link" href="">single type 2</a>
-                      </li>
-                      <li class="col-3-list">
-                        <a class="col-3-link" href="">single type 3</a>
-                      </li>
-                      <li class="col-3-list">
-                        <a class="col-3-link" href="">single type 4</a>
-                      </li>
-                      <li class="col-3-list">
-                        <a class="col-3-link" href="">thumbnails left</a>
-                      </li>
-                      <li class="col-3-list">
-                        <a class="col-3-link" href="">zoom image</a>
-                      </li>
-                    </ul>
-                    <ul class="col-four">
-                      <li class="col-4-list header">
-                        <a class="lead-link col-4-link" href="">shop pages</a>
-                      </li>
-                      <li class="col-4-list">
-                        <a class="col-4-link" href="">cart</a>
-                      </li>
-                      <li class="col-4-list">
-                        <a class="col-4-link" href="">checkout</a>
-                      </li>
-                      <li class="col-4-list">
-                        <a class="col-4-link" href="">my account</a>
-                      </li>
-                      <li class="col-4-list">
-                        <a class="col-4-link" href="">wishlist</a>
-                      </li>
-                      <li class="col-4-list">
-                        <a class="col-4-link" href="">order tracking</a>
-                      </li>
-                      <li class="col-4-list">
-                        <a class="col-4-link" href="">order on whatsApp</a>
-                      </li>
-                    </ul>
-                    <ul class="col-five">
-                      <li class="col-5-list header">
-                        <a class="lead-link col-5-link" href="">shop layouts</a>
-                      </li>
-                      <li class="col-5-list">
-                        <a class="col-5-link" href="">two columns</a>
-                      </li>
-                      <li class="col-5-list">
-                        <a class="col-5-link" href="">three coulmns</a>
-                      </li>
-                      <li class="col-5-list">
-                        <a class="col-5-link" href="">three columns wide</a>
-                      </li>
-                      <li class="col-5-list">
-                        <a class="col-5-link" href="">four columns</a>
-                      </li>
-                      <li class="col-5-list">
-                        <a class="col-5-link" href="">four columns wide</a>
-                      </li>
-                      <li class="col-5-list">
-                        <a class="col-5-link" href="">five columns wide</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li class="nav-list">
-                <i class="fa-solid fa-feather-pointed"></i> MEATS & SEAFOOD
-              </li>
-              <li class="nav-list"><i class="fa-solid fa-cookie"></i> BAKERY</li>
-              <li class="nav-list">
-                <i class="fa-solid fa-mug-hot"></i>BEVERAGES
-              </li>
-              <li class="nav-list">BLOG</li>
-              <li class="nav-list">CONTACT</li>
-            </ul>
-          </div>
-        </div>
-      </header>
+          </li>
+          <li class="nav-list">
+            <i class="fa-solid fa-feather-pointed"></i> MEATS & SEAFOOD
+          </li>
+          <li class="nav-list"><i class="fa-solid fa-cookie"></i> BAKERY</li>
+          <li class="nav-list">
+            <i class="fa-solid fa-mug-hot"></i>BEVERAGES
+          </li>
+          <li id="blog-list" class="nav-list">BLOG</li>
+          <li id="contact-list" class="nav-list">CONTACT</li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
       <div id="my-basket" class="basket-div">
         
@@ -654,6 +660,12 @@
         </div>
     
 </body>
+<script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+<script src="./assets/apps/URLs.js"></script>
 <script src="./assets/apps/cardPageBasket.js"></script>
 <script src="./assets/apps/basket.js"></script>
 </html>

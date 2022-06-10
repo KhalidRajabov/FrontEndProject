@@ -1,11 +1,16 @@
 let basket = document.getElementById("my-basket")
 let sumTotalPrice = 0;
 window.addEventListener('load', (event) => {
-
-    if (localStorage.getItem("basket") == null) {
+    let newbasket = JSON.parse(localStorage.getItem("basket"))
+    if (localStorage.getItem("basket") == null||newbasket.length==0) {
         basket.innerHTML = `<div class="icon-div"><i class="fa-solid fa-basket-shopping"></i></div>
-         <span class="empty">YOUR CART IS CURRENTLY EMPTY</span>
-         <button class="return">Return to shop</button>`
+        <span class="empty">YOUR CART IS CURRENTLY EMPTY</span>
+        <button id="return" class="return">Return to shop</button>`
+        
+        let returnBtn = document.getElementById("return")
+        returnBtn.onclick=function(){
+            window.location="index.html"
+        }
     }
     else {
         basket.innerHTML = `<table class="table table-white" id="table">
@@ -36,15 +41,21 @@ window.addEventListener('load', (event) => {
                 image.style.width = "100px"
                 tdImage.append(image)
 
-                let plusicon =`<i id="plus-btn" class="btn-icons fa-solid fa-plus"></i>`
-                let minusicon =  `<i id="minus-btn" class="btn-icons fa-solid fa-minus"></i>`
 
                 let tdName = document.createElement("td")
                 tdName.innerText = product.name
                 let tdPrice = document.createElement("td")
                 tdPrice.innerText = product.price + "$"
                 let tdCount = document.createElement("td")
-                tdCount.innerHTML =minusicon+ product.count + plusicon;
+                let plus = document.createElement("button")
+                plus.innerText = "+"
+                let minus = document.createElement("button")
+                minus.innerText = "-"
+                spanthing=document.createElement("span")
+                spanthing.innerText=product.count
+                tdCount.prepend(minus);
+                tdCount.append(spanthing)
+                tdCount.append(plus);
 
 
                 let SubTd = document.createElement("td")
@@ -54,17 +65,23 @@ window.addEventListener('load', (event) => {
                 SubTd.innerHTML = (product.count * product.price).toFixed(2) + "$";
                 tr.append(tdImage, tdName, tdPrice, tdCount, SubTd, deleteTd)
                 table.append(tr)
-                
-                let plus =document.getElementById("plus-btn")
-                plus.onclick=function(){
+
+                plus.onclick = function () {
                     product.count++;
                     alert("dad")
                     localStorage.setItem("basket", JSON.stringify(arr));
                 }
-                let minus =document.getElementById("minus-btn")
-                minus.onclick=function(){
-                    product.count--;
-                    
+                minus.onclick = function () {
+                    product.count--
+                    if (product.count > 0) {
+                        spanthing.innerText=product.count
+                    }
+                    let zero = arr.filter(element => element.count > 0);
+                    let newArr = [...zero];
+                    arr = newArr
+                    if (arr.length==0) {
+                        localStorage.removeItem("basket")
+                    }
                     localStorage.setItem("basket", JSON.stringify(arr));
                 }
                 deleteTd.onclick = function () {
@@ -72,6 +89,16 @@ window.addEventListener('load', (event) => {
                     product.count = 0
                     localStorage.setItem("basket", JSON.stringify(arr));
                     location.reload()
+                    localStorage.removeItem(this.parentElement)
+                    let zero = arr.filter(element => element.count > 0);
+                    let newArr = [...zero];
+                    arr = newArr
+                    if (arr.length==0) {
+                        localStorage.removeItem("basket")
+                    }
+                    else{
+                        localStorage.setItem("basket", JSON.stringify(arr));
+                    }
 
                 }
             }

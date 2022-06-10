@@ -120,41 +120,38 @@
         <div class="profile">
           <i class="fa-regular fa-user"></i>
         </div>
-
+  
         <div class="header-basket">
           <div class="basket-worth">
-            <span class="basket-total-worth"
-              >$ <span id="basket-worth">0.00</span>
-            </span>
+            <span class="basket-total-worth">$ <span id="basket-worth">0.00</span> </span>
           </div>
           <div class="basket-self">
             <i class="fa-solid fa-bag-shopping"></i>
             <sup id="product-count" class="sup">0</sup>
           </div>
           <div id="dropping-basket" class="dropping-basket">
-            <div class="basket-empty">
-              <div class="basket-div">
-                <i class="fa-solid fa-basket-shopping"></i>
-              </div>
+            <div id="empty-this" class="basket-empty">
+              <div class="basket-div"><i class="fa-solid fa-basket-shopping"></i></div>
               <span>No products in the cart.</span>
             </div>
-            <div class="added-baskets">
-              <div id="for-new-item" class="basket-row">
-                <!-- <img src="./assets/images/alpro.jpg"  alt="">
+            <div id="added-baskets" class="added-baskets">
+              <!-- <div id="for-new-item" class="basket-row">
+                <img src="./assets/images/alpro.jpg"  alt="">
                 <div class="pro-details">
                   <span id="pro-name" >We reduce shipping prices to</span>
                   <div>
                     <span id="pro-count">35</span> <span> x $</span> <span id="pro-price">5.99</span>
                   </div>
-                </div> -->
-              </div>
+                </div>
+              </div> -->
             </div>
-
+            
+  
             <p class="empty-text">We reduce shipping prices to only 2.49 €!</p>
           </div>
         </div>
       </div>
-
+  
       <div class="header-last-row">
         <div id="h-categories" class="all-categories">
           <ul class="categories">
@@ -173,7 +170,7 @@
                 ><i class="fa-solid fa-apple-whole"></i>Fruits & Vegetables
                 <i class="v-icon fa-solid fa-chevron-right"></i>
               </a>
-
+  
               <div class="pop-list-fruit">
                 <ul class="pop-fruit-ul">
                   <li class="pop-fruit-li">
@@ -429,8 +426,8 @@
             <li class="nav-list">
               <i class="fa-solid fa-mug-hot"></i>BEVERAGES
             </li>
-            <li class="nav-list">BLOG</li>
-            <li class="nav-list">CONTACT</li>
+            <li id="blog-list" class="nav-list">BLOG</li>
+            <li id="contact-list" class="nav-list">CONTACT</li>
           </ul>
         </div>
       </div>
@@ -737,6 +734,7 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"
   ></script>
+  <script src="./assets/apps/URLs.js"></script>
   <script src="./assets/apps/basket.js"></script>
   <script src="./assets/apps/main.js"></script>
 </html>
