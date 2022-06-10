@@ -462,7 +462,7 @@ header .header-second-row .header-basket .dropping-basket .added-baskets .basket
 }
 
 header .header-second-row .header-basket .dropping-basket .added-baskets .basket-row .pro-details #pro-name {
-  font-size: 80%;
+  font-size: 70%;
 }
 
 header .header-second-row .header-basket .dropping-basket .added-baskets .basket-row .pro-details div {
@@ -473,6 +473,15 @@ header .header-second-row .header-basket .dropping-basket .added-baskets .basket
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  font-size: 80%;
+}
+
+header .header-second-row .header-basket .dropping-basket .added-baskets .basket-row .pro-details div #pro-count {
+  padding-right: 10px;
+}
+
+header .header-second-row .header-basket .dropping-basket .added-baskets .basket-row .pro-details div #pro-price {
+  margin-left: 10px;
 }
 
 header .header-second-row .header-basket .dropping-basket .basket-empty {

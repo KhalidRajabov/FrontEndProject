@@ -295,11 +295,18 @@ header {
               flex-direction: column;
               height: 50px;
               #pro-name {
-                font-size: 80%;
+                font-size: 70%;
               }
               div {
                 display: flex;
                 flex-direction: row;
+                font-size: 80%;
+                #pro-count{
+                  padding-right: 10px;
+                }
+                #pro-price{
+                  margin-left: 10px;
+                }
               }
             }
           }
