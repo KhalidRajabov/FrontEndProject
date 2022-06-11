@@ -30,7 +30,6 @@ ul {
     font-weight: 100;
   }
 }
-
 header {
   width: 1200px;
   margin: 0 auto;
@@ -1054,7 +1053,7 @@ footer {
   justify-content: space-between;
   .product-time-counter {
     width: 33%;
-    height: 105vh;
+    height: 800px;
     border: 2px solid rgb(237, 23, 74);
     border-radius: 8px;
     .deal-section {
@@ -1214,12 +1213,12 @@ footer {
   .product-cards {
     display: flex;
     width: 66%;
-    height: 105vh;
+    height: 800px;
     flex-wrap: wrap;
     .pr-card {
       border: 1px solid #ededed;
       width: 33.3%;
-      height: 52.5vh;
+      height: 400px;
       position: relative;
       transition: 0.3s;
       z-index: 1;
@@ -2456,7 +2455,7 @@ footer {
       border: 1px solid #ededed;
       background-color: white;
       width: 33.3%;
-      height: 52.5vh;
+      height: 400px;
       position: relative;
       transition: 0.3s;
       z-index: 1;
@@ -3082,6 +3081,7 @@ footer {
   border-radius: 50%;
   margin: 10px;
   font-size: 120%;
+  text-align: center
 }
 .carousel-img-1 {
   position: absolute;

@@ -1628,7 +1628,7 @@ footer .footer-info .footer-last .payments {
 
 .big-product-section .product-time-counter {
   width: 33%;
-  height: 105vh;
+  height: 800px;
   border: 2px solid #ed174a;
   border-radius: 8px;
 }
@@ -1855,7 +1855,7 @@ footer .footer-info .footer-last .payments {
   display: -ms-flexbox;
   display: flex;
   width: 66%;
-  height: 105vh;
+  height: 800px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1863,7 +1863,7 @@ footer .footer-info .footer-last .payments {
 .big-product-section .product-cards .pr-card {
   border: 1px solid #ededed;
   width: 33.3%;
-  height: 52.5vh;
+  height: 400px;
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -3560,7 +3560,7 @@ footer .footer-info .footer-last .payments {
   border: 1px solid #ededed;
   background-color: white;
   width: 33.3%;
-  height: 52.5vh;
+  height: 400px;
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -4441,6 +4441,7 @@ footer .footer-info .footer-last .payments {
   border-radius: 50%;
   margin: 10px;
   font-size: 120%;
+  text-align: center;
 }
 
 .carousel-img-1 {
