@@ -4298,7 +4298,7 @@ footer .footer-info .footer-last .payments {
 }
 
 .container-blogs .aside .posts {
-  border: 1px  solid #bfbfbf;
+  border: 1px solid #bfbfbf;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4449,6 +4449,244 @@ footer .footer-info .footer-last .payments {
 }
 
 #basket-notifier {
+  cursor: pointer;
+}
+
+.nothing {
+  position: relative;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.nothing .cr-left, .nothing .cr-right {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #bfbfbf;
+  color: black;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 150px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.nothing .cr-left {
+  left: 145px;
+}
+
+.nothing .cr-right {
+  right: 145px;
+}
+
+.nothing .carousel-pr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  margin: 50px auto;
+  overflow-y: auto;
+  height: 420px;
+  position: relative;
+}
+
+.nothing .carousel-pr::-webkit-scrollbar {
+  display: none;
+}
+
+.nothing .carousel-pr .pr-card {
+  border: 1px solid #ededed;
+  min-width: 20%;
+  height: 380px;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nothing .carousel-pr .pr-card:hover .icon-collapse {
+  right: 15px;
+  top: 15px;
+  opacity: 1;
+}
+
+.nothing .carousel-pr .pr-card:hover .icon-heart {
+  right: 15px;
+  top: 55px;
+  opacity: 1;
+}
+
+.nothing .carousel-pr .pr-card .icon-collapse {
+  width: 40px;
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nothing .carousel-pr .pr-card .icon-collapse:hover {
+  background-color: #004a9a;
+  color: white;
+}
+
+.nothing .carousel-pr .pr-card .icon-heart {
+  width: 40px;
+  position: absolute;
+  right: 5px;
+  top: 55px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.nothing .carousel-pr .pr-card .icon-heart:hover {
+  background-color: #cf3996;
+  color: white;
+}
+
+.nothing .carousel-pr .pr-card img {
+  padding: 0;
+  width: 80%;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+.nothing .carousel-pr .pr-card .dc-percentage {
+  background-color: #2bbef9;
+  padding: 3px 9px;
+  width: 50px;
+  top: 15px;
+  left: 15px;
+  font-size: 80%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.nothing .carousel-pr .pr-card .dc-recommended {
+  background-color: #7a7a7a;
+  padding: 3px 9px;
+  width: 110px;
+  top: 45px;
+  text-transform: uppercase;
+  left: 15px;
+  font-size: 70%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.nothing .carousel-pr .pr-card .dc-title {
+  width: 80%;
+  font-weight: 500;
+  font-family: sans-serif;
+  margin-left: 15px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nothing .carousel-pr .pr-card .dc-title:hover {
+  color: #0026c0;
+}
+
+.nothing .carousel-pr .pr-card .stock {
+  color: #00beb9;
+  margin-left: 15px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 70%;
+  font-weight: 600;
+}
+
+.nothing .carousel-pr .pr-card .review {
+  margin-left: 15px;
+}
+
+.nothing .carousel-pr .pr-card .review i {
+  font-size: 80%;
+  color: gold;
+}
+
+.nothing .carousel-pr .pr-card .review .bad-star {
+  color: #bfbfbf;
+  padding-right: 5px;
+}
+
+.nothing .carousel-pr .pr-card .worth-spans {
+  margin-left: 15px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.nothing .carousel-pr .pr-card .worth-spans .previous {
+  margin-bottom: -4px;
+  font-size: 130%;
+  color: #b2b2b6;
+  text-decoration: line-through;
+}
+
+.nothing .carousel-pr .pr-card .worth-spans .current {
+  margin-left: 5px;
+  font-size: 140%;
+  color: #ed174a;
+}
+
+.nothing .carousel-pr .pr-card .button-div {
+  margin-left: 15px;
+  width: 80%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nothing .carousel-pr .pr-card .button-div .card-button {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+  height: 30px;
+  background-color: gold;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 12px;
+  font-size: 80%;
   cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

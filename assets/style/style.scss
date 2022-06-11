@@ -301,10 +301,10 @@ header {
                 display: flex;
                 flex-direction: row;
                 font-size: 80%;
-                #pro-count{
+                #pro-count {
                   padding-right: 10px;
                 }
-                #pro-price{
+                #pro-price {
                   margin-left: 10px;
                 }
               }
@@ -2827,7 +2827,7 @@ footer {
       display: flex;
       flex-direction: column;
       margin: 0 auto;
-      .input-row{
+      .input-row {
         width: 70%;
         margin: 0px auto;
         display: flex;
@@ -2837,7 +2837,7 @@ footer {
           width: 48%;
           input {
             width: 100%;
-            background-color: rgb(243,244,247);
+            background-color: rgb(243, 244, 247);
             border: none;
             outline: none;
             height: 50px;
@@ -2845,22 +2845,22 @@ footer {
           }
         }
       }
-      .full-inputs{
+      .full-inputs {
         display: flex;
         flex-direction: column;
         width: 70%;
         margin: 0 auto;
-        form{
+        form {
           width: 100%;
-          input{
+          input {
             width: 100%;
             padding: 10px;
-            background-color: rgb(243,244,247);
+            background-color: rgb(243, 244, 247);
             border: none;
             outline: none;
             height: 50px;
           }
-          #fmessage{
+          #fmessage {
             padding: 15px 15px 60px 15px;
           }
         }
@@ -2868,51 +2868,51 @@ footer {
     }
   }
 }
-.container-blogs{
+.container-blogs {
   width: 1200px;
   margin: 50px auto;
   display: flex;
-flex-direction: row;
-  .blogs{
+  flex-direction: row;
+  .blogs {
     width: 72%;
     display: flex;
     flex-direction: column;
-    .blog{
+    .blog {
       width: 100%;
       display: flex;
       flex-direction: column;
-      img{
+      img {
         border-radius: 10px;
       }
-      ul{
+      ul {
         display: flex;
         flex-direction: row;
         list-style: none;
         padding: 0;
         margin-top: 20px;
-        li{
+        li {
           padding-right: 20px;
-          i{
+          i {
             padding-right: 10px;
             color: #007bff;
           }
-          a{
+          a {
             text-decoration: none;
             color: black;
           }
         }
       }
-      h1{
+      h1 {
         font-family: sans-serif;
         font-weight: 550;
         margin-top: 10px;
         cursor: pointer;
       }
-      p{
+      p {
         margin-top: 10px;
         font-size: 102%;
       }
-      button{
+      button {
         background-color: #004a9a;
         margin-top: 10px;
         color: white;
@@ -2922,17 +2922,17 @@ flex-direction: row;
         border: none;
       }
     }
-    .pages{
+    .pages {
       width: 100px;
       margin: 50px auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-direction: row;
-      span{
+      span {
         cursor: pointer;
       }
-      .one{
+      .one {
         background-color: rgb(43, 190, 249);
         color: white;
         font-weight: 600;
@@ -2943,8 +2943,7 @@ flex-direction: row;
         justify-content: center;
         align-items: center;
       }
-      .two{
-
+      .two {
         font-weight: 600;
         width: 30px;
         height: 30px;
@@ -2953,61 +2952,61 @@ flex-direction: row;
         justify-content: center;
         align-items: center;
       }
-      .two:hover{
+      .two:hover {
         background-color: #d8d8de;
       }
     }
   }
-  .aside{
+  .aside {
     width: 22%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    .input-div{
+    .input-div {
       position: relative;
       width: 90%;
-      input{
+      input {
         width: 100%;
         height: 40px;
         padding: 10px;
-        background-color: rgb(243,244,247);
+        background-color: rgb(243, 244, 247);
         border: none;
         outline: none;
       }
-      i{
+      i {
         font-weight: 600;
         position: absolute;
         right: 15px;
         top: 10px;
       }
     }
-    h6{
+    h6 {
       margin-top: 50px;
     }
-    .posts{
-      border: 1px  solid #bfbfbf;
+    .posts {
+      border: 1px solid #bfbfbf;
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-direction: column;
-      .post{
+      .post {
         width: 90%;
         display: flex;
         flex-direction: row;
         padding: 10px 0;
         justify-content: space-between;
         align-items: center;
-        .image{
+        .image {
           position: relative;
           width: 30%;
           cursor: pointer;
-          img{
+          img {
             width: 60px;
             height: 60px;
             border-radius: 50%;
           }
-          sup{
+          sup {
             position: absolute;
             background-color: #007bff;
             width: 25px;
@@ -3023,49 +3022,49 @@ flex-direction: row;
             left: 35px;
           }
         }
-        span{
+        span {
           cursor: pointer;
           width: 65%;
           font-weight: 600;
         }
       }
     }
-    .social{
+    .social {
       width: 100%;
       height: 40px;
       background-color: red;
       margin-top: 5px;
-      i{
+      i {
         margin: 12px 20px;
         color: white;
       }
-      span{
+      span {
         color: white;
         font-size: 80%;
       }
     }
-    .fb{
-      background-color: rgb(59,89,152)
+    .fb {
+      background-color: rgb(59, 89, 152);
     }
-    .tw{
-      background-color: rgb(29,161,242);
+    .tw {
+      background-color: rgb(29, 161, 242);
     }
-    .pin{
-      background-color: rgb(230,0,35);
+    .pin {
+      background-color: rgb(230, 0, 35);
     }
-    .link{
-      background-color: rgb(0,119,181);
+    .link {
+      background-color: rgb(0, 119, 181);
     }
-    .redd{
-      background-color: rgb(255,69,0);
+    .redd {
+      background-color: rgb(255, 69, 0);
     }
-    .tag-box{
+    .tag-box {
       width: 100%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       margin-top: 10px;
-      a{
+      a {
         text-decoration: none;
         color: black;
         padding: 2px 15px;
@@ -3076,19 +3075,204 @@ flex-direction: row;
     }
   }
 }
-.table-buttons{
+.table-buttons {
   width: 25px;
   height: 25px;
   border-radius: 50%;
   margin: 10px;
   font-size: 120%;
 }
-.carousel-img-1{
+.carousel-img-1 {
   position: absolute;
   top: 150px;
   width: 50px;
   height: 50px;
 }
-#basket-notifier{
+#basket-notifier {
   cursor: pointer;
 }
+.nothing{
+  position: relative;
+  max-width: 1200px;
+  margin: 50px auto;
+  .cr-left,.cr-right{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #bfbfbf;
+    color: black;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+    z-index: 100;
+    cursor: pointer;
+  }
+  .cr-left{
+    left: 145px;
+  }
+  .cr-right{
+    right: 145px;
+  }
+  .carousel-pr {
+    display: flex;
+    width: 1200px;
+    margin: 50px auto;
+    overflow-y: auto;
+    height: 420px;
+    position: relative;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+    .pr-card {
+      border: 1px solid #ededed;
+      min-width: 20%;
+      height: 380px;
+      position: relative;
+      transition: 0.3s;
+      &:hover .icon-collapse {
+        right: 15px;
+        top: 15px;
+        opacity: 1;
+      }
+      &:hover .icon-heart {
+        right: 15px;
+        top: 55px;
+        opacity: 1;
+      }
+      .icon-collapse {
+        width: 40px;
+        position: absolute;
+        right: 5px;
+        top: 15px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: 0.3s;
+        &:hover {
+          background-color: #004a9a;
+          color: white;
+        }
+      }
+      .icon-heart {
+        width: 40px;
+        position: absolute;
+        right: 5px;
+        top: 55px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: 0.6s;
+        &:hover {
+          background-color: rgb(207, 57, 150);
+          color: white;
+        }
+      }
+      img {
+        padding: 0;
+        width: 80%;
+        margin-top: 15px;
+        margin-left: 30px;
+      }
+      .dc-percentage {
+        background-color: rgb(43, 190, 249);
+        padding: 3px 9px;
+        width: 50px;
+        top: 15px;
+        left: 15px;
+        font-size: 80%;
+        text-align: center;
+        color: white;
+        position: absolute;
+        border-radius: 5px;
+      }
+      .dc-recommended {
+        background-color: #7a7a7a;
+        padding: 3px 9px;
+        width: 110px;
+        top: 45px;
+        text-transform: uppercase;
+        left: 15px;
+        font-size: 70%;
+        text-align: center;
+        color: white;
+        position: absolute;
+        border-radius: 5px;
+      }
+      .dc-title {
+        width: 80%;
+        font-weight: 500;
+        font-family: sans-serif;
+        margin-left: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          color: rgb(0, 38, 192);
+        }
+      }
+      .stock {
+        color: rgb(0, 190, 185);
+        margin-left: 15px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-size: 70%;
+        font-weight: 600;
+      }
+      .review {
+        margin-left: 15px;
+        i {
+          font-size: 80%;
+          color: gold;
+        }
+        .bad-star {
+          color: #bfbfbf;
+          padding-right: 5px;
+        }
+      }
+      .worth-spans {
+        margin-left: 15px;
+        font-family: sans-serif;
+        font-weight: 600;
+        .previous {
+          margin-bottom: -4px;
+          font-size: 130%;
+          color: #b2b2b6;
+          text-decoration: line-through;
+        }
+        .current {
+          margin-left: 5px;
+          font-size: 140%;
+          color: rgb(237, 23, 74);
+        }
+      }
+      .button-div {
+        margin-left: 15px;
+        width: 80%;
+        transition: 0.3s;
+        .card-button {
+          transition: 0.3s;
+          width: 100%;
+          height: 30px;
+          background-color: gold;
+          color: black;
+          border: none;
+          border-radius: 10px;
+          margin-top: 10px;
+          margin-left: 12px;
+          font-size: 80%;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+

@@ -52,5 +52,34 @@ $(document).ready(function () {
     setInterval(updateCountdownTime,1000)
 
 
-  
+    // let crBtn = document.querySelectorAll(".cr-control")
+    // let product = document.getElementsByClassName("cr-product")
+    // let productPage = Math.ceil(product.length/2)
+    // let l = 0
+    // let movePer = 25.34
+    // let maxMove =203
+    // let rightMove = ()=>{
+    //     l = l+movePer;
+    //     if (product==1) {
+    //         l=0
+    //     }
+    //     for (const i of product) {
+    //         if (l>maxMove) {
+    //             l=l-movePer
+    //         }
+    //         i.style.left= `-` +l+`%`
+    //     }
+    // }
+    // let leftMove = ()=>{
+    //     l = l - movePer
+    //     if(l<=0){l=0}
+    //     for (const i of product) {
+    //         if (productPage>1) {
+    //             i.style.left=`-`+l+`%`
+    //         }
+    //     }
+    // }
+    // crBtn[1].onclick=()=>{rightMove()}
+    // crBtn[0].onclick=()=>{leftMove()}
+    // console.log(productPage);
 })
