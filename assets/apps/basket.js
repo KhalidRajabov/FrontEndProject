@@ -9,7 +9,7 @@ let emptyText = document.getElementById("empty-text")
 window.onload = function () {
     writeProductCount();
     let currentLS=JSON.parse(localStorage.getItem("basket"))
-    if(localStorage.getItem("basket") != null||currentLS.length!=0){
+    if(localStorage.getItem("basket") != null){
         emptyBasket.classList.add("d-none")
         emptyText.classList.add("d-none")
         currentLS.forEach(function (product){
@@ -21,14 +21,15 @@ window.onload = function () {
                 <span id="pro-count">${product.count } </span> <span style="color: red;"> x </span> <span id="pro-price"> $${product.price}</span>
               </div>
             </div>
-          </div>`
+          </div>
+          `
 
           newItemsHere.onclick= _=>{
             window.location="cart(basket).html"
           }
         })
     }
-    else if (currentLS.length==0||localStorage.getItem("basket") == null){
+    else if (localStorage.getItem("basket") == null){
         emptyBasket.classList.remove("d-none")
         emptyText.classList.remove("d-none")
     }

@@ -272,6 +272,13 @@ header {
         align-items: center;
         justify-content: center;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        .subtotal{
+          display: flex;
+        flex-direction: row;
+      justify-content: space-between; 
+      width: 90%;
+      height: 50px;        
+    }
         .added-baskets {
           width: 90%;
           margin: 5px auto;
