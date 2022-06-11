@@ -79,8 +79,8 @@ function writeProductCount() {
         let arr = JSON.parse(localStorage.getItem("basket"))
         let totalProducts = 0;
         let totalPrice = 0;
-        arr.map(product => { totalProducts += product.count })
         arr.map(product => { totalPrice += product.price * product.count })
+        arr.map(product => { totalProducts += product.count })
         productCount.innerText = totalProducts
         basketPrice.innerText = parseFloat(totalPrice).toFixed(2)
     }

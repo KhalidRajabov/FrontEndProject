@@ -272,13 +272,13 @@ header {
         align-items: center;
         justify-content: center;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        .subtotal{
+        .subtotal {
           display: flex;
-        flex-direction: row;
-      justify-content: space-between; 
-      width: 90%;
-      height: 50px;        
-    }
+          flex-direction: row;
+          justify-content: space-between;
+          width: 90%;
+          height: 50px;
+        }
         .added-baskets {
           width: 90%;
           margin: 5px auto;
@@ -2680,6 +2680,59 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .my-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    #table {
+      display: block;
+      width: 75%;
+    }
+    .total-process-card {
+      width: 23%;
+      height: 470px;
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      font-size: 85%;
+      h6{
+        width: 90%;
+        margin: 20px auto;
+      }
+      .subtotal{
+        width: 90%;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .radio-group{
+        width: 90%;
+        margin: 20px auto;
+        a{
+          margin: 15px 0;
+        }
+      }
+
+      .total-everything{
+        width: 90%;
+        margin: 25px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      button{
+        width: 90%;
+        margin-top: 25px;
+        margin-left: 15px;
+        border-radius: 5px;
+        height: 60px;
+        background-color: rgb(237, 23, 74);
+        border: none;
+        color: white;
+      }
+    }
+  }
   .icon-div {
     width: 200px;
     height: 200px;
@@ -3088,7 +3141,7 @@ footer {
   border-radius: 50%;
   margin: 10px;
   font-size: 120%;
-  text-align: center
+  text-align: center;
 }
 .carousel-img-1 {
   position: absolute;
@@ -3099,11 +3152,12 @@ footer {
 #basket-notifier {
   cursor: pointer;
 }
-.nothing{
+.nothing {
   position: relative;
   max-width: 1200px;
   margin: 50px auto;
-  .cr-left,.cr-right{
+  .cr-left,
+  .cr-right {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -3119,10 +3173,10 @@ footer {
     z-index: 100;
     cursor: pointer;
   }
-  .cr-left{
+  .cr-left {
     left: 145px;
   }
-  .cr-right{
+  .cr-right {
     right: 145px;
   }
   .carousel-pr {
@@ -3132,7 +3186,7 @@ footer {
     overflow-y: auto;
     height: 420px;
     position: relative;
-    &::-webkit-scrollbar{
+    &::-webkit-scrollbar {
       display: none;
     }
     .pr-card {
@@ -3283,4 +3337,3 @@ footer {
     }
   }
 }
-

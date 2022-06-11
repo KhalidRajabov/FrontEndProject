@@ -3860,6 +3860,89 @@ footer .footer-info .footer-last .payments {
           align-items: center;
 }
 
+.basket-div .my-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.basket-div .my-row #table {
+  display: block;
+  width: 75%;
+}
+
+.basket-div .my-row .total-process-card {
+  width: 23%;
+  height: 470px;
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  font-size: 85%;
+}
+
+.basket-div .my-row .total-process-card h6 {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.basket-div .my-row .total-process-card .subtotal {
+  width: 90%;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.basket-div .my-row .total-process-card .radio-group {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.basket-div .my-row .total-process-card .radio-group a {
+  margin: 15px 0;
+}
+
+.basket-div .my-row .total-process-card .total-everything {
+  width: 90%;
+  margin: 25px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.basket-div .my-row .total-process-card button {
+  width: 90%;
+  margin-top: 25px;
+  margin-left: 15px;
+  border-radius: 5px;
+  height: 60px;
+  background-color: #ed174a;
+  border: none;
+  color: white;
+}
+
 .basket-div .icon-div {
   width: 200px;
   height: 200px;
@@ -4476,7 +4559,8 @@ footer .footer-info .footer-last .payments {
   margin: 50px auto;
 }
 
-.nothing .cr-left, .nothing .cr-right {
+.nothing .cr-left,
+.nothing .cr-right {
   position: absolute;
   width: 30px;
   height: 30px;
