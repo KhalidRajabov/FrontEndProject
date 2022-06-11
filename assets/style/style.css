@@ -3781,6 +3781,8 @@ footer .footer-info .footer-last .payments {
   visibility: hidden;
   opacity: 0;
   font-size: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .new-item-added div {
