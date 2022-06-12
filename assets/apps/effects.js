@@ -1,4 +1,17 @@
 $(document).ready(function () {
+
+
+    $('.slick_slide').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        prevArrow: `<div class="previous-btn"><i class="fa-solid fa-chevron-left"></i> </div>`,
+        nextArrow: `<div class="next-btn"><i class="fa-solid fa-chevron-right"></i> </div>`
+      });
+
+
+
     let count = 0;
     $(document).on("click", ".sliderright", function(){
         if (count<1) {            
@@ -52,34 +65,4 @@ $(document).ready(function () {
     setInterval(updateCountdownTime,1000)
 
 
-    // let crBtn = document.querySelectorAll(".cr-control")
-    // let product = document.getElementsByClassName("cr-product")
-    // let productPage = Math.ceil(product.length/2)
-    // let l = 0
-    // let movePer = 25.34
-    // let maxMove =203
-    // let rightMove = ()=>{
-    //     l = l+movePer;
-    //     if (product==1) {
-    //         l=0
-    //     }
-    //     for (const i of product) {
-    //         if (l>maxMove) {
-    //             l=l-movePer
-    //         }
-    //         i.style.left= `-` +l+`%`
-    //     }
-    // }
-    // let leftMove = ()=>{
-    //     l = l - movePer
-    //     if(l<=0){l=0}
-    //     for (const i of product) {
-    //         if (productPage>1) {
-    //             i.style.left=`-`+l+`%`
-    //         }
-    //     }
-    // }
-    // crBtn[1].onclick=()=>{rightMove()}
-    // crBtn[0].onclick=()=>{leftMove()}
-    // console.log(productPage);
 })
