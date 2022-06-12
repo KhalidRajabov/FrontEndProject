@@ -27,8 +27,8 @@ window.onload = function () {
           `
             subtotaldrop.innerHTML = `<span style="color: #c2c2d3;"><b>Subtotal</b></span> 
             <span style="color:rgb(230, 0, 35);"><b id="total-sub-drop">${basketPrice.innerText}</b></span>`
-            buttons.innerHTML = `<button class="btns view">View Cart</button>
-            <button class="btns checkout">Checkout</button>`
+            buttons.innerHTML = `<button id="drop-down-buttons" class="btns view">View Cart</button>
+            <button id="drop-down-button" class="btns checkout">Checkout</button>`
             buttons.onclick = function_ => {
                 window.location = "cart(basket).html"
             }
@@ -64,6 +64,32 @@ cardBtn.forEach((addBtn) => {
         else {
             existProduct.count++;
         }
+        let currentLS = JSON.parse(localStorage.getItem("basket"))
+
+        emptyBasket.classList.add("d-none")
+        emptyText.classList.add("d-none")
+        currentLS.forEach(function (product) {
+            newItemsHere.innerHTML += `<div id="for-new-item" class="basket-row">
+            <img src="${product.imageURL}"  alt="">
+            <div class="pro-details">
+              <span id="pro-name" >${product.name}</span>
+              <div>
+                <span id="pro-count">${product.count} </span> <span style="color: red;"> x </span> <span id="pro-price"> $${product.price}</span>
+              </div>
+            </div>
+          </div>
+          `
+            subtotaldrop.innerHTML = `<span style="color: #c2c2d3;"><b>Subtotal</b></span> 
+            <span style="color:rgb(230, 0, 35);"><b id="total-sub-drop">${basketPrice.innerText}</b></span>`
+            buttons.innerHTML = `<button class="btns view">View Cart</button>
+            <button class="btns checkout">Checkout</button>`
+            buttons.onclick = function_ => {
+                window.location = "cart(basket).html"
+            }
+            newItemsHere.onclick = _ => {
+                window.location = "cart(basket).html"
+            }
+        })
 
         localStorage.setItem("basket", JSON.stringify(arr))
         writeProductCount()

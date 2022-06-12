@@ -49,7 +49,7 @@ window.addEventListener("load", event => {
             <a style="margin: 15px 0; text-decoration: none;"  href="">Change address</a>
           </form>
         </div>
-        <div class="total-everything">
+        <div id="total-everything" class="total-everything">
           <span><b>Total</b></span>
           <span id="total-everything">$50</span>
         </div>
@@ -163,6 +163,15 @@ window.addEventListener("load", event => {
             returnBtn.onclick = function () {
               window.location = "index.html";
             }
+            let basketButton1 =document.getElementById("drop-down-buttons")
+            let basketButton2 = document.getElementById("drop-down-button")
+            subtotaldrop.classList.add("d-none")
+
+            basketButton1.classList.add("d-none")
+            basketButton2.classList.add("d-none")
+            newItemsHere.classList.add("d-none")
+            emptyBasket.classList.remove("d-none")
+        emptyText.classList.remove("d-none")
           } else {
             localStorage.setItem("basket", JSON.stringify(arr));
           }

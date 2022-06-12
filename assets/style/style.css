@@ -398,7 +398,8 @@ header .header-second-row .header-basket .dropping-basket {
   visibility: hidden;
   position: absolute;
   width: 300px;
-  height: 350px;
+  min-height: 200px;
+  max-height: 350px;
   background-color: white;
   z-index: 50;
   top: 40px;
@@ -582,7 +583,7 @@ header .header-second-row .header-basket .dropping-basket .basket-empty span {
 header .header-second-row .header-basket .dropping-basket p {
   background-color: white;
   position: absolute;
-  top: 210px;
+  top: 170px;
   font-weight: 500;
   font-size: 80%;
 }
