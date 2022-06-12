@@ -273,24 +273,24 @@ header {
         align-items: center;
         justify-content: center;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        .buttons{
+        .buttons {
           width: 90%;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: space-evenly;
-          .btns{
+          .btns {
             width: 100%;
             margin: 5px auto;
             border-radius: 5px;
             height: 35px;
             border: none;
           }
-          .view{
+          .view {
             border: 1px solid #b2b2b6;
             background-color: white;
           }
-          .checkout{
+          .checkout {
             background-color: rgb(230, 0, 35);
             color: white;
           }
@@ -824,6 +824,7 @@ header {
     justify-content: center;
     top: 50%;
     font-size: 80%;
+    z-index: 100;
     cursor: pointer;
   }
   .my-sliderleft {
@@ -836,6 +837,147 @@ header {
     width: 200%;
     height: 100%;
     display: flex;
+    position: relative;
+    .h1{
+      position: absolute;
+      font-family: sans-serif;
+      font-weight: 700;
+      top: 21%;
+      left: 5.5%;
+      font-size: 320%;
+    }
+    .my-h1{
+      position: absolute;
+      font-family: sans-serif;
+      font-weight: 700;
+      top: 21%;
+      left: 55.5%;
+      font-size: 320%;
+    }
+    .offer-div {
+      position: absolute;
+      top: 15%;
+      left: 5%;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: row;
+      .spann {
+        font-size: 80%;
+        padding: 5px 15px;
+      }
+      .perc-off {
+        margin-left: 20px;
+        background: linear-gradient(
+          90deg,
+          rgba(0, 102, 1, 0.6197829473586309) 17%,
+          rgba(0, 207, 255, 0.017542051000087544) 82%
+        );
+        border-radius: 10px;
+        font-size: 80%;
+        padding: 5px 15px;
+      }
+    }
+    .only-this{
+      position: absolute;
+      left: 5.5%;
+      top: 50%;
+      font-weight: 500;
+    }
+    .cost-row{
+      position: absolute;
+      top: 59%;
+      display: flex;
+      flex-direction: row;
+      left: 5.5%;
+      width: 200px;
+      padding: 0;
+      .from{
+        padding: 0;
+        font-weight: 500;
+        align-self: flex-end;
+        margin-bottom: 8px;
+      }
+      .to-up{
+        margin-left: 10px;
+        color: rgb(213,18,67);
+        font-size: 220%;
+        font-weight: 600;
+      }
+
+    }
+    button{
+      position: absolute;
+      background-color: rgb(43,190,249);
+      width: 140px;
+      border-radius: 20px;
+      height: 40px;
+      border: none;
+      color: white;
+      top: 74%;
+      left: 5.5%;
+    }
+    .my-offer-div {
+      position: absolute;
+      top: 15%;
+      left: 55%;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: row;
+      .my-spann {
+        font-size: 80%;
+        padding: 5px 15px;
+      }
+      .my-perc-off {
+        margin-left: 20px;
+        background: linear-gradient(
+          90deg,
+          rgba(0, 102, 1, 0.6197829473586309) 17%,
+          rgba(0, 207, 255, 0.017542051000087544) 82%
+        );
+        border-radius: 10px;
+        font-size: 80%;
+        padding: 5px 15px;
+      }
+    }
+    .my-only-this{
+      position: absolute;
+      left: 55.5%;
+      top: 50%;
+      font-weight: 500;
+    }
+    .my-cost-row{
+      position: absolute;
+      top: 59%;
+      display: flex;
+      flex-direction: row;
+      left: 55.5%;
+      width: 200px;
+      padding: 0;
+      .my-from{
+        padding: 0;
+        font-weight: 500;
+        align-self: flex-end;
+        margin-bottom: 8px;
+      }
+      .my-to-up{
+        margin-left: 10px;
+        color: rgb(213,18,67);
+        font-size: 220%;
+        font-weight: 600;
+      }
+
+    }
+    button{
+      position: absolute;
+      background-color: rgb(43,190,249);
+      width: 140px;
+      border-radius: 20px;
+      height: 40px;
+      border: none;
+      color: white;
+      top: 74%;
+      left: 55.5%;
+    }
   }
 }
 
@@ -1619,8 +1761,9 @@ footer {
   &::-webkit-scrollbar {
     display: none;
   }
-  
-  .previous-btn,.next-btn{
+
+  .previous-btn,
+  .next-btn {
     width: 30px;
     height: 30px;
     border: 1px solid #b2b2b6;
@@ -1635,10 +1778,10 @@ footer {
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-  .previous-btn{
-left: 0px;
+  .previous-btn {
+    left: 0px;
   }
-  .next-btn{
+  .next-btn {
     right: 0;
   }
   .pr-card {
@@ -2733,9 +2876,9 @@ left: 0px;
     #table {
       display: block;
       width: 75%;
-      #tbody{
-        tr{
-          .td-name{
+      #tbody {
+        tr {
+          .td-name {
             width: 50%;
           }
         }
@@ -2745,35 +2888,37 @@ left: 0px;
       width: 23%;
       height: 470px;
       border-radius: 15px;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
       font-size: 90%;
-      h6{
+      h6 {
         width: 90%;
         margin: 20px auto;
       }
-      .subtotal{
+      .subtotal {
         width: 90%;
         margin: 30px auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
       }
-      .radio-group{
+      .radio-group {
         width: 90%;
         margin: 20px auto;
-        a{
+        a {
           margin: 15px 0;
         }
       }
 
-      .total-everything{
+      .total-everything {
         width: 90%;
         margin: 25px auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
       }
-      button{
+      button {
         width: 90%;
         margin-top: 25px;
         margin-left: 15px;
@@ -3195,8 +3340,8 @@ left: 0px;
   font-size: 60%;
   text-align: center;
   border: none;
-  transition: .3s;
-  &:hover{
+  transition: 0.3s;
+  &:hover {
     background-color: #bfbfbf;
   }
 }
@@ -3213,7 +3358,7 @@ left: 0px;
   position: relative;
   max-width: 1200px;
   margin: 50px auto;
-  
+
   .carousel-pr {
     display: flex;
     width: 1200px;
