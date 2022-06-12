@@ -8,7 +8,7 @@ window.addEventListener("load", event => {
         <button id="return" class="return">Return to shop</button>`;
 
     let returnBtn = document.getElementById("return");
-    returnBtn.onclick = function() {
+    returnBtn.onclick = function () {
       window.location = "index.html";
     };
   } else {
@@ -95,25 +95,25 @@ window.addEventListener("load", event => {
         let just = JSON.parse(localStorage.getItem("basket"))
         let totalPrice = 0;
         just.map(product => { totalPrice += product.price * product.count })
-        totalOfCart.innerHTML="$"+ totalPrice.toFixed(2)
-        intoCardTotal.innerHTML="$"+ totalPrice.toFixed(2)
+        totalOfCart.innerHTML = "$" + totalPrice.toFixed(2)
+        intoCardTotal.innerHTML = "$" + totalPrice.toFixed(2)
         SubTd.innerHTML = (product.count * product.price).toFixed(2) + "$";
         tr.append(tdImage, tdName, tdPrice, tdCount, SubTd, deleteTd);
         table.append(tr);
-        
+
         let shippingCost = document.getElementById("age1")
         let freeShipping = document.getElementById("age2")
         let localPickup = document.getElementById("age3")
-        shippingCost.onclick=function(){
-          totalOfCart.innerHTML="$"+ (totalPrice+5.00).toFixed(2)
-          freeShipping.onclick=function(){
-              totalOfCart.innerHTML="$"+ totalPrice.toFixed(2)
+        shippingCost.onclick = function () {
+          totalOfCart.innerHTML = "$" + (totalPrice + 5.00).toFixed(2)
+          freeShipping.onclick = function () {
+            totalOfCart.innerHTML = "$" + totalPrice.toFixed(2)
           }
-          localPickup.onclick=function(){
-              totalOfCart.innerHTML="$"+ totalPrice.toFixed(2)
+          localPickup.onclick = function () {
+            totalOfCart.innerHTML = "$" + totalPrice.toFixed(2)
           }
         }
-        plus.onclick = function() {
+        plus.onclick = function () {
           product.count++;
           tdCount.innerHTML = `${product.count}`;
           tdCount.prepend(minus);
@@ -121,23 +121,26 @@ window.addEventListener("load", event => {
           SubTd.innerHTML = (product.count * product.price).toFixed(2) + "$";
           let totalPrice = 0;
           arr.map(product => { totalPrice += product.price * product.count })
-          intoCardTotal.innerText=`$`+totalPrice.toFixed(2)
+          intoCardTotal.innerText = `$` + totalPrice.toFixed(2)
           basketPrice.innerText = parseFloat(totalPrice).toFixed(2)
           let totalOfCart = document.getElementById("total-everything")
-          totalOfCart.innerText=`$`+totalPrice.toFixed(2)
+          totalOfCart.innerText = `$` + totalPrice.toFixed(2)
           let totalProducts = 0;
-        arr.map(product => { totalProducts += product.count })
-        productCount.innerText = totalProducts
+          arr.map(product => { totalProducts += product.count })
+          productCount.innerText = totalProducts
           localStorage.setItem("basket", JSON.stringify(arr));
-          
+
         };
-        minus.onclick = function() {
+        minus.onclick = function () {
           product.count--;
           if (product.count > 0) {
             tdCount.innerHTML = `${product.count}`;
             tdCount.prepend(minus);
             tdCount.append(plus);
             SubTd.innerHTML = (product.count * product.price).toFixed(2) + "$";
+          }
+          else {
+            tr.remove()
           }
           let zero = arr.filter(element => element.count > 0);
           let newArr = [...zero];
@@ -146,22 +149,29 @@ window.addEventListener("load", event => {
           productCount.innerText = totalProducts
           let totalPrice = 0;
           newArr.map(product => { totalPrice += product.price * product.count })
-          intoCardTotal.innerText=`$`+totalPrice.toFixed(2)
+          intoCardTotal.innerText = `$` + totalPrice.toFixed(2)
           basketPrice.innerText = parseFloat(totalPrice).toFixed(2)
           let totalOfCart = document.getElementById("total-everything")
-          totalOfCart.innerText=`$`+totalPrice.toFixed(2)
+          totalOfCart.innerText = `$` + totalPrice.toFixed(2)
           arr = newArr;
           if (arr.length == 0) {
             localStorage.removeItem("basket");
+            basket.innerHTML = `<div class="icon-div"><i class="fa-solid fa-basket-shopping"></i></div>
+            <span class="empty">YOUR CART IS CURRENTLY EMPTY</span>
+            <button id="return" class="return">Return to shop</button>`
+            let returnBtn = document.getElementById("return");
+            returnBtn.onclick = function () {
+              window.location = "index.html";
+            }
           } else {
             localStorage.setItem("basket", JSON.stringify(arr));
           }
-          
+
         };
-        deleteTd.onclick = function() {
-          this.parentElement.remove();
+        deleteTd.onclick = function () {
           product.count = 0;
-          
+          this.parentElement.remove();
+
           localStorage.setItem("basket", JSON.stringify(arr));
           localStorage.removeItem(this.parentElement);
           let zero = arr.filter(element => element.count > 0);
@@ -169,11 +179,11 @@ window.addEventListener("load", event => {
           let totalPrice = 0;
           newArr.map(product => { totalPrice += product.price * product.count })
           let totalProducts = 0;
-        newArr.map(product => { totalProducts += product.count })
-        productCount.innerText = totalProducts
-          intoCardTotal.innerText=`$`+totalPrice.toFixed(2)
+          newArr.map(product => { totalProducts += product.count })
+          productCount.innerText = totalProducts
+          intoCardTotal.innerText = `$` + totalPrice.toFixed(2)
           let totalOfCart = document.getElementById("total-everything")
-          totalOfCart.innerText=`$`+totalPrice.toFixed(2)
+          totalOfCart.innerText = `$` + totalPrice.toFixed(2)
           basketPrice.innerText = parseFloat(totalPrice).toFixed(2)
           arr = newArr;
           if (arr.length == 0) {

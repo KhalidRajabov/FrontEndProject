@@ -3946,7 +3946,7 @@ footer .footer-info .footer-last .payments {
 }
 
 .basket-div .my-row #table #tbody tr .td-name {
-  min-width: 50%;
+  width: 50%;
 }
 
 .basket-div .my-row .total-process-card {
