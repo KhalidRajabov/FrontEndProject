@@ -13,7 +13,7 @@ $(document).ready(function () {
 
 
     let count = 0;
-    $(document).on("click", ".sliderright", function(){
+    $(document).on("click", ".my-sliderright", function(){
         if (count<1) {            
             count++;
             $(".images").animate({
@@ -27,7 +27,7 @@ $(document).ready(function () {
             })
         }
     })
-    $(document).on("click", ".sliderleft", function(){
+    $(document).on("click", ".my-sliderleft", function(){
         if (count>0) {            
             count--;
             $(".images").animate({

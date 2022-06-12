@@ -7,34 +7,37 @@ let newItemsHere = document.getElementById("added-baskets")
 let emptyBasket = document.getElementById("empty-this")
 let emptyText = document.getElementById("empty-text")
 let buttons = document.getElementById("buttons")
+let subtotaldrop = document.getElementById("subtotal-drop")
 window.onload = function () {
     writeProductCount();
-    let currentLS=JSON.parse(localStorage.getItem("basket"))
-    if(localStorage.getItem("basket") != null){
+    let currentLS = JSON.parse(localStorage.getItem("basket"))
+    if (localStorage.getItem("basket") != null) {
         emptyBasket.classList.add("d-none")
         emptyText.classList.add("d-none")
-        currentLS.forEach(function (product){
-            newItemsHere.innerHTML+=`<div id="for-new-item" class="basket-row">
+        currentLS.forEach(function (product) {
+            newItemsHere.innerHTML += `<div id="for-new-item" class="basket-row">
             <img src="${product.imageURL}"  alt="">
             <div class="pro-details">
               <span id="pro-name" >${product.name}</span>
               <div>
-                <span id="pro-count">${product.count } </span> <span style="color: red;"> x </span> <span id="pro-price"> $${product.price}</span>
+                <span id="pro-count">${product.count} </span> <span style="color: red;"> x </span> <span id="pro-price"> $${product.price}</span>
               </div>
             </div>
           </div>
           `
-            buttons.innerHTML=`<button class="btns view">View Cart</button>
+            subtotaldrop.innerHTML = `<span style="color: #c2c2d3;"><b>Subtotal</b></span> 
+            <span style="color:rgb(230, 0, 35);"><b id="total-sub-drop">${basketPrice.innerText}</b></span>`
+            buttons.innerHTML = `<button class="btns view">View Cart</button>
             <button class="btns checkout">Checkout</button>`
-            buttons.onclick=function_=>{
-                window.location="cart(basket).html"
+            buttons.onclick = function_ => {
+                window.location = "cart(basket).html"
             }
-          newItemsHere.onclick= _=>{
-            window.location="cart(basket).html"
-          }
+            newItemsHere.onclick = _ => {
+                window.location = "cart(basket).html"
+            }
         })
     }
-    else if (localStorage.getItem("basket") == null){
+    else if (localStorage.getItem("basket") == null) {
         emptyBasket.classList.remove("d-none")
         emptyText.classList.remove("d-none")
     }
@@ -61,7 +64,7 @@ cardBtn.forEach((addBtn) => {
         else {
             existProduct.count++;
         }
-        
+
         localStorage.setItem("basket", JSON.stringify(arr))
         writeProductCount()
         showBasketNotification(itemName)
@@ -75,7 +78,7 @@ cardBtn.forEach((addBtn) => {
         //         </div>
         // `
         //newItemsHere.innerHTML+= newProduct
-        
+
     })
 })
 
@@ -93,10 +96,10 @@ function writeProductCount() {
 function showBasketNotification(itemName) {
     basketNotify.classList.add("temporary-div")
     basketAlert.innerText = itemName
-    basketNotify.onclick=function(){
-        window.location="cart(basket).html"
+    basketNotify.onclick = function () {
+        window.location = "cart(basket).html"
     }
-    
+
 }
 function hideBasketNotification() {
     basketNotify.classList.remove("temporary-div")

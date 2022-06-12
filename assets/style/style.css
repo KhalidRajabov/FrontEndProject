@@ -398,7 +398,7 @@ header .header-second-row .header-basket .dropping-basket {
   visibility: hidden;
   position: absolute;
   width: 300px;
-  height: 250px;
+  height: 350px;
   background-color: white;
   z-index: 50;
   top: 40px;
@@ -1216,15 +1216,15 @@ header .drop-down-product .drop-footer {
   right: 0;
 }
 
-.slider {
+.main-slider {
   width: 100%;
   height: 64vh;
   position: relative;
   overflow: hidden;
 }
 
-.slider .sliderleft,
-.slider .sliderright {
+.main-slider .my-sliderleft,
+.main-slider .my-sliderright {
   position: absolute;
   background-color: white;
   height: 40px;
@@ -1244,15 +1244,15 @@ header .drop-down-product .drop-footer {
   cursor: pointer;
 }
 
-.slider .sliderleft {
+.main-slider .my-sliderleft {
   left: 3%;
 }
 
-.slider .sliderright {
+.main-slider .my-sliderright {
   right: 3%;
 }
 
-.slider .images {
+.main-slider .images {
   width: 200%;
   height: 100%;
   display: -webkit-box;
