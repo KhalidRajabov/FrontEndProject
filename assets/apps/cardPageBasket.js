@@ -101,13 +101,14 @@ window.addEventListener("load", event => {
         
         let shippingCost = document.getElementById("age1")
         let freeShipping = document.getElementById("age2")
+        let localPickup = document.getElementById("age3")
         shippingCost.onclick=function(){
           totalOfCart.innerHTML="$"+ (totalPrice+5.00).toFixed(2)
           freeShipping.onclick=function(){
-            
               totalOfCart.innerHTML="$"+ totalPrice.toFixed(2)
-              
-            
+          }
+          localPickup.onclick=function(){
+              totalOfCart.innerHTML="$"+ totalPrice.toFixed(2)
           }
         }
         plus.onclick = function() {

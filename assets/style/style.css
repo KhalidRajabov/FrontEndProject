@@ -417,8 +417,43 @@ header .header-second-row .header-basket .dropping-basket {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header .header-second-row .header-basket .dropping-basket .buttons {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header .header-second-row .header-basket .dropping-basket .buttons .btns {
+  width: 100%;
+  margin: 5px auto;
+  border-radius: 5px;
+  height: 35px;
+  border: none;
+}
+
+header .header-second-row .header-basket .dropping-basket .buttons .view {
+  border: 1px solid #b2b2b6;
+  background-color: white;
+}
+
+header .header-second-row .header-basket .dropping-basket .buttons .checkout {
+  background-color: #e60023;
+  color: white;
 }
 
 header .header-second-row .header-basket .dropping-basket .subtotal {
@@ -3885,7 +3920,7 @@ footer .footer-info .footer-last .payments {
   border-radius: 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  font-size: 85%;
+  font-size: 90%;
 }
 
 .basket-div .my-row .total-process-card h6 {

@@ -6,6 +6,7 @@ let basketAlert = document.getElementById("new-item")
 let newItemsHere = document.getElementById("added-baskets")
 let emptyBasket = document.getElementById("empty-this")
 let emptyText = document.getElementById("empty-text")
+let buttons = document.getElementById("buttons")
 window.onload = function () {
     writeProductCount();
     let currentLS=JSON.parse(localStorage.getItem("basket"))
@@ -23,7 +24,11 @@ window.onload = function () {
             </div>
           </div>
           `
-
+            buttons.innerHTML=`<button class="btns view">View Cart</button>
+            <button class="btns checkout">Checkout</button>`
+            buttons.onclick=function_=>{
+                window.location="cart(basket).html"
+            }
           newItemsHere.onclick= _=>{
             window.location="cart(basket).html"
           }
