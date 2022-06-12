@@ -3292,6 +3292,7 @@ footer .footer-info .footer-last .payments {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .product-detail-body .bodies .container-product .left {
@@ -4603,7 +4604,7 @@ footer .footer-info .footer-last .payments {
   height: 25px;
   border-radius: 50%;
   margin: 10px;
-  font-size: 120%;
+  font-size: 60%;
   text-align: center;
 }
 

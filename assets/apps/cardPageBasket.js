@@ -73,12 +73,13 @@ window.addEventListener("load", event => {
         tdPrice.innerText = product.price + "$";
         let tdCount = document.createElement("td");
         let plus = document.createElement("button");
-        plus.innerText = "+";
+        plus.innerHTML = `<i class="fa-solid fa-plus"></i>`;
         let minus = document.createElement("button");
-        minus.innerText = "-";
+        minus.innerHTML = `<i class="fa-solid fa-minus"></i>`;
         plus.classList.add("table-buttons");
         minus.classList.add("table-buttons");
         spanthing = document.createElement("span");
+        spanthing.classList.add("spanthing")
         spanthing.innerText = product.count;
         tdCount.prepend(minus);
         tdCount.append(spanthing);
