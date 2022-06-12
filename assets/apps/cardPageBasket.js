@@ -49,7 +49,7 @@ window.addEventListener("load", event => {
             <a style="margin: 15px 0; text-decoration: none;"  href="">Change address</a>
           </form>
         </div>
-        <div id="total-everything" class="total-everything">
+        <div class="total-everything">
           <span><b>Total</b></span>
           <span id="total-everything">$50</span>
         </div>
