@@ -68,6 +68,7 @@ window.addEventListener("load", event => {
         tdImage.append(image);
 
         let tdName = document.createElement("td");
+        tdName.classList.add("td-name")
         tdName.innerText = product.name;
         let tdPrice = document.createElement("td");
         tdPrice.innerText = product.price + "$";
@@ -118,8 +119,17 @@ window.addEventListener("load", event => {
           tdCount.prepend(minus);
           tdCount.append(plus);
           SubTd.innerHTML = (product.count * product.price).toFixed(2) + "$";
+          let totalPrice = 0;
+          arr.map(product => { totalPrice += product.price * product.count })
+          intoCardTotal.innerText=`$`+totalPrice.toFixed(2)
+          basketPrice.innerText = parseFloat(totalPrice).toFixed(2)
+          let totalOfCart = document.getElementById("total-everything")
+          totalOfCart.innerText=`$`+totalPrice.toFixed(2)
+          let totalProducts = 0;
+        arr.map(product => { totalProducts += product.count })
+        productCount.innerText = totalProducts
           localStorage.setItem("basket", JSON.stringify(arr));
-          window.location.reload();
+          
         };
         minus.onclick = function() {
           product.count--;
@@ -131,25 +141,46 @@ window.addEventListener("load", event => {
           }
           let zero = arr.filter(element => element.count > 0);
           let newArr = [...zero];
+          let totalProducts = 0;
+          newArr.map(product => { totalProducts += product.count })
+          productCount.innerText = totalProducts
+          let totalPrice = 0;
+          newArr.map(product => { totalPrice += product.price * product.count })
+          intoCardTotal.innerText=`$`+totalPrice.toFixed(2)
+          basketPrice.innerText = parseFloat(totalPrice).toFixed(2)
+          let totalOfCart = document.getElementById("total-everything")
+          totalOfCart.innerText=`$`+totalPrice.toFixed(2)
           arr = newArr;
           if (arr.length == 0) {
             localStorage.removeItem("basket");
           } else {
             localStorage.setItem("basket", JSON.stringify(arr));
           }
-          window.location.reload();
+          
         };
         deleteTd.onclick = function() {
           this.parentElement.remove();
           product.count = 0;
+          
           localStorage.setItem("basket", JSON.stringify(arr));
-          location.reload();
           localStorage.removeItem(this.parentElement);
           let zero = arr.filter(element => element.count > 0);
           let newArr = [...zero];
+          let totalPrice = 0;
+          newArr.map(product => { totalPrice += product.price * product.count })
+          let totalProducts = 0;
+        newArr.map(product => { totalProducts += product.count })
+        productCount.innerText = totalProducts
+          intoCardTotal.innerText=`$`+totalPrice.toFixed(2)
+          let totalOfCart = document.getElementById("total-everything")
+          totalOfCart.innerText=`$`+totalPrice.toFixed(2)
+          basketPrice.innerText = parseFloat(totalPrice).toFixed(2)
           arr = newArr;
           if (arr.length == 0) {
             localStorage.removeItem("basket");
+            basket.innerHTML = `<div class="icon-div"><i class="fa-solid fa-basket-shopping"></i></div>
+        <span class="empty">YOUR CART IS CURRENTLY EMPTY</span>
+        <button id="return" class="return">Return to shop</button>`;
           } else {
             localStorage.setItem("basket", JSON.stringify(arr));
           }
@@ -158,3 +189,6 @@ window.addEventListener("load", event => {
     });
   }
 });
+
+
+

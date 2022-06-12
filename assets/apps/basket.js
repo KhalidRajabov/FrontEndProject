@@ -85,12 +85,12 @@ cardBtn.forEach((addBtn) => {
 function writeProductCount() {
     if (localStorage.getItem("basket") != null) {
         let arr = JSON.parse(localStorage.getItem("basket"))
-        let totalProducts = 0;
         let totalPrice = 0;
         arr.map(product => { totalPrice += product.price * product.count })
+        basketPrice.innerText = parseFloat(totalPrice).toFixed(2)
+        let totalProducts = 0;
         arr.map(product => { totalProducts += product.count })
         productCount.innerText = totalProducts
-        basketPrice.innerText = parseFloat(totalPrice).toFixed(2)
     }
 }
 function showBasketNotification(itemName) {

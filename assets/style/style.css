@@ -3945,6 +3945,10 @@ footer .footer-info .footer-last .payments {
   width: 75%;
 }
 
+.basket-div .my-row #table #tbody tr .td-name {
+  min-width: 50%;
+}
+
 .basket-div .my-row .total-process-card {
   width: 23%;
   height: 470px;
@@ -4606,6 +4610,13 @@ footer .footer-info .footer-last .payments {
   margin: 10px;
   font-size: 60%;
   text-align: center;
+  border: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.table-buttons:hover {
+  background-color: #bfbfbf;
 }
 
 .carousel-img-1 {

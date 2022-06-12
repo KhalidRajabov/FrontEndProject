@@ -2732,6 +2732,13 @@ left: 0px;
     #table {
       display: block;
       width: 75%;
+      #tbody{
+        tr{
+          .td-name{
+            min-width: 50%;
+          }
+        }
+      }
     }
     .total-process-card {
       width: 23%;
@@ -3186,6 +3193,11 @@ left: 0px;
   margin: 10px;
   font-size: 60%;
   text-align: center;
+  border: none;
+  transition: .3s;
+  &:hover{
+    background-color: #bfbfbf;
+  }
 }
 .carousel-img-1 {
   position: absolute;
