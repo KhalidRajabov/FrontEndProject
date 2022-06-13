@@ -115,12 +115,27 @@ window.addEventListener("load", event => {
         }
         plus.onclick = function () {
           product.count++;
+          let shippingCost = document.getElementById("age1")
+          shippingCost.checked=false;
           tdCount.innerHTML = `${product.count}`;
           tdCount.prepend(minus);
           tdCount.append(plus);
           SubTd.innerHTML = (product.count * product.price).toFixed(2) + "$";
           let totalPrice = 0;
           arr.map(product => { totalPrice += product.price * product.count })
+          
+
+          shippingCost.onclick = function () {
+          totalOfCart.innerHTML = "$" + (totalPrice + 5.00).toFixed(2)
+          freeShipping.onclick = function () {
+            totalOfCart.innerHTML = "$" + totalPrice.toFixed(2)
+          }
+          localPickup.onclick = function () {
+            totalOfCart.innerHTML = "$" + totalPrice.toFixed(2)
+          }
+        }
+
+
           intoCardTotal.innerText = `$` + totalPrice.toFixed(2)
           basketPrice.innerText = parseFloat(totalPrice).toFixed(2)
           let totalOfCart = document.getElementById("total-everything")
@@ -133,6 +148,17 @@ window.addEventListener("load", event => {
         };
         minus.onclick = function () {
           product.count--;
+          let shippingCost = document.getElementById("age1")
+          shippingCost.checked=false;
+          shippingCost.onclick = function () {
+            totalOfCart.innerHTML = "$" + (totalPrice + 5.00).toFixed(2)
+            freeShipping.onclick = function () {
+              totalOfCart.innerHTML = "$" + totalPrice.toFixed(2)
+            }
+            localPickup.onclick = function () {
+              totalOfCart.innerHTML = "$" + totalPrice.toFixed(2)
+            }
+          }
           if (product.count > 0) {
             tdCount.innerHTML = `${product.count}`;
             tdCount.prepend(minus);
@@ -163,7 +189,7 @@ window.addEventListener("load", event => {
             returnBtn.onclick = function () {
               window.location = "index.html";
             }
-            let basketButton1 =document.getElementById("drop-down-buttons")
+            let basketButton1 = document.getElementById("drop-down-buttons")
             let basketButton2 = document.getElementById("drop-down-button")
             subtotaldrop.classList.add("d-none")
 
@@ -171,7 +197,7 @@ window.addEventListener("load", event => {
             basketButton2.classList.add("d-none")
             newItemsHere.classList.add("d-none")
             emptyBasket.classList.remove("d-none")
-        emptyText.classList.remove("d-none")
+            emptyText.classList.remove("d-none")
           } else {
             localStorage.setItem("basket", JSON.stringify(arr));
           }
@@ -179,7 +205,18 @@ window.addEventListener("load", event => {
         };
         deleteTd.onclick = function () {
           product.count = 0;
+          let shippingCost = document.getElementById("age1")
+          shippingCost.checked=false;
           this.parentElement.remove();
+          shippingCost.onclick = function () {
+            totalOfCart.innerHTML = "$" + (totalPrice + 5.00).toFixed(2)
+            freeShipping.onclick = function () {
+              totalOfCart.innerHTML = "$" + totalPrice.toFixed(2)
+            }
+            localPickup.onclick = function () {
+              totalOfCart.innerHTML = "$" + totalPrice.toFixed(2)
+            }
+          }
 
           localStorage.setItem("basket", JSON.stringify(arr));
           localStorage.removeItem(this.parentElement);
@@ -200,6 +237,10 @@ window.addEventListener("load", event => {
             basket.innerHTML = `<div class="icon-div"><i class="fa-solid fa-basket-shopping"></i></div>
         <span class="empty">YOUR CART IS CURRENTLY EMPTY</span>
         <button id="return" class="return">Return to shop</button>`;
+            let returnBtn = document.getElementById("return");
+            returnBtn.onclick = function () {
+              window.location = "index.html";
+            }
           } else {
             localStorage.setItem("basket", JSON.stringify(arr));
           }

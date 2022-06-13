@@ -1261,6 +1261,7 @@ header .drop-down-product .drop-footer {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  cursor: pointer;
 }
 
 .main-slider .images .h1 {

@@ -60,6 +60,17 @@ cardBtn.forEach((addBtn) => {
                 name: itemName,
                 count: 1
             })
+            let item = arr.find(p => p.id == productId)
+            newItemsHere.innerHTML += `<div id="for-new-item" class="basket-row">
+            <img src="${item.imageURL}"  alt="">
+            <div class="pro-details">
+              <span id="pro-name" >${item.name}</span>
+              <div>
+                <span id="pro-count">${item.count} </span> <span style="color: red;"> x </span> <span id="pro-price"> $${item.price}</span>
+              </div>
+            </div>
+          </div>
+          `
         }
         else {
             existProduct.count++;
@@ -69,16 +80,7 @@ cardBtn.forEach((addBtn) => {
         emptyBasket.classList.add("d-none")
         emptyText.classList.add("d-none")
         currentLS.forEach(function (product) {
-            newItemsHere.innerHTML += `<div id="for-new-item" class="basket-row">
-            <img src="${product.imageURL}"  alt="">
-            <div class="pro-details">
-              <span id="pro-name" >${product.name}</span>
-              <div>
-                <span id="pro-count">${product.count} </span> <span style="color: red;"> x </span> <span id="pro-price"> $${product.price}</span>
-              </div>
-            </div>
-          </div>
-          `
+            
             subtotaldrop.innerHTML = `<span style="color: #c2c2d3;"><b>Subtotal</b></span> 
             <span style="color:rgb(230, 0, 35);"><b id="total-sub-drop">${basketPrice.innerText}</b></span>`
             buttons.innerHTML = `<button class="btns view">View Cart</button>
