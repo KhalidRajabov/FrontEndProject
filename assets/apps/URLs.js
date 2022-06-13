@@ -15,6 +15,8 @@ $(document).ready(function () {
     $(".logo").click(_ => { window.location = "index.html" })
 
 
+    $(".fa-mug-hot").click(_=>{window.location = "productdetail.html"})
+
     let blogs = document.querySelectorAll("#gotoblog")
     blogs.forEach((event) => {
         event.addEventListener("click", () => {
