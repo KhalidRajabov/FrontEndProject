@@ -96,16 +96,7 @@ cardBtn.forEach((addBtn) => {
         localStorage.setItem("basket", JSON.stringify(arr))
         writeProductCount()
         showBasketNotification(itemName)
-        // newProduct = `
-        // <img src="${existProduct.imageURL}"  alt="">
-        //         <div class="pro-details">
-        //           <span id="pro-name" >${existProduct.name}</span>
-        //           <div>
-        //             <span id="pro-count">${existProduct.count}</span> <span> x $</span> <span id="pro-price">${existProduct.price}</span>
-        //           </div>
-        //         </div>
-        // `
-        //newItemsHere.innerHTML+= newProduct
+        
 
     })
 })

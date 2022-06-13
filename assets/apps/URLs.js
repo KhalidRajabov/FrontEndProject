@@ -8,6 +8,8 @@ $(document).ready(function () {
     $("#contact-list").click(_=>{window.location="contact.html"})
     $("#account").click(_=>{window.location="login&register.html"})
     $("#profile").click(_=>{window.location="login&register.html"})
+    $(".header-basket").click(_=>{window.location="cart(basket).html"})
+    $(".logo").click(_=>{window.location="index.html"})
  
     let blogs = document.querySelectorAll("#gotoblog")
     blogs.forEach((event)=>{
