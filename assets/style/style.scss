@@ -471,10 +471,13 @@ header {
           &:hover > .drop-home {
             opacity: 1;
             visibility: visible;
+            z-index: 56;
+            height: 220px;
           }
           .drop-home {
             transition: 0.3s;
             opacity: 0;
+            height: 0px;
             visibility: hidden;
             position: absolute;
             width: 200%;
@@ -504,6 +507,8 @@ header {
           &:hover > .hidden-div {
             opacity: 1;
             visibility: visible;
+            z-index: 100;
+            height: 600px;
           }
           .hidden-div {
             transition: 0.3s;
@@ -511,7 +516,7 @@ header {
             visibility: hidden;
             background-color: rgb(255, 255, 255);
             width: 100%;
-            min-height: 200px;
+            height: 0;
             position: absolute;
             display: flex;
             justify-content: center;
