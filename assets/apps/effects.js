@@ -49,7 +49,7 @@ $(document).ready(function () {
     let seconds = document.getElementById("seconds")
     let currentYear = new Date().getFullYear();
 
-    let endTime = new Date(`June 26 ${currentYear} 00:00:00`)
+    let endTime = new Date(`December 31 ${currentYear} 00:00:00`)
 
     function updateCountdownTime() {
         let currentTime = new Date();
